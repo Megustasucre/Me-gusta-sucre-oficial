@@ -591,7 +591,12 @@ const translations = {
       "slide3Label": "Learning",
       "slide3Cap": "Immersive, practical, effective",
       "slide4Label": "Sucre",
-      "slide4Cap": "The best city to learn Spanish"
+      "slide4Cap": "The best city to learn Spanish",
+      "pricesEyebrow": "Pricing",
+      "pricesTitle": "Simple, transparent",
+      "pricesAccent": "pricing.",
+      "pricesSub": "20 hours per week · All levels · Native teachers",
+      "pricesNote": "* Prices in USD · Exact rates and schedules at megustaspanish.com"
     },
     "cafe": {
       "address": "Bolivar #603, Sucre, Bolivia",
@@ -1519,7 +1524,12 @@ const translations = {
       "slide3Label": "Aprendizaje",
       "slide3Cap": "Inmersivo, práctico, efectivo",
       "slide4Label": "Sucre",
-      "slide4Cap": "La mejor ciudad para aprender español"
+      "slide4Cap": "La mejor ciudad para aprender español",
+      "pricesEyebrow": "Precios",
+      "pricesTitle": "Simple y transparente,",
+      "pricesAccent": "sin sorpresas.",
+      "pricesSub": "20 horas por semana · Todos los niveles · Profesores nativos",
+      "pricesNote": "* Precios en USD · Tarifas y horarios exactos en megustaspanish.com"
     },
     "cafe": {
       "address": "Bolívar #603, Sucre, Bolivia",
