@@ -1,0 +1,21 @@
+/* ═══════════════════════════════════════════════════
+   SUCRE FONTS — sistema tipográfico definitivo
+   Fraunces (display) · Plus Jakarta Sans (body) · Sacramento (accent)
+   ═══════════════════════════════════════════════════ */
+
+/* El @import principal vive en style.css — no duplicar aquí */
+
+/* Clases semánticas — refuerzan el sistema sin !important */
+.serif,
+.section-title,
+.brand-card-name {
+  font-family: 'Fraunces', serif;
+}
+
+.handwritten {
+  font-family: 'Sacramento', cursive;
+}
+
+.polaroid::after {
+  font-family: 'Sacramento', cursive;
+}

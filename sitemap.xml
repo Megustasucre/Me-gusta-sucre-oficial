@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home -->
+  <url>
+    <loc>https://megustasucre.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/index.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/index.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/index.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/index.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Café -->
+  <url>
+    <loc>https://megustasucre.com/cafe.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/cafe.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/cafe.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/cafe.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/cafe.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Spanish Classes -->
+  <url>
+    <loc>https://megustasucre.com/clases.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/clases.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/clases.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/clases.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/clases.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- City Guide -->
+  <url>
+    <loc>https://megustasucre.com/guia.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/guia.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/guia.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/guia.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/guia.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Stay (Hospedaje) -->
+  <url>
+    <loc>https://megustasucre.com/hospedaje.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/hospedaje.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/hospedaje.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/hospedaje.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/hospedaje.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Merch -->
+  <url>
+    <loc>https://megustasucre.com/merchandising.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/merchandising.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/merchandising.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/merchandising.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/merchandising.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://megustasucre.com/contacto.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://megustasucre.com/contacto.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://megustasucre.com/contacto.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://megustasucre.com/contacto.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://megustasucre.com/contacto.html"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

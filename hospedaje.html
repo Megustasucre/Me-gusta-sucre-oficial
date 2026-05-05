@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Me Gusta Inn — Hospedaje Boutique en Sucre, Bolivia</title>
+  <meta name="description" content="Quédate en una casa colonial del siglo XIX en el corazón de Sucre. Habitaciones privadas y compartidas, a pasos de la plaza principal." />
+  
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Hero image preload (LCP) -->
+  <link rel="preload" as="image" href="imagenes/hostal/hostal_general/vista_terraza.webp" />
+
+  <!-- CSS Global + Tailwind (sucre-fonts.css ya carga las fuentes) -->
+  <link rel="stylesheet" href="css/tw.css" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/sucre-fonts.css" />
+
+  <style>
+    /* ── BASE MOCKUP STYLES ── */
+    :root {
+      --teal:      #14b8a6;
+      --teal-dark: #0f766e;
+      --teal-pale: #99f6e4;
+      --navy:      #0a1628;
+      --cream:     #fdf6ec;
+      --cream-2:   #f5efe4;
+      --sand:      #e8ddd0;
+      --text:      #1a1a2e;
+      --muted:     #666;
+      --cafe:      #5aaa6a;
+      --school:    #FF3B6B;
+    }
+
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: var(--text); -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Fraunces', serif; }
+
+    /* ══ 1. HERO ══ */
+    .s-hero {
+      position: relative; height: 85vh; min-height: 580px;
+      display: flex; align-items: flex-end; overflow: hidden;
+      background: url('imagenes/hostal/hostal_general/vista_terraza.webp') center/cover;
+    }
+    .s-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,0.95) 0%, rgba(10,22,40,0.4) 50%, transparent 100%); }
+    .s-hero-content { position: relative; z-index: 10; padding: 90px 48px 0; width: 100%; }
+    .eyebrow-teal { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; display: block; }
+    .s-hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; color: #fff; line-height: 1.05; margin-bottom: 12px; }
+    .s-hero h1 em { color: var(--teal); font-style: italic; }
+    .s-hero p { font-size: 16px; color: rgba(255,255,255,0.65); max-width: 480px; margin-bottom: 48px; line-height: 1.7; }
+
+    /* Booking Bar */
+    .booking-bar {
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(16px);
+      border-radius: 20px 20px 0 0; padding: 24px 32px;
+      display: flex; align-items: center; gap: 0;
+      box-shadow: 0 -4px 40px rgba(0,0,0,0.15);
+      max-width: 900px;
+    }
+    .bb-field { flex: 1; padding: 0 24px; }
+    .bb-field:first-child { padding-left: 0; }
+    .bb-label { display: block; font-size: 9px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #999; margin-bottom: 4px; }
+    .bb-input {
+      font-size: 14px; font-weight: 600; color: var(--navy);
+      border: none; outline: none; background: transparent;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      width: 100%; cursor: pointer; padding: 0;
+    }
+    .bb-input[type="number"] { width: 48px; -moz-appearance: textfield; }
+    .bb-input[type="number"]::-webkit-inner-spin-button,
+    .bb-input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+    .bb-input:focus { color: var(--teal-dark); }
+    .bb-field { transition: background 0.15s; border-radius: 10px; }
+    .bb-field:hover { background: rgba(20,184,166,0.06); }
+    .bb-div { width: 1px; height: 32px; background: rgba(0,0,0,0.1); flex-shrink: 0; }
+    .bb-btn { background: var(--teal); color: #fff; padding: 14px 28px; border: none; border-radius: 12px; font-weight: 700; font-size: 13px; white-space: nowrap; margin-left: 20px; cursor: pointer; transition: background 0.2s; }
+    .bb-btn:hover { background: var(--teal-dark); }
+
+    /* ══ 2. NARRATIVE ══ */
+    .s-narrative { background: var(--cream); display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
+    .s-narrative-text { padding: 80px 64px 80px 80px; display: flex; flex-direction: column; justify-content: center; }
+    .s-narrative-text .overline { font-size: 10px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--teal-dark); margin-bottom: 20px; display: block; }
+    .s-narrative-text h2 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; line-height: 1.1; margin-bottom: 24px; color: var(--navy); }
+    .s-narrative-text h2 em { color: var(--teal); font-style: italic; }
+    .s-narrative-text p { font-size: 16px; line-height: 1.85; color: var(--muted); max-width: 420px; margin-bottom: 16px; }
+    .s-narrative-badges { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .s-narrative-badge-item { background: rgba(20,184,166,0.1); border: 1px solid rgba(20,184,166,0.25); border-radius: 50px; padding: 5px 14px; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--teal-dark); }
+    
+    .s-narrative-img { position: relative; overflow: hidden; }
+    .s-narrative-img img { width: 100%; height: 100%; object-fit: cover; }
+    .s-narrative-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,0.3) 0%, transparent 50%); }
+    .s-narrative-float {
+      position: absolute; bottom: 28px; left: 28px;
+      background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+      border-radius: 12px; padding: 14px 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    .s-narrative-float-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #999; margin-bottom: 2px; }
+    .s-narrative-float-value { font-size: 13px; font-weight: 700; color: var(--navy); }
+
+    /* ══ 3. ROOMS ══ */
+    .s-rooms { background: #fff; padding: 96px 0 112px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .section-header { margin-bottom: 56px; }
+    .section-header h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.1; margin-bottom: 12px; }
+    .section-header h2 em { color: var(--teal); font-style: italic; }
+    .section-header p { font-size: 15px; color: var(--muted); max-width: 480px; line-height: 1.75; }
+
+    .rooms-list { display: flex; flex-direction: column; gap: 20px; }
+    .room-card {
+      display: grid; grid-template-columns: clamp(360px, 42%, 500px) 1fr;
+      background: var(--cream); border-radius: 24px; overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .room-card:hover { box-shadow: 0 20px 60px rgba(0,0,0,0.1) !important; transform: none !important; }
+    .room-card--alt { grid-template-columns: 1fr clamp(360px, 42%, 500px); }
+    .room-card--alt .room-card-img { order: 2; }
+    .room-card--alt .room-card-body { order: 1; }
+
+    .room-card-img { position: relative; height: 380px; overflow: hidden; }
+    .room-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s ease; }
+    .room-card:hover .room-card-img img { transform: scale(1.04); }
+    
+    .room-card-badge {
+      position: absolute; top: 20px; left: 20px;
+      background: var(--navy); color: var(--teal-pale);
+      font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 50px; z-index: 5;
+    }
+    .room-card-price {
+      position: absolute; bottom: 20px; right: 20px;
+      background: rgba(255,255,255,0.97); backdrop-filter: blur(8px);
+      border-radius: 12px; padding: 12px 20px; text-align: right; z-index: 5;
+    }
+    .room-card-price .num { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 800; color: var(--navy); line-height: 1; }
+    .room-card-price .unit { font-size: 11px; color: #888; margin-top: 2px; }
+    
+    .room-card-body { padding: 40px 44px; display: flex; flex-direction: column; justify-content: center; }
+    .room-card-name { font-size: 1.75rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; line-height: 1.15; }
+    .room-card-desc { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 20px; max-width: 340px; }
+    
+    .room-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+    .chip { font-size: 11px; font-weight: 600; padding: 5px 14px; border-radius: 50px; background: #fff; color: var(--teal-dark); border: 1px solid var(--sand); }
+    
+    .room-discount {
+      display: flex; align-items: flex-start; gap: 8px;
+      background: rgba(20,184,166,0.07); border: 1px solid rgba(20,184,166,0.2);
+      border-radius: 10px; padding: 10px 14px; margin-bottom: 24px;
+      font-size: 12px; color: var(--teal-dark); line-height: 1.7;
+    }
+    .room-discount-icon { font-size: 13px; font-weight: 800; color: var(--teal); flex-shrink: 0; margin-top: 1px; }
+    .room-card-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--navy); color: #fff;
+      padding: 13px 28px; border-radius: 12px;
+      font-weight: 700; font-size: 13px; text-decoration: none;
+      align-self: flex-start; transition: background 0.2s, transform 0.15s;
+    }
+    .room-card-cta:hover { background: var(--teal-dark); transform: translateY(-1px); }
+
+    /* Dorm Wide Card */
+    .room-dorm { background: var(--navy); border-radius: 24px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; }
+    .room-dorm-img { overflow: hidden; position: relative; min-height: 340px; }
+    .room-dorm-img img { width: 100%; height: 100%; object-fit: cover; }
+    .room-dorm-body { padding: 40px 44px; display: flex; flex-direction: column; justify-content: center; }
+    .room-dorm-price-wrap { margin-bottom: 18px; }
+    .room-dorm-price { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 800; color: var(--teal-pale); line-height: 1; }
+    .room-dorm-unit { font-size: 12px; color: rgba(255,255,255,0.35); margin-top: 4px; }
+    .room-dorm-name { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+    .room-dorm-desc { font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.75; margin-bottom: 16px; max-width: 320px; }
+    .room-dorm-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .chip-dark { font-size: 11px; font-weight: 600; padding: 5px 14px; border-radius: 50px; background: rgba(20,184,166,0.15); color: var(--teal-pale); border: 1px solid rgba(20,184,166,0.3); }
+    .room-dorm-discount { background: rgba(20,184,166,0.1); border: 1px solid rgba(20,184,166,0.2); border-radius: 10px; padding: 10px 14px; margin-bottom: 24px; font-size: 12px; color: var(--teal-pale); line-height: 1.7; }
+    .room-dorm-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--teal); color: #fff; padding: 13px 28px; border-radius: 12px; font-weight: 700; font-size: 13px; text-decoration: none; align-self: flex-start; }
+
+    /* ══ 4. AMENITIES ══ */
+    .s-amenities { background: var(--cream-2); padding: 80px 0 88px; }
+    .amenities-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--sand); border-radius: 20px; overflow: hidden; margin-bottom: 32px; }
+    .amenity-cell { background: var(--cream); padding: 28px 24px; }
+    .amenity-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(20,184,166,0.12); display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+    .amenity-icon svg { width: 18px; height: 18px; stroke: var(--teal-dark); fill: none; }
+    .amenity-name { font-weight: 700; font-size: 13px; color: var(--navy); margin-bottom: 3px; }
+    .amenity-desc { font-size: 12px; color: var(--muted); line-height: 1.55; }
+
+    /* Cross-sell banners */
+    .crossell-banners { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .cafe-banner { background: var(--navy); border-radius: 20px; display: flex; align-items: center; gap: 28px; padding: 32px 40px; }
+    .cafe-banner-img { width: 80px; height: 64px; object-fit: cover; border-radius: 10px; flex-shrink: 0; opacity: 0.85; }
+    .cafe-banner-text { flex: 1; }
+    .cafe-banner-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--cafe); margin-bottom: 4px; }
+    .cafe-banner-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 4px; }
+    .cafe-banner-title em { color: var(--cafe); font-style: italic; }
+    .cafe-banner-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.65; }
+    .cafe-banner-btn { color: #fff; padding: 10px 20px; border-radius: 10px; font-weight: 700; font-size: 12px; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .cafe-banner-btn--cafe { background: var(--cafe); }
+    .cafe-banner-btn--school { background: var(--school); }
+
+    /* ══ 5. GALLERY ══ */
+    .s-gallery { background: #fff; padding: 96px 0; }
+    .gallery-grid { display: grid; grid-template-columns: 1.4fr 1fr; grid-template-rows: 300px 300px; gap: 12px; }
+    .g-cell { border-radius: 20px; overflow: hidden; position: relative; }
+    .g-cell--tall { grid-row: span 2; }
+    .g-cell img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s; }
+    .g-cell:hover img { transform: scale(1.05); }
+    .g-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,22,40,0.5) 0%, transparent 55%); }
+    .g-label { position: absolute; bottom: 20px; left: 20px; }
+    .g-pill { display: inline-block; background: rgba(255,255,255,0.12); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; padding: 5px 16px; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal-pale); }
+
+    /* ══ 6. BOOKING FORM ══ */
+    .s-booking { background: var(--cream); padding: 96px 0 112px; }
+    .booking-grid { display: grid; grid-template-columns: 1fr 340px; gap: 28px; max-width: 980px; margin: 0 auto; }
+    .booking-form-card { background: #fff; border-radius: 28px; border: 1px solid var(--sand); overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
+    .booking-accent-line { height: 4px; background: linear-gradient(to right, var(--teal-dark), var(--teal)); }
+    .booking-form-body { padding: 40px; }
+    .form-label { display: block; font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #aaa; margin-bottom: 8px; }
+    .form-input { width: 100%; border: none; border-bottom: 1.5px solid var(--sand); padding: 10px 0; font-size: 14px; font-weight: 600; color: var(--navy); background: transparent; outline: none; margin-bottom: 24px; transition: border-color 0.2s; }
+    .form-input:focus { border-color: var(--teal); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    
+    .room-option-light { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px; border: 1.5px solid var(--sand); background: #fff; margin-bottom: 10px; cursor: pointer; transition: all 0.2s; }
+    .room-option-light:hover { border-color: var(--teal); background: rgba(20,184,166,0.04); }
+    .room-option-light.sel { border-color: var(--teal); background: rgba(20,184,166,0.08); }
+    .rol-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid var(--sand); flex-shrink: 0; }
+    .room-option-light.sel .rol-dot { background: var(--teal); border-color: var(--teal); box-shadow: 0 0 0 3px rgba(20,184,166,0.2); }
+    .rol-text { font-size: 13px; font-weight: 600; color: var(--navy); flex: 1; }
+    .rol-price { font-family: 'Fraunces', serif; font-size: 1rem; font-weight: 700; color: var(--teal-dark); white-space: nowrap; }
+
+    /* summary card */
+    .booking-summary { position: sticky; top: 20px; }
+    .summary-card { background: var(--navy); border-radius: 24px; overflow: hidden; box-shadow: 0 16px 48px rgba(10,22,40,0.18); }
+    .sum-accent { height: 3px; background: linear-gradient(to right, var(--teal-dark), var(--teal)); }
+    .sum-body { padding: 28px; }
+    .sum-title { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 16px; }
+    .sum-thumb { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 18px; opacity: 0.9; }
+    .sum-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .sum-lbl { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.3); }
+    .sum-val { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.6); text-align: right; }
+    .sum-total { display: flex; justify-content: space-between; align-items: center; padding: 18px 0 22px; }
+    .sum-total-lbl { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .sum-total-num { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 800; color: #fff; }
+    .sum-discount { background: rgba(20,184,166,0.1); border: 1px solid rgba(20,184,166,0.2); border-radius: 10px; padding: 10px 12px; margin-bottom: 18px; }
+    .sum-discount p { font-size: 11px; color: var(--teal-pale); line-height: 1.65; margin: 0; }
+    .sum-cta { width: 100%; background: var(--teal); color: #fff; border: none; border-radius: 12px; padding: 16px; font-weight: 700; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .sum-note { text-align: center; font-size: 11px; color: rgba(255,255,255,0.25); margin-top: 12px; }
+
+    /* ══ Student toggle ══ */
+    .student-toggle { display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 14px 16px; border-radius: 12px; border: 1.5px solid var(--sand); background: #fff; margin-bottom: 24px; transition: all 0.2s; user-select: none; }
+    .student-toggle:has(input:checked) { border-color: var(--teal); background: rgba(20,184,166,0.06); }
+    .student-toggle input { display: none; }
+    .student-toggle-box { width: 20px; height: 20px; border-radius: 6px; border: 2px solid var(--sand); flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+    .student-toggle:has(input:checked) .student-toggle-box { background: var(--teal); border-color: var(--teal); }
+    .student-toggle:has(input:checked) .student-toggle-box::after { content: ''; width: 5px; height: 9px; border: 2px solid #fff; border-top: none; border-left: none; transform: rotate(45deg) translateY(-1px); display: block; }
+    .student-toggle-text { font-size: 13px; font-weight: 600; color: var(--navy); flex: 1; }
+    .student-toggle-badge { display: inline-block; background: rgba(20,184,166,0.12); color: var(--teal-dark); font-size: 9px; font-weight: 800; letter-spacing: 1.5px; padding: 2px 8px; border-radius: 50px; margin-left: 8px; vertical-align: middle; }
+
+    /* ══ 7. FINAL CTA ══ */
+    .s-cta {
+      position: relative; min-height: 480px; display: flex; align-items: center; justify-content: center;
+      background: url('imagenes/hostal/hostal_general/terraza_1.webp') center/cover;
+    }
+    .s-cta-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,22,40,0.5), rgba(10,22,40,0.85)); }
+    .s-cta-body { position: relative; z-index: 1; text-align: center; padding: 80px 24px; max-width: 600px; }
+    .s-cta-body h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #fff; margin-bottom: 16px; }
+    .s-cta-body p { font-size: 16px; color: rgba(255,255,255,0.6); max-width: 400px; margin: 0 auto 36px; line-height: 1.75; }
+    .cta-btns { display: flex; justify-content: center; gap: 14px; }
+    .btn-primary { background: var(--teal); color: #fff; padding: 15px 32px; border: 2px solid var(--teal); border-radius: 12px; font-weight: 700; font-size: 14px; text-decoration: none; }
+    .btn-outline-white { background: transparent; color: var(--teal-pale); padding: 15px 32px; border: 2px solid rgba(153,246,228,0.3); border-radius: 12px; font-weight: 700; font-size: 14px; text-decoration: none; }
+
+    @media (max-width: 900px) {
+      .s-narrative, .room-card, .room-card--alt, .room-dorm, .amenities-grid, .crossell-banners, .booking-grid { grid-template-columns: 1fr; }
+      .room-card-img { height: 300px; }
+      .room-card--alt .room-card-img { order: 0; }
+      .s-hero { min-height: 720px; }
+      .s-hero-content { padding: 80px 20px 0; }
+      .booking-bar { flex-direction: column; border-radius: 20px; padding: 20px; }
+      .bb-field { border-bottom: 1px solid rgba(0,0,0,0.08); width: 100%; padding: 15px 0; }
+      .bb-div { display: none; }
+      .bb-btn { width: 100%; margin-left: 0; margin-top: 15px; }
+      .booking-summary { position: static; margin-top: 32px; }
+      .amenities-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50" style="background:transparent">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
+      <div class="hidden md:flex items-center gap-7" style="flex:1">
+        <a href="clases.html" class="nav-link text-white" data-i18n="nav.classes">Spanish Classes</a>
+        <a href="cafe.html" class="nav-link text-white" data-i18n="nav.cafe">Café</a>
+        <a href="guia.html" class="nav-link text-white" data-i18n="nav.guide">City Guide</a>
+      </div>
+      <a href="index.html" class="flex items-center gap-3 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img">
+        <span class="logo-text text-white font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
+      </a>
+      <div class="hidden md:flex items-center justify-end gap-7" style="flex:1">
+        <a href="hospedaje.html" class="nav-link nav-active text-white" data-i18n="nav.stay">Stay</a>
+        <a href="contacto.html" class="nav-link text-white" data-i18n="nav.contact">Contact</a>
+        <div class="flex items-center gap-3 border-l lang-container border-white/20 pl-6 ml-2">
+          <button class="lang-btn text-xs font-bold text-white uppercase active" data-lang="en">EN</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="es">ES</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="fr">FR</button>
+        </div>
+      </div>
+      <button id="menu-btn" class="md:hidden text-white p-1">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white shadow-xl px-6 pb-5">
+      <div class="flex justify-center items-center gap-3 py-4 border-b border-gray-100 mb-2">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" style="filter:none">
+        <span class="logo-text font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap;color:#111">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
+      </div>
+      <a href="clases.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.classes">Spanish Classes</a>
+      <a href="cafe.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.cafe">Café</a>
+      <a href="guia.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.guide">City Guide</a>
+      <a href="hospedaje.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.stay">Stay</a>
+      <a href="contacto.html" class="block py-2 text-sm font-semibold text-gray-800" data-i18n="nav.contact">Contact</a>
+      <div class="py-4 mt-2 border-t border-b border-gray-100 mb-4">
+        <p class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-wider" data-i18n="nav.langLabel">Language</p>
+        <div class="flex items-center gap-5">
+          <button class="lang-btn text-sm font-bold text-gray-900" data-lang="en">EN</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="es">ES</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="fr">FR</button>
+        </div>
+      </div>
+      <a href="hospedaje.html" class="btn-red block text-center mt-4" data-i18n="nav.book">Book a Stay</a>
+    </div>
+  </nav>
+
+  <!-- 01. HERO -->
+  <section class="s-hero">
+    <div class="s-hero-overlay"></div>
+    <div class="s-hero-content">
+      <span class="eyebrow-teal" data-i18n="hospedaje.heroEyebrow">Hostal · Sucre, Bolivia</span>
+      <h1 class="fade-up">
+        <span data-i18n="hospedaje.heroTitle">Tu hogar</span><br>
+        <em data-i18n="hospedaje.heroAccent">en la Ciudad Blanca</em>
+      </h1>
+      <p class="fade-up delay-1" data-i18n="hospedaje.heroSub">Una casa colonial en el corazón del centro histórico. A pasos de la Plaza 25 de Mayo.</p>
+      
+      <div class="booking-bar fade-up delay-2">
+        <div class="bb-field">
+          <label class="bb-label" for="bar-checkin" data-i18n="hospedaje.heroBarArrival">Llegada</label>
+          <input type="date" id="bar-checkin" class="bb-input" oninput="syncFromBar('checkin')" />
+        </div>
+        <div class="bb-div"></div>
+        <div class="bb-field">
+          <label class="bb-label" for="bar-checkout" data-i18n="hospedaje.heroBarDeparture">Salida</label>
+          <input type="date" id="bar-checkout" class="bb-input" oninput="syncFromBar('checkout')" />
+        </div>
+        <div class="bb-div"></div>
+        <div class="bb-field" style="flex:0 0 auto;min-width:90px">
+          <label class="bb-label" for="bar-guests-inp" data-i18n="hospedaje.heroBarGuests">Huéspedes</label>
+          <input type="number" id="bar-guests-inp" class="bb-input" min="1" max="20" value="2" oninput="syncFromBar('guests')" />
+        </div>
+        <button class="bb-btn" onclick="scrollToForm()" data-i18n="hospedaje.heroBarBtn">Consultar Disponibilidad</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. NARRATIVA -->
+  <section class="s-narrative">
+    <div class="s-narrative-text">
+      <span class="overline" data-i18n="hospedaje.narrativeEyebrow">La Paz #571 · Centro Histórico · Sucre</span>
+      <h2 data-i18n-html="hospedaje.narrativeTitleHtml">Una casa colonial<br><em>hecha hogar</em></h2>
+      <p data-i18n="hospedaje.narrativeDesc1">Construida en el siglo XIX, Me Gusta Inn es una de las casas coloniales mejor conservadas del centro. Techos altos, patio de piedra y esa luz sucrense que entra de costado cada mañana.</p>
+      <p data-i18n="hospedaje.narrativeDesc2">No es un hotel. Es el lugar donde te quedas cuando quieres vivir Sucre, no solo visitarla.</p>
+      <div class="s-narrative-badges">
+        <span class="s-narrative-badge-item" data-i18n="hospedaje.narrativeBadge1">Patrimonio UNESCO</span>
+        <span class="s-narrative-badge-item" data-i18n="hospedaje.narrativeBadge2">Centro Histórico</span>
+        <span class="s-narrative-badge-item" data-i18n="hospedaje.narrativeBadge3">3 min de la Plaza</span>
+      </div>
+    </div>
+    <div class="s-narrative-img">
+      <img src="imagenes/hostal/hostal_general/Entrada.webp" alt="Me Gusta Inn — Tu casa lejos de casa" loading="lazy" />
+      <div class="s-narrative-overlay"></div>
+      <div class="s-narrative-float">
+        <div class="s-narrative-float-label" data-i18n="hospedaje.narrativeFloatLabel">Nuestra dirección</div>
+        <div class="s-narrative-float-value">La Paz #571 · Sucre, Bolivia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03. HABITACIONES -->
+  <section class="s-rooms" id="habitaciones">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-4" data-i18n="hospedaje.roomsEyebrow">Nuestras Habitaciones</span>
+        <h2 data-i18n-html="hospedaje.roomsTitleHtml">Espacios para<br><em>descansar de verdad</em></h2>
+        <p data-i18n="hospedaje.roomsSub">Cuatro opciones para cada viajero — desde la mayor privacidad hasta la opción más social. Los precios no incluyen desayuno.</p>
+      </div>
+
+      <div class="rooms-list">
+        <!-- Privada c/ Baño Privado -->
+        <div class="room-card fade-up">
+          <div class="room-card-img">
+            <img src="imagenes/hostal/baño_privado/DSC08147-HDR-2.webp" alt="Habitación Privada con Baño Privado" loading="lazy" />
+            <span class="room-card-badge" data-i18n="hospedaje.room1Badge">Mayor Comodidad</span>
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room1Price">230 Bs</div>
+              <div class="unit" data-i18n="hospedaje.unitNight">/ noche</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room1Name">Privada con<br>Baño Privado</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room1Desc">La mayor privacidad y confort. Baño privado en suite, luz natural y vista al patio colonial. Ideal para estadías largas.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chipPrivateBath">Baño Privado</span>
+              <span class="chip" data-i18n="hospedaje.chipHotWater">Agua Caliente 24h</span>
+              <span class="chip" data-i18n="hospedaje.chipFiberWifi">WiFi Fibra</span>
+              <span class="chip" data-i18n="hospedaje.chipUpTo2">Hasta 2 personas</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room1DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 190 Bs para 2 personas · 150 Bs para 1 persona</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-private-bath')" data-i18n="hospedaje.btnReserve">Seleccionar →</a>
+          </div>
+        </div>
+
+        <!-- Privada c/ Baño Compartido -->
+        <div class="room-card room-card--alt fade-up" style="animation-delay:0.1s">
+          <div class="room-card-img">
+            <img src="imagenes/hostal/baño_compartido/DSC08217-HDR.webp" alt="Habitación Privada con Baño Compartido" style="object-position: center 30%;" loading="lazy" />
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room2Price">180 Bs</div>
+              <div class="unit" data-i18n="hospedaje.unitNight">/ noche</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room2Name">Privada con<br>Baño Compartido</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room2Desc">Toda la privacidad de tu propio cuarto a un precio más accesible. Baño compartido impecablemente limpio.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chipPrivateRoom">Habitación Privada</span>
+              <span class="chip" data-i18n="hospedaje.chipSharedBath">Baño Compartido</span>
+              <span class="chip" data-i18n="hospedaje.chipHotWater">Agua Caliente 24h</span>
+              <span class="chip" data-i18n="hospedaje.chipFiberWifi">WiFi Fibra</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room2DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 150 Bs para 2 personas · 130 Bs para 1 persona</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-private-shared')" data-i18n="hospedaje.btnReserve">Seleccionar →</a>
+          </div>
+        </div>
+
+        <!-- Familiar -->
+        <div class="room-card fade-up" style="animation-delay:0.2s">
+          <div class="room-card-img">
+            <img src="imagenes/hostal/familiar/DSC08332-HDR.webp" alt="Habitación Familiar" loading="lazy" />
+            <span class="room-card-badge" data-i18n="hospedaje.room3Badge">Familias y Grupos</span>
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room3Price">365 Bs</div>
+              <div class="unit" data-i18n="hospedaje.unitNight">/ noche</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room3Name">Habitación<br>Familiar</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room3Desc">Espacio amplio para hasta 4 personas. Ideal para familias o grupos pequeños que exploran Sucre juntos.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chipUpTo4">Hasta 4 personas</span>
+              <span class="chip" data-i18n="hospedaje.chipSpaciousRoom">Espacio Amplio</span>
+              <span class="chip" data-i18n="hospedaje.chipHotWater">Agua Caliente 24h</span>
+              <span class="chip" data-i18n="hospedaje.chipFiberWifi">WiFi Fibra</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room3DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 300 Bs / noche</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-family')" data-i18n="hospedaje.btnReserve">Seleccionar →</a>
+          </div>
+        </div>
+
+        <!-- Compartida -->
+        <div class="room-dorm fade-up" style="animation-delay:0.15s">
+          <div class="room-dorm-img">
+            <img src="imagenes/hostal/seis_camas/DSC08489-HDR.webp" alt="Habitación Compartida" loading="lazy" />
+          </div>
+          <div class="room-dorm-body">
+            <span class="eyebrow-teal mb-4" data-i18n="hospedaje.room4Eyebrow">La opción más social</span>
+            <div class="room-dorm-price-wrap">
+              <div class="room-dorm-price" data-i18n="hospedaje.room4Price">103 Bs</div>
+              <div class="room-dorm-unit" data-i18n="hospedaje.roomDormDetail">por cama / noche · incluye baño privado y cocineta</div>
+            </div>
+            <h3 class="room-dorm-name" data-i18n="hospedaje.room4Name">Habitación Compartida</h3>
+            <p class="room-dorm-desc" data-i18n="hospedaje.room4Desc">Techos altos, literas cómodas y casilleros grandes. El mejor lugar para conocer gente y compartir experiencias.</p>
+            <div class="room-dorm-chips">
+              <span class="chip-dark" data-i18n="hospedaje.chip6Beds">6 Camas</span>
+              <span class="chip-dark" data-i18n="hospedaje.chipBunkBeds">Literas</span>
+              <span class="chip-dark" data-i18n="hospedaje.chipLocker">Casillero Personal</span>
+              <span class="chip-dark" data-i18n="hospedaje.chipPrivateBath">Baño Privado</span>
+              <span class="chip-dark" data-i18n="hospedaje.chipKitchenette">Cocineta</span>
+              <span class="chip-dark" data-i18n="hospedaje.chipWifi">WiFi</span>
+            </div>
+            <div class="room-dorm-discount" data-i18n-html="hospedaje.room4DiscountHtml">
+              Descuento estudiantes (17%): 85 Bs por cama / noche
+            </div>
+            <a href="#reservar" class="room-dorm-cta" onclick="selectRoom('opt-dorm')" data-i18n="hospedaje.btnReserve">Seleccionar →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. AMENITIES -->
+  <section class="s-amenities">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-3" data-i18n="hospedaje.inclEyebrow">Lo que incluye tu estadía</span>
+        <h2 data-i18n-html="hospedaje.inclTitleHtml">Lo que te<br><em>espera aquí</em></h2>
+      </div>
+      <div class="amenities-grid fade-up">
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M1 6l10.06 6.75L22 6M1 18h22V6H1z"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am1Name">WiFi de fibra óptica</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am1Desc">Alta velocidad en todas las áreas</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am2Name">Recepción 24h</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am2Desc">Siempre hay alguien para ayudarte</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am3Name">Casilleros seguros</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am3Desc">Disponibles en todas las habitaciones</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am4Name">Tips locales</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am4Desc">Mapas y guías curadas del equipo</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am5Name">Limpieza diaria</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am5Desc">Toallas frescas cada mañana</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am6Name">Ubicación inmejorable</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am6Desc">La Paz #571 · 3 min de la Plaza</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am7Name">Clases de español</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am7Desc">Me Gusta Spanish · a pasos del hostal</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am8Name">Agua caliente 24h</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am8Desc">En todas las duchas y baños</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 05. GALLERY -->
+  <section class="s-gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-3" data-i18n="hospedaje.galleryEyebrow">Un Vistazo a Tu Estadía</span>
+        <h2 data-i18n-html="hospedaje.galleryTitleHtml">La casa,<br><em>tu hogar</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="g-cell g-cell--tall fade-up">
+          <img src="imagenes/hostal/hostal_general/terraza_3.webp" alt="Terraza colonial" loading="lazy" />
+          <div class="g-overlay"></div>
+          <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel1">El Patio · La Paz #571</span></div>
+        </div>
+        <div class="g-cell fade-up" style="animation-delay:0.1s">
+          <img src="imagenes/hostal/hostal_general/area_compartida_1.webp" alt="Area comun" loading="lazy" />
+          <div class="g-overlay"></div>
+          <div class="g-label"><span class="g-pill" style="color:#a7f3d0" data-i18n="hospedaje.galleryLabel2">Me Gusta Café</span></div>
+        </div>
+        <div class="g-cell fade-up" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;background:transparent;border-radius:0;overflow:visible;animation-delay:0.2s">
+          <div class="g-cell">
+            <img src="imagenes/hostal/hostal_general/pasillo_1.webp" alt="Pasillo" loading="lazy" />
+            <div class="g-overlay"></div>
+            <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel3">Habitación Privada</span></div>
+          </div>
+          <div class="g-cell">
+            <img src="imagenes/hostal/hostal_general/area_compartida_2.webp" alt="Area comun" loading="lazy" />
+            <div class="g-overlay"></div>
+            <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel4">Common Areas</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06. CROSS-SELL -->
+  <section style="background:var(--cream-2);padding:64px 0">
+    <div class="container">
+      <div class="crossell-banners fade-up">
+        <div class="cafe-banner">
+          <img class="cafe-banner-img" src="imagenes/fotos_cafe/latte.jpg" alt="Me Gusta Café" loading="lazy" />
+          <div class="cafe-banner-text">
+            <p class="cafe-banner-eyebrow" data-i18n="hospedaje.xsellCafeEyebrow">Sobre el desayuno</p>
+            <h3 class="cafe-banner-title" data-i18n-html="hospedaje.xsellCafeTitleHtml">El desayuno es en <em>Me Gusta Café</em></h3>
+            <p class="cafe-banner-desc" data-i18n="hospedaje.xsellCafeDesc">A 5 minutos — café boliviano de origen y pastelería casera hecha en el día.</p>
+          </div>
+          <a href="cafe.html" class="cafe-banner-btn cafe-banner-btn--cafe" data-i18n="hospedaje.xsellCafeBtn">Ver el Menú</a>
+        </div>
+        <div class="cafe-banner" style="background:linear-gradient(135deg,#1a0a12 0%,#2d0f1e 100%)">
+          <img class="cafe-banner-img" src="imagenes/fotos_escuela/esc2.jpg" alt="Me Gusta Spanish" loading="lazy" />
+          <div class="cafe-banner-text">
+            <p class="cafe-banner-eyebrow" style="color:var(--school)" data-i18n="hospedaje.xsellSchoolEyebrow">Aprender + Vivir</p>
+            <h3 class="cafe-banner-title" style="font-size:1rem" data-i18n-html="hospedaje.xsellSchoolTitleHtml">Aprende español<br><em style="color:var(--school)">mientras te quedas</em></h3>
+            <p class="cafe-banner-desc" data-i18n="hospedaje.xsellSchoolDesc">Aprende español en el mismo centro histórico donde vives. Programas desde 1 semana.</p>
+          </div>
+          <a href="clases.html" class="cafe-banner-btn cafe-banner-btn--school" data-i18n="hospedaje.xsellSchoolBtn">Ver Programas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07. BOOKING -->
+  <section class="s-booking" id="reservar">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-3" data-i18n="hospedaje.formEyebrow">Solicitud de Reserva</span>
+        <h2 data-i18n-html="hospedaje.formTitleHtml">Reserva<br><em>tu habitación</em></h2>
+        <p data-i18n="hospedaje.formSub">Completa los datos y confirmamos por WhatsApp — normalmente en menos de una hora.</p>
+      </div>
+      <div class="booking-grid">
+        <div class="booking-form-card fade-up">
+          <div class="booking-accent-line"></div>
+          <div class="booking-form-body">
+            <div style="margin-bottom:24px">
+              <span class="form-label" style="margin-bottom:14px;display:block" data-i18n="hospedaje.formLabelRoom">Tipo de Habitación</span>
+              <div class="room-option-light sel" onclick="selectRoom('opt-private-bath', this)" data-room="Privada c/ Baño Privado" data-price="230">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt1">Privada c/ Baño Privado</span>
+                <span class="rol-price">230 Bs</span>
+              </div>
+              <div class="room-option-light" onclick="selectRoom('opt-private-shared', this)" data-room="Privada c/ Baño Compartido" data-price="180">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt2">Privada c/ Baño Compartido</span>
+                <span class="rol-price">180 Bs</span>
+              </div>
+              <div class="room-option-light" onclick="selectRoom('opt-family', this)" data-room="Familiar (hasta 4 personas)" data-price="365">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt3">Familiar (hasta 4 personas)</span>
+                <span class="rol-price">365 Bs</span>
+              </div>
+              <div class="room-option-light" onclick="selectRoom('opt-dorm', this)" data-room="Cama Compartida" data-price="103">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt4">Cama Compartida</span>
+                <span class="rol-price">103 Bs</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelArrival">Llegada</label>
+                <input type="date" id="check-in" class="form-input" oninput="syncFromForm()" />
+              </div>
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelDeparture">Salida</label>
+                <input type="date" id="check-out" class="form-input" oninput="syncFromForm()" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelGuests">Huéspedes</label>
+                <input type="number" id="guests" class="form-input" value="2" min="1" max="20" oninput="syncFromForm()" />
+              </div>
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelName">Tu Nombre</label>
+                <input type="text" id="user-name" class="form-input" placeholder="Your name / Tu nombre" />
+              </div>
+            </div>
+
+            <!-- Toggle descuento estudiante -->
+            <label class="student-toggle" onclick="updateSummary()">
+              <input type="checkbox" id="student-discount" onchange="updateSummary()" />
+              <span class="student-toggle-box"></span>
+              <span class="student-toggle-text" data-i18n="hospedaje.studentToggleText">Soy estudiante de Me Gusta Spanish</span>
+              <span class="student-toggle-badge" data-i18n="hospedaje.studentToggleBadge">17% DESCUENTO</span>
+            </label>
+
+            <label class="form-label" data-i18n="hospedaje.formLabelMessage">Mensaje (opcional)</label>
+            <textarea id="message" class="form-input" rows="2" placeholder="Arrival time, special requests / Hora de llegada..."></textarea>
+          </div>
+        </div>
+
+        <div class="booking-summary">
+          <div class="summary-card">
+            <div class="sum-accent"></div>
+            <div class="sum-body">
+              <div class="sum-title" data-i18n="hospedaje.sumTitle">Tu Estadía</div>
+              <img id="sum-img" class="sum-thumb" src="imagenes/hostal/baño_privado/DSC08172-HDR-2.webp" alt="Resumen" loading="lazy" />
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelRoom">Habitación</span>
+                <span id="sum-room-name" class="sum-val">Privada c/ Baño Privado</span>
+              </div>
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelPrice">Precio / noche</span>
+                <span id="sum-rate" class="sum-val">230 Bs</span>
+              </div>
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelNights">Noches</span>
+                <span id="sum-nights" class="sum-val">0</span>
+              </div>
+              <div id="sum-capacity-warn" style="display:none;background:rgba(255,180,0,0.12);border:1px solid rgba(255,180,0,0.3);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:11px;color:#fcd34d;line-height:1.55"></div>
+              <div class="sum-total">
+                <span class="sum-total-lbl" data-i18n="hospedaje.sumLabelTotal">Total Estimado</span>
+                <span id="sum-total-num" class="sum-total-num">0 Bs</span>
+              </div>
+              <div class="sum-discount">
+                <p data-i18n="hospedaje.sumDiscount">Estudiantes de Me Gusta Spanish: 17% de descuento en todas las habitaciones.</p>
+              </div>
+              <button class="sum-cta" onclick="sendWhatsApp()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span data-i18n="hospedaje.sumBtn">Enviar por WhatsApp</span>
+              </button>
+              <p class="sum-note" data-i18n="hospedaje.sumNote">Sin registro. Respondemos en menos de una hora.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08. FINAL CTA -->
+  <section class="s-cta">
+    <div class="s-cta-overlay"></div>
+    <div class="s-cta-body">
+      <h2 data-i18n="hospedaje.ctaTitle">¿Listo para despertar en Sucre?</h2>
+      <p data-i18n="hospedaje.ctaSub">Las habitaciones se llenan rápido en temporada alta (Jun–Ago). Reserva con anticipación.</p>
+      <div class="cta-btns">
+        <a href="#habitaciones" class="btn-primary" data-i18n="hospedaje.ctaBtn1">Reservar Habitación</a>
+        <a href="contacto.html" class="btn-outline-white" data-i18n="hospedaje.ctaBtn2">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#111111;color:#aaa;padding:72px 0 28px">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <p style="font-family:'Fraunces',serif;font-size:1.6rem;font-weight:800;color:#fff;margin-bottom:10px">Me Gusta <span style="color:#c9252d;font-style:italic">Sucre</span></p>
+          <p style="font-size:14px;line-height:1.7;margin-bottom:20px" data-i18n="footer.tagline">Your gateway to Bolivia's most beautiful city — Spanish classes, boutique inn, café, and city experiences.</p>
+          <div style="display:flex;gap:10px">
+            <a href="https://www.facebook.com/MeGustaSucre" target="_blank" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#aaa;text-decoration:none">f</a>
+            <a href="https://www.instagram.com/megustasucre" target="_blank" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#aaa;text-decoration:none">ig</a>
+            <a href="https://wa.me/59173425725" target="_blank" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#aaa;text-decoration:none">wa</a>
+          </div>
+        </div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:#fff;margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px" data-i18n="footer.explore">Explore</p>
+          <ul style="list-style:none;padding:0;font-size:14px;line-height:2.4">
+            <li><a href="clases.html" style="color:#aaa;text-decoration:none" data-i18n="nav.classes">Spanish Classes</a></li>
+            <li><a href="guia.html" style="color:#aaa;text-decoration:none" data-i18n="nav.guide">City Guide</a></li>
+            <li><a href="cafe.html" style="color:#aaa;text-decoration:none" data-i18n="nav.cafe">Café &amp; Menu</a></li>
+            <li><a href="hospedaje.html" style="color:#aaa;text-decoration:none" data-i18n="nav.stay">Stay</a></li>
+            <li><a href="contacto.html" style="color:#aaa;text-decoration:none" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:#fff;margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px" data-i18n="footer.megustaTitle">Me Gusta</p>
+          <ul style="list-style:none;padding:0;font-size:14px;line-height:2.4">
+            <li><a href="hospedaje.html" style="color:#aaa;text-decoration:none" data-i18n="index.brand2Pill">Inn — Boutique Hotel</a></li>
+            <li><a href="cafe.html" style="color:#aaa;text-decoration:none" data-i18n="index.brand3Pill">Café</a></li>
+            <li><a href="clases.html" style="color:#aaa;text-decoration:none" data-i18n="nav.classes">Spanish Classes</a></li>
+            <li><a href="https://megustaspanish.com" target="_blank" style="color:#aaa;text-decoration:none" data-i18n="index.schoolBtn2">School Website ↗</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:#fff;margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px" data-i18n="footer.findUs">Find Us</p>
+          <ul style="list-style:none;padding:0;font-size:14px;line-height:2.4">
+            <li data-i18n="footer.address">La Paz #571, Sucre, Bolivia</li>
+            <li><a href="tel:+59173425725" style="color:#aaa;text-decoration:none">+591 734 25725</a></li>
+            <li><a href="mailto:info@megustasucre.com" style="color:#aaa;text-decoration:none">info@megustasucre.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top:1px solid #2d2010;padding-top:24px;text-align:center;font-size:13px;color:#555">
+        &copy; 2026 Me Gusta Sucre. <span data-i18n="footer.rights">All rights reserved.</span> ·
+        <a href="https://megustaspanish.com" target="_blank" style="color:#c9252d">Me Gusta Spanish School</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Configuración de Habitaciones — precios reales en Bs
+    const roomsData = {
+      'opt-private-bath': {
+        name: 'Privada c/ Baño Privado',
+        pricing: 'room',
+        prices:         { 1: 230, 2: 230 }, // precio regular (tarifa por habitación)
+        discountPrices: { 1: 150, 2: 190 }, // precio estudiante 17%
+        maxGuests: 2,
+        img: 'imagenes/hostal/baño_privado/DSC08147-HDR-2.webp'
+      },
+      'opt-private-shared': {
+        name: 'Privada c/ Baño Compartido',
+        pricing: 'room',
+        prices:         { 1: 180, 2: 180 },
+        discountPrices: { 1: 130, 2: 150 },
+        maxGuests: 2,
+        img: 'imagenes/hostal/baño_compartido/DSC08232-HDR.webp'
+      },
+      'opt-family': {
+        name: 'Familiar (hasta 4 personas)',
+        pricing: 'flat',
+        price:         365,
+        discountPrice: 300,
+        maxGuests: 4,
+        img: 'imagenes/hostal/familiar/DSC08332-HDR.webp'
+      },
+      'opt-dorm': {
+        name: 'Cama Compartida',
+        pricing: 'per-person',
+        price:         103, // por cama / noche
+        discountPrice:  85,
+        maxGuests: 6,
+        img: 'imagenes/hostal/seis_camas/DSC08494-HDR.webp'
+      }
+    };
+
+    // Calcula el precio por noche según habitación, huéspedes y descuento
+    function getPricePerNight(room, guests, isStudent) {
+      const g = Math.max(1, parseInt(guests) || 1);
+      if (room.pricing === 'per-person') {
+        const base = isStudent ? room.discountPrice : room.price;
+        return base * Math.min(g, room.maxGuests);
+      } else if (room.pricing === 'room') {
+        const tiers = isStudent ? room.discountPrices : room.prices;
+        const capped = Math.min(g, room.maxGuests);
+        return tiers[capped] || tiers[room.maxGuests];
+      } else { // flat
+        return isStudent ? room.discountPrice : room.price;
+      }
+    }
+
+    let selectedRoomId = 'opt-private-bath';
+
+    // Función para seleccionar habitación
+    function selectRoom(id, element) {
+      selectedRoomId = id;
+      
+      // UI Update
+      document.querySelectorAll('.room-option-light').forEach(opt => opt.classList.remove('sel'));
+      if (element) {
+        element.classList.add('sel');
+      } else {
+        // Find element by id if called from room cards
+        const opts = document.querySelectorAll('.room-option-light');
+        if (id === 'opt-private-bath') opts[0].classList.add('sel');
+        if (id === 'opt-private-shared') opts[1].classList.add('sel');
+        if (id === 'opt-family') opts[2].classList.add('sel');
+        if (id === 'opt-dorm') opts[3].classList.add('sel');
+      }
+
+      // Scroll to form if needed
+      if (!element) {
+        document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
+      }
+
+      updateSummary();
+    }
+
+    // Scroll al formulario
+    function scrollToForm() {
+      document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Sincronización: barra del hero → form
+    function syncFromBar(field) {
+      if (field === 'checkin') {
+        document.getElementById('check-in').value = document.getElementById('bar-checkin').value;
+      } else if (field === 'checkout') {
+        document.getElementById('check-out').value = document.getElementById('bar-checkout').value;
+      } else if (field === 'guests') {
+        document.getElementById('guests').value = document.getElementById('bar-guests-inp').value;
+      }
+      updateSummary();
+    }
+
+    // Sincronización: form → barra del hero (se llama desde oninput/onchange del form)
+    function syncFromForm() {
+      document.getElementById('bar-checkin').value = document.getElementById('check-in').value;
+      document.getElementById('bar-checkout').value = document.getElementById('check-out').value;
+      document.getElementById('bar-guests-inp').value = document.getElementById('guests').value;
+      updateSummary();
+    }
+
+    // Actualizar resumen de la tarjeta sticky
+    function updateSummary() {
+      const room      = roomsData[selectedRoomId];
+      const checkIn   = document.getElementById('check-in').value;
+      const checkOut  = document.getElementById('check-out').value;
+      const guests    = Math.max(1, parseInt(document.getElementById('guests').value) || 1);
+      const isStudent = document.getElementById('student-discount').checked;
+
+      document.getElementById('sum-room-name').innerText = room.name;
+      document.getElementById('sum-img').src = room.img;
+
+      // Aviso de capacidad
+      const warn = document.getElementById('sum-capacity-warn');
+      if (room.maxGuests && guests > room.maxGuests) {
+        warn.style.display = 'block';
+        warn.innerText = `Esta habitación tiene capacidad para ${room.maxGuests} huésped${room.maxGuests > 1 ? 'es' : ''}. El precio refleja el máximo.`;
+      } else {
+        warn.style.display = 'none';
+      }
+
+      const pricePerNight = getPricePerNight(room, guests, isStudent);
+
+      let nights = 0;
+      if (checkIn && checkOut) {
+        const start = new Date(checkIn);
+        const end   = new Date(checkOut);
+        nights = Math.max(0, Math.ceil((end - start) / (1000 * 60 * 60 * 24)));
+      }
+
+      // Etiqueta de precio/noche según tipo de habitación
+      const basePrice = room.pricing === 'per-person'
+        ? (isStudent ? room.discountPrice : room.price)
+        : pricePerNight;
+      const rateLabel = room.pricing === 'per-person'
+        ? `${basePrice} Bs × ${Math.min(guests, room.maxGuests)} cama${guests > 1 ? 's' : ''}`
+        : `${pricePerNight} Bs`;
+
+      document.getElementById('sum-rate').innerText   = rateLabel;
+      document.getElementById('sum-nights').innerText = nights;
+      document.getElementById('sum-total-num').innerText = (nights * pricePerNight) + ' Bs';
+    }
+
+    // Enviar WhatsApp
+    function sendWhatsApp() {
+      const room      = roomsData[selectedRoomId];
+      const name      = document.getElementById('user-name').value;
+      const checkIn   = document.getElementById('check-in').value;
+      const checkOut  = document.getElementById('check-out').value;
+      const guests    = Math.max(1, parseInt(document.getElementById('guests').value) || 1);
+      const isStudent = document.getElementById('student-discount').checked;
+      const msg       = document.getElementById('message').value;
+
+      if (!name || !checkIn || !checkOut) {
+        alert('Por favor completa tu nombre y las fechas de estadía.');
+        return;
+      }
+
+      const pricePerNight = getPricePerNight(room, guests, isStudent);
+      const nights = Math.max(0, Math.ceil((new Date(checkOut) - new Date(checkIn)) / (1000*60*60*24)));
+      const total  = nights * pricePerNight;
+
+      const text = `Hola Me Gusta Inn! Quisiera solicitar una reserva:%0A%0A` +
+                   `Nombre: ${name}%0A` +
+                   `Habitacion: ${room.name}%0A` +
+                   `Llegada: ${checkIn}%0A` +
+                   `Salida: ${checkOut}%0A` +
+                   `Huespedes: ${guests}%0A` +
+                   (isStudent ? `Descuento estudiante: Si (17%)%0A` : '') +
+                   `Precio/noche: ${pricePerNight} Bs%0A` +
+                   `Total estimado: ${total} Bs (${nights} noches)%0A` +
+                   `Mensaje: ${msg}%0A%0A` +
+                   `Espero su confirmacion. Gracias!`;
+
+      window.open(`https://wa.me/59173425725?text=${text}`, '_blank');
+    }
+
+    // Inicializar fechas en ambos lados
+    window.onload = () => {
+      const today = new Date();
+      const d1 = new Date(today); d1.setDate(d1.getDate() + 1);
+      const d2 = new Date(today); d2.setDate(d2.getDate() + 3);
+      const fmt = d => d.toISOString().split('T')[0];
+
+      // Form
+      document.getElementById('check-in').value  = fmt(d1);
+      document.getElementById('check-out').value = fmt(d2);
+
+      // Barra del hero
+      document.getElementById('bar-checkin').value  = fmt(d1);
+      document.getElementById('bar-checkout').value = fmt(d2);
+
+      updateSummary();
+    };
+  </script>
+</body>
+</html>
