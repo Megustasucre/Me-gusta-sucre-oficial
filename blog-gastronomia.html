@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Que Comer en Sucre — Me Gusta Sucre</title>
+  <meta name="description" content="Salteñas en El Patio, chorizos en 7 Lunares, api con pastel en el Mercado Central. La guia gastronomica de Sucre escrita por locales." />
+  <meta property="og:title" content="Que Comer en Sucre — Me Gusta Sucre" />
+  <meta property="og:description" content="Salteñas antes de las 10am, chorizos chuquisaquenos, api con pastel, y helados en el Parque Bolivar. Lo que hay que comer en Sucre." />
+  <meta property="og:image" content="https://megustasucre.com/imagenes/og-image.svg" />
+  <meta property="og:url" content="https://megustasucre.com/blog-gastronomia.html" />
+  <meta property="og:type" content="article" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://megustasucre.com/blog-gastronomia.html" />
+  <link rel="icon" type="image/svg+xml" href="imagenes/favicon-guia.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;0,9..144,800;1,9..144,700;1,9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tw.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sucre-fonts.css" />
+</head>
+<body class="bg-white">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
+      <div class="hidden md:flex items-center gap-7" style="flex:1">
+        <a href="clases.html" class="nav-link nav-secondary text-white" data-i18n="nav.classes">Spanish Classes</a>
+        <a href="cafe.html" class="nav-link nav-secondary text-white" data-i18n="nav.cafe">Café</a>
+        <a href="guia.html" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
+      </div>
+      <a href="index.html" class="flex items-center gap-3 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img">
+        <span class="logo-text text-white font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
+      </a>
+      <div class="hidden md:flex items-center justify-end gap-7" style="flex:1">
+        <a href="hospedaje.html" class="nav-link nav-primary text-white" data-i18n="nav.stay">Stay</a>
+        <a href="contacto.html" class="nav-link nav-secondary text-white" data-i18n="nav.contact">Contact</a>
+        <div class="flex items-center gap-3 border-l lang-container border-white/20 pl-6 ml-2">
+          <button class="lang-btn text-xs font-bold text-white uppercase active" data-lang="en">EN</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="es">ES</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="fr">FR</button>
+        </div>
+      </div>
+      <button id="menu-btn" class="md:hidden text-white p-1">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden bg-white shadow-xl px-6 pb-5">
+      <div class="flex justify-center items-center gap-3 py-4 border-b border-gray-100 mb-2">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" style="filter:none">
+        <span class="logo-text font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap;color:#111">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
+      </div>
+      <a href="clases.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.classes">Spanish Classes</a>
+      <a href="cafe.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.cafe">Café</a>
+      <a href="guia.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.guide">City Guide</a>
+      <a href="hospedaje.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.stay">Stay</a>
+      <a href="contacto.html" class="block py-2 text-sm font-semibold text-gray-800" data-i18n="nav.contact">Contact</a>
+      <div class="py-4 mt-2 border-t border-b border-gray-100 mb-4">
+        <p class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-wider">Language</p>
+        <div class="flex items-center gap-5">
+          <button class="lang-btn text-sm font-bold text-gray-900" data-lang="en">EN</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="es">ES</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="fr">FR</button>
+        </div>
+      </div>
+      <a href="hospedaje.html" class="btn-red block text-center mt-4" style="border-radius:0" data-i18n="nav.book">Book a Stay</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════ -->
+  <section class="post-hero">
+    <div class="post-hero-bg hero-kenburns" style="background-image:url('imagenes/wikipedia/sucre_street.webp')"></div>
+    <div class="post-hero-overlay"></div>
+    <div class="post-hero-body">
+      <div class="post-breadcrumb">
+        <a href="guia.html">City Guide</a>
+        <span>/</span>
+        <span>Las Crónicas</span>
+        <span>/</span>
+        <span style="color:rgba(255,255,255,0.7)">Gastronomia</span>
+      </div>
+      <p class="post-tag">Gastronomia</p>
+      <h1 class="post-title">
+        Lo que hay que comer<br><em>en Sucre</em>
+      </h1>
+      <div class="post-meta">
+        <span>Equipo Me Gusta Sucre</span>
+        <span class="post-meta-dot"></span>
+        <span>Sucre, Bolivia</span>
+        <span class="post-meta-dot"></span>
+        <span>2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ARTICLE BODY ══════════════════════════════════════ -->
+  <article class="post-body">
+
+    <a href="guia.html#cronicas" class="post-back">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      Volver a Las Crónicas
+    </a>
+
+    <p class="post-lead">
+      Sucre no es una ciudad que presume de su gastronomia — simplemente la tiene. Salteñas antes de las 10am, chorizos que no se consiguen igual en ninguna otra parte, api con pastel en el mercado, y helados en el parque que llevan decadas siendo los mismos. Esta es la guia que escribirian los de aqui.
+    </p>
+
+    <!-- Quick facts bar -->
+    <div class="post-facts">
+      <div class="post-fact">
+        <p class="post-fact-label">Salteñas</p>
+        <p class="post-fact-value">Antes 10am</p>
+        <p class="post-fact-desc">Solo se venden en la mañana. Sin excepcion.</p>
+      </div>
+      <div class="post-fact">
+        <p class="post-fact-label">Mercado Central</p>
+        <p class="post-fact-value">Todo el dia</p>
+        <p class="post-fact-desc">Desayuno, almuerzo y cena. El mas economico.</p>
+      </div>
+      <div class="post-fact">
+        <p class="post-fact-label">Chorizos</p>
+        <p class="post-fact-value">7 Lunares</p>
+        <p class="post-fact-desc">El referente chuquisaqueno. Varias sucursales.</p>
+      </div>
+      <div class="post-fact">
+        <p class="post-fact-label">Postre</p>
+        <p class="post-fact-value">Heladeria Sandra</p>
+        <p class="post-fact-desc">Parque Bolivar. Emblematica de la ciudad.</p>
+      </div>
+    </div>
+
+    <hr class="post-divider" />
+
+    <!-- Salteñas -->
+    <div class="post-section">
+      <p class="post-section-eyebrow">01 — Salteñas</p>
+      <h2 class="post-section-title">El ritual de la mañana <em>que no se puede saltar</em></h2>
+      <p class="post-p">En Sucre, la salteña no es un snack — es una institucion. Se come a media mañana, de pie o en una mesa chica, con una servilleta y mucha concentracion para no derramar el caldo. Quien no ha tenido una salteña en Sucre, no ha empezado el dia bien.</p>
+      <p class="post-p">La diferencia con las salteñas de otras ciudades de Bolivia es notable: la masa es mas dulce, el relleno es jugoso — casi caldoso — y lleva aceitunas, huevo y papa ademas de la carne. No se comen con prisa. Se inclinan, se muerden por la punta, y se disfrutan.</p>
+      <div class="post-callout">
+        <p class="post-callout-label">Donde ir</p>
+        <p class="post-callout-text">Salteñeria El Patio es la referencia local. Llegar antes de las 10am — cuando se acaban, se acaban.</p>
+      </div>
+      <p class="post-p">El horario es ley: las salteñerias abren temprano y cierran cuando se agota el stock. Despues de las 10am, las posibilidades caen drasticamente. Este es uno de esos rituales que Sucre toma en serio y que el visitante aprende a respetar rapidamente.</p>
+    </div>
+
+    <hr class="post-divider" />
+
+    <!-- Mercado Central -->
+    <div class="post-section">
+      <p class="post-section-eyebrow">02 — Mercado Central</p>
+      <h2 class="post-section-title">Desayuno, almuerzo y cena <em>bajo el mismo techo</em></h2>
+      <p class="post-p">El Mercado Central de Sucre es uno de esos lugares que hay que visitar aunque no se tenga hambre. El movimiento empieza temprano: puestos de jugos naturales, api con pastel, desayunos completos a precios que cuesta creer, y el olor a comida casera que lo llena todo.</p>
+      <p class="post-p">El comedor del mercado es la opcion mas economica y mas autentica de la ciudad. A la hora del almuerzo, el menu del dia incluye sopa, segundo, refresco y postre — todo por menos de lo que cuesta un cafe en cualquier ciudad europea. La variedad cambia cada dia y el nivel es consistentemente bueno.</p>
+      <div class="post-callout">
+        <p class="post-callout-label">No te vayas sin probar</p>
+        <p class="post-callout-text">El api con pastel: una bebida caliente de maiz morado, especiada y levemente dulce, acompañada de un pastel frito. Se encuentra en el mercado y tambien en los puestos del Cementerio General — especialmente en epoca de festividades.</p>
+      </div>
+      <p class="post-p">El api no es solo comida — es clima. Una taza en la mañana fria de Sucre es una de esas experiencias pequenas que se recuerdan. Si estas en el mercado y ves la olla humeante, no lo pienses dos veces.</p>
+    </div>
+
+    <hr class="post-divider" />
+
+    <!-- Chorizos -->
+    <div class="post-section">
+      <p class="post-section-eyebrow">03 — Chorizos Chuquisaquenos</p>
+      <h2 class="post-section-title">El plato emblema <em>de Chuquisaca</em></h2>
+      <p class="post-p">El chorizo chuquisaqueno no es el chorizo que conoces de otros lugares. Es una preparacion local — condimentada con especias regionales, servida con mote, papa y llajua — que define la cocina de Sucre mejor que cualquier otro plato. Se come a cualquier hora y en cualquier ocasion.</p>
+      <p class="post-p">El nombre de referencia en la ciudad es 7 Lunares, con presencia en el Mercado Central y varias sucursales repartidas por la ciudad. No todos los locales son del mismo dueño — el nombre se fue expandiendo — pero mantienen el estandar que los hizo conocidos. Es el lugar al que van los sucrenses cuando quieren chorizos, y eso dice todo.</p>
+      <div class="post-callout">
+        <p class="post-callout-label">Consejo local</p>
+        <p class="post-callout-text">Pidelo con todo: mote, papa, llajua. La llajua — salsa picante de tomate y locoto — es parte integral del plato, no un opcional.</p>
+      </div>
+    </div>
+
+    <hr class="post-divider" />
+
+    <!-- Cafes y postres -->
+    <div class="post-section">
+      <p class="post-section-eyebrow">04 — Cafes y Postres</p>
+      <h2 class="post-section-title">El mejor final <em>para cualquier dia</em></h2>
+      <p class="post-p">Sucre tiene una escena de cafes tranquila pero bien establecida. El centro historico concentra varias opciones buenas para tomarse el tiempo — desayunos tarde, tardes con libro, o simplemente un cafe antes de seguir caminando. El Cafe Me Gusta, en Bolivar #603, es nuestro espacio: buenos cafes, desayunos sin apuro, y el equipo local que conoce la ciudad de memoria.</p>
+      <p class="post-p">Para el postre, la referencia que ningun sucrense discute es la Heladeria Sandra, frente al Parque Bolivar. Decadas en el mismo lugar, los mismos helados artesanales, y la misma fila de locales que vuelven siempre. Es uno de esos lugares que no necesitan marketing porque el producto habla solo.</p>
+      <div class="post-callout">
+        <p class="post-callout-label">La combinacion perfecta</p>
+        <p class="post-callout-text">Cafe por la mañana en el centro, almuerzo en el Mercado, helado de Sandra al caer la tarde frente al parque. El dia perfecto en Sucre cuesta menos de lo que crees.</p>
+      </div>
+    </div>
+
+  </article>
+
+  <!-- ═══ CTA CAFE ══════════════════════════════════════════ -->
+  <section style="background:#111;padding:100px 24px 80px">
+    <div style="max-width:900px;margin:0 auto">
+
+      <!-- Headline -->
+      <div style="text-align:center;margin-bottom:56px">
+        <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">El cafe donde<br><em style="color:#5aaa6a;font-style:italic">empezar el dia</em></h2>
+        <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">Bolivar #603, centro historico. Buenos cafes, desayunos reales, y el equipo local que escribio esta guia. Sin apuros.</p>
+      </div>
+
+      <!-- Features -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.07);margin-bottom:56px">
+        <div style="background:#111;padding:32px 28px;text-align:center">
+          <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Desayuno</p>
+          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5aaa6a;margin-bottom:10px">Hasta el mediodia</p>
+          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Tostadas, huevos, jugos y el mejor cafe del centro. El mejor momento para planear el dia.</p>
+        </div>
+        <div style="background:#111;padding:32px 28px;text-align:center;border-left:1px solid rgba(255,255,255,0.07);border-right:1px solid rgba(255,255,255,0.07)">
+          <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Bolivar #603</p>
+          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5aaa6a;margin-bottom:10px">Centro historico</p>
+          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">A pasos de la plaza. El punto de partida natural para cualquier dia en la ciudad.</p>
+        </div>
+        <div style="background:#111;padding:32px 28px;text-align:center">
+          <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Local</p>
+          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5aaa6a;margin-bottom:10px">100% sucrense</p>
+          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">El equipo que escribio esta guia trabaja aqui. Cualquier pregunta sobre donde comer, te respondemos.</p>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="cafe.html" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;background:#5aaa6a;color:#fff">Ver el Cafe</a>
+        <a href="https://wa.me/59173425725" target="_blank" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)">WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ RELATED ARTICLES ══════════════════════════════════ -->
+  <section class="post-related">
+    <div class="post-related-inner">
+      <p class="post-related-eyebrow">Las Cronicas</p>
+      <h2 class="post-related-title">Mas del guide</h2>
+      <div class="post-related-grid">
+        <a href="blog-insider-tips.html" class="post-related-card">
+          <div class="post-related-img">
+            <img src="imagenes/wikipedia/catedral.webp" alt="10 Secretos Locales" loading="lazy" />
+          </div>
+          <div class="post-related-body">
+            <p class="post-related-tag">Secretos Locales</p>
+            <p class="post-related-name">10 Secretos Locales</p>
+            <p class="post-related-desc">Las cosas que una vida entera en Sucre te enseña — y que realmente cambian como vives el viaje.</p>
+          </div>
+        </a>
+        <a href="blog-el-manual.html" class="post-related-card">
+          <div class="post-related-img">
+            <img src="imagenes/wikipedia/sucre_street.webp" alt="El Manual del Viajero" loading="lazy" />
+          </div>
+          <div class="post-related-body">
+            <p class="post-related-tag">El Manual</p>
+            <p class="post-related-name">El Manual del Viajero</p>
+            <p class="post-related-desc">Altitud, moneda, transporte, clima y seguridad. Todo lo que necesitas saber antes de llegar.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-12">
+        <div>
+          <p style="font-family:'Fraunces',serif;font-size:1.6rem;font-weight:800;color:#fff;margin-bottom:10px">Me Gusta <span style="color:#c9252d;font-style:italic">Sucre</span></p>
+          <p style="font-size:14px;line-height:1.7;margin-bottom:20px" data-i18n="footer.tagline">Your gateway to Bolivia's most beautiful city — Spanish classes, hostal, café, and city experiences.</p>
+          <div style="display:flex;gap:10px">
+            <a href="https://www.facebook.com/MeGustaSucre" target="_blank" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#aaa;text-decoration:none">f</a>
+            <a href="https://www.instagram.com/megustasucre" target="_blank" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#aaa;text-decoration:none">ig</a>
+            <a href="https://wa.me/59173425725" target="_blank" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="#aaa"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:#fff;margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px" data-i18n="footer.explore">Explore</p>
+          <ul style="list-style:none;padding:0;font-size:14px;line-height:2.4">
+            <li><a href="clases.html" data-i18n="nav.classes">Spanish Classes</a></li>
+            <li><a href="guia.html" data-i18n="nav.guide">City Guide</a></li>
+            <li><a href="cafe.html" data-i18n="nav.cafe">Café &amp; Menu</a></li>
+            <li><a href="hospedaje.html" data-i18n="nav.stay">Stay</a></li>
+            <li><a href="contacto.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:#fff;margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px" data-i18n="footer.megustaTitle">Me Gusta</p>
+          <ul style="list-style:none;padding:0;font-size:14px;line-height:2.4">
+            <li><a href="hospedaje.html" data-i18n="index.brand2Pill">Inn — Boutique Hotel</a></li>
+            <li><a href="cafe.html" data-i18n="index.brand3Pill">Café</a></li>
+            <li><a href="clases.html" data-i18n="nav.classes">Spanish Classes</a></li>
+            <li><a href="https://megustaspanish.com" target="_blank" data-i18n="index.schoolBtn2">School Website ↗</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:#fff;margin-bottom:16px;font-size:12px;text-transform:uppercase;letter-spacing:2px" data-i18n="footer.findUs">Find Us</p>
+          <ul style="list-style:none;padding:0;font-size:14px;line-height:2.4">
+            <li data-i18n="footer.address">La Paz #571, Sucre, Bolivia</li>
+            <li><a href="tel:+59173425725" style="color:#aaa;text-decoration:none">+591 734 25725</a></li>
+            <li><a href="mailto:info@megustasucre.com" style="color:#aaa;text-decoration:none">info@megustasucre.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="border-top:1px solid #2d2010;padding-top:24px;text-align:center;font-size:13px;color:#555">
+        &copy; 2026 Me Gusta Sucre. <span data-i18n="footer.rights">All rights reserved.</span> &middot; <a href="https://megustaspanish.com" target="_blank" style="color:#c9252d">Me Gusta Spanish School</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/59173425725" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
