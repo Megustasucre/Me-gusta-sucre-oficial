@@ -9,10 +9,19 @@
 ~~10. **Hero cafe.html** — desproporcionado (75vh con H1 de 3rem), reducir a 60vh o agrandar titulo~~
 
 ## Contenido
-8. **Calendario de festividades en guia.html** — Carnaval, Tarabuco (3er domingo de marzo), Semana Santa, Dia de los Muertos (2 nov)
-9. **Consejos practicos en guia.html** — cambio de moneda, SIM cards, apps de transporte, altitud
+~~8. **Calendario de festividades en guia.html** — cubierto en blog-festividades.html~~
+~~9. **Consejos practicos en guia.html** — cubierto en blog-el-manual.html~~
 
 ## Tecnico
 ~~11. **Ticker index.html** — agregar pausa en hover (WCAG 2.1)~~
 ~~12. **Styles inline** — migrar estilos de hospedaje.html y guia.html a style.css~~
 ~~13. **lang="es"** en hospedaje.html → cambiar a lang="en"~~
+
+## Blogs
+~~blog-insider-tips.html — completo~~
+~~blog-aprende-espanol.html — completo~~
+~~blog-el-manual.html — completo~~
+~~blog-gastronomia.html — completo~~
+~~blog-festividades.html — completo~~
+~~blog-barrios.html — completo~~
+- **blog-dia-de-campo.html** — pendiente (excursiones: Cal Orcko, Maragua, Tarabuco, Chataquila) — en pausa hasta tener info local
