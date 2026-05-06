@@ -13,6 +13,6 @@
 9. **Consejos practicos en guia.html** — cambio de moneda, SIM cards, apps de transporte, altitud
 
 ## Tecnico
-11. **Ticker index.html** — agregar pausa en hover (WCAG 2.1)
-12. **Styles inline** — migrar estilos de hospedaje.html y guia.html a style.css
-13. **lang="es"** en hospedaje.html → cambiar a lang="en"
+~~11. **Ticker index.html** — agregar pausa en hover (WCAG 2.1)~~
+~~12. **Styles inline** — migrar estilos de hospedaje.html y guia.html a style.css~~
+~~13. **lang="es"** en hospedaje.html → cambiar a lang="en"~~
