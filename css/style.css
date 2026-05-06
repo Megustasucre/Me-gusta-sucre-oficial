@@ -483,7 +483,7 @@ body.scrolled-past .top-bar { transform: translateY(-100%); }
   font-size: 12px;
   font-weight: 700;
   padding: 10px 22px;
-  border-radius: 50px;
+  border-radius: 0;
   color: #fff;
   text-decoration: none;
   transition: opacity 0.2s, transform 0.2s;
@@ -572,7 +572,7 @@ body.scrolled-past .top-bar { transform: translateY(-100%); }
   font-weight: 700;
   letter-spacing: 0.5px;
   padding: 9px 20px;
-  border-radius: 50px;
+  border-radius: 0;
   background: var(--red) !important;
   color: #fff;
   transition: opacity 0.2s, transform 0.2s;
