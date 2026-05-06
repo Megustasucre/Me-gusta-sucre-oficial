@@ -5,8 +5,8 @@
 2. **Menu del cafe con precios** — agregar 8-10 items representativos (desayunos, cafes, postres)
 
 ## Diseno
-6. **Inconsistencia visual** — estandarizar border-radius:0 en todos los botones del sitio
-10. **Hero cafe.html** — desproporcionado (75vh con H1 de 3rem), reducir a 60vh o agrandar titulo
+~~6. **Inconsistencia visual** — estandarizar border-radius:0 en todos los botones del sitio~~
+~~10. **Hero cafe.html** — desproporcionado (75vh con H1 de 3rem), reducir a 60vh o agrandar titulo~~
 
 ## Contenido
 8. **Calendario de festividades en guia.html** — Carnaval, Tarabuco (3er domingo de marzo), Semana Santa, Dia de los Muertos (2 nov)
