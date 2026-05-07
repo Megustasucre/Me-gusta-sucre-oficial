@@ -30,7 +30,7 @@
         <a href="guia.html" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
       </div>
       <a href="index.html" class="flex items-center gap-3 md:absolute md:left-1/2 md:-translate-x-1/2">
-        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" width="1148" height="1116">
         <span class="logo-text text-white font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
       </a>
       <div class="hidden md:flex items-center justify-end gap-7" style="flex:1">
@@ -52,7 +52,7 @@
     </div>
     <div id="mobile-menu" class="hidden bg-white shadow-xl px-6 pb-5">
       <div class="flex justify-center items-center gap-3 py-4 border-b border-gray-100 mb-2">
-        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" style="filter:none">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" style="filter:none" width="1148" height="1116">
         <span class="logo-text font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap;color:#111">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
       </div>
       <a href="clases.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.classes">Spanish Classes</a>
@@ -60,7 +60,8 @@
       <a href="guia.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.guide">City Guide</a>
       <a href="hospedaje.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.stay">Stay</a>
       <a href="contacto.html" class="block py-2 text-sm font-semibold text-gray-800" data-i18n="nav.contact">Contact</a>
-      <div class="py-4 mt-2 border-t border-b border-gray-100 mb-4">
+      <a href="hospedaje.html" class="btn-red block text-center mt-2 mb-3" style="border-radius:0" data-i18n="nav.book">Book a Stay</a>
+      <div class="py-3 border-t border-gray-100">
         <p class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-wider">Language</p>
         <div class="flex items-center gap-5">
           <button class="lang-btn text-sm font-bold text-gray-900" data-lang="en">EN</button>
@@ -70,7 +71,6 @@
           <button class="lang-btn text-sm font-bold text-gray-400" data-lang="fr">FR</button>
         </div>
       </div>
-      <a href="hospedaje.html" class="btn-red block text-center mt-4" style="border-radius:0" data-i18n="nav.book">Book a Stay</a>
     </div>
   </nav>
 
@@ -86,16 +86,38 @@
         <span>/</span>
         <span style="color:rgba(255,255,255,0.7)">Español en Sucre</span>
       </div>
-      <p class="post-tag">Clases de Español</p>
-      <h1 class="post-title">
-        El secreto mejor guardado<br><em>para aprender español</em>
-      </h1>
-      <div class="post-meta">
-        <span>Equipo Me Gusta Sucre</span>
-        <span class="post-meta-dot"></span>
-        <span>Sucre, Bolivia</span>
-        <span class="post-meta-dot"></span>
-        <span>2026</span>
+      <div data-lang-block="en">
+        <p class="post-tag">Spanish Classes</p>
+        <h1 class="post-title">The best-kept secret<br><em>for learning Spanish</em></h1>
+        <div class="post-meta">
+          <span>Me Gusta Sucre Team</span>
+          <span class="post-meta-dot"></span>
+          <span>Sucre, Bolivia</span>
+          <span class="post-meta-dot"></span>
+          <span>2026</span>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-tag">Clases de Español</p>
+        <h1 class="post-title">El secreto mejor guardado<br><em>para aprender español</em></h1>
+        <div class="post-meta">
+          <span>Equipo Me Gusta Sucre</span>
+          <span class="post-meta-dot"></span>
+          <span>Sucre, Bolivia</span>
+          <span class="post-meta-dot"></span>
+          <span>2026</span>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-tag">Cours d'Espagnol</p>
+        <h1 class="post-title">Le secret le mieux gardé<br><em>pour apprendre l'espagnol</em></h1>
+        <div class="post-meta">
+          <span>L'équipe Me Gusta Sucre</span>
+          <span class="post-meta-dot"></span>
+          <span>Sucre, Bolivia</span>
+          <span class="post-meta-dot"></span>
+          <span>2026</span>
+        </div>
       </div>
     </div>
   </section>
@@ -105,34 +127,98 @@
 
     <a href="guia.html#cronicas" class="post-back">
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-      Volver a Las Crónicas
+      <span data-lang-block="en">Back to Las Crónicas</span>
+      <span data-lang-block="es" style="display:none">Volver a Las Crónicas</span>
+      <span data-lang-block="fr" style="display:none">Retour à Las Crónicas</span>
     </a>
 
-    <p class="post-lead">
-      Por qué miles de viajeros eligen esta pequeña ciudad blanca en los Andes para sumergirse en el idioma. La respuesta no solo está en sus fachadas coloniales, sino en algo que se siente en el aire: la claridad de sus palabras.
-    </p>
+    <div data-lang-block="en">
+      <p class="post-lead">
+        Why thousands of travelers choose this small white city in the Andes to immerse themselves in the language. The answer is not only in its colonial facades, but in something you feel in the air: the clarity of its words.
+      </p>
+    </div>
+    <div data-lang-block="es" style="display:none">
+      <p class="post-lead">
+        Por qué miles de viajeros eligen esta pequeña ciudad blanca en los Andes para sumergirse en el idioma. La respuesta no solo está en sus fachadas coloniales, sino en algo que se siente en el aire: la claridad de sus palabras.
+      </p>
+    </div>
+    <div data-lang-block="fr" style="display:none">
+      <p class="post-lead">
+        Pourquoi des milliers de voyageurs choisissent cette petite ville blanche des Andes pour se plonger dans la langue. La réponse ne se trouve pas seulement dans ses façades coloniales, mais dans quelque chose que l'on ressent dans l'air : la clarté de ses mots.
+      </p>
+    </div>
 
     <!-- Quick facts bar -->
-    <div class="post-facts">
-      <div class="post-fact">
-        <p class="post-fact-label">Acento</p>
-        <p class="post-fact-value">El mas neutro</p>
-        <p class="post-fact-desc">De todo el continente sudamericano.</p>
+    <div data-lang-block="en">
+      <div class="post-facts">
+        <div class="post-fact">
+          <p class="post-fact-label">Accent</p>
+          <p class="post-fact-value">The most neutral</p>
+          <p class="post-fact-desc">Of the entire South American continent.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">University</p>
+          <p class="post-fact-value">Since 1624</p>
+          <p class="post-fact-desc">USFX, one of the oldest in the Americas.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Cost of living</p>
+          <p class="post-fact-value">Very low</p>
+          <p class="post-fact-desc">Stay weeks or months, without sacrifices.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Size</p>
+          <p class="post-fact-value">Small city</p>
+          <p class="post-fact-desc">Real immersion. Spanish is unavoidable.</p>
+        </div>
       </div>
-      <div class="post-fact">
-        <p class="post-fact-label">Universidad</p>
-        <p class="post-fact-value">Desde 1624</p>
-        <p class="post-fact-desc">USFX, una de las mas antiguas de America.</p>
+    </div>
+    <div data-lang-block="es" style="display:none">
+      <div class="post-facts">
+        <div class="post-fact">
+          <p class="post-fact-label">Acento</p>
+          <p class="post-fact-value">El mas neutro</p>
+          <p class="post-fact-desc">De todo el continente sudamericano.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Universidad</p>
+          <p class="post-fact-value">Desde 1624</p>
+          <p class="post-fact-desc">USFX, una de las mas antiguas de America.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Costo de vida</p>
+          <p class="post-fact-value">Muy bajo</p>
+          <p class="post-fact-desc">Quedarse semanas o meses, sin sacrificios.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Tamano</p>
+          <p class="post-fact-value">Ciudad pequena</p>
+          <p class="post-fact-desc">Inmersion real. El espanol es inevitable.</p>
+        </div>
       </div>
-      <div class="post-fact">
-        <p class="post-fact-label">Costo de vida</p>
-        <p class="post-fact-value">Muy bajo</p>
-        <p class="post-fact-desc">Quedarse semanas o meses, sin sacrificios.</p>
-      </div>
-      <div class="post-fact">
-        <p class="post-fact-label">Tamano</p>
-        <p class="post-fact-value">Ciudad pequena</p>
-        <p class="post-fact-desc">Inmersion real. El espanol es inevitable.</p>
+    </div>
+    <div data-lang-block="fr" style="display:none">
+      <div class="post-facts">
+        <div class="post-fact">
+          <p class="post-fact-label">Accent</p>
+          <p class="post-fact-value">Le plus neutre</p>
+          <p class="post-fact-desc">De tout le continent sud-américain.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Université</p>
+          <p class="post-fact-value">Depuis 1624</p>
+          <p class="post-fact-desc">USFX, l'une des plus anciennes des Amériques.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Coût de vie</p>
+          <p class="post-fact-value">Très bas</p>
+          <p class="post-fact-desc">Rester des semaines ou des mois, sans sacrifices.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Taille</p>
+          <p class="post-fact-value">Petite ville</p>
+          <p class="post-fact-desc">Immersion réelle. L'espagnol est inévitable.</p>
+        </div>
       </div>
     </div>
 
@@ -140,42 +226,110 @@
 
     <!-- Acento -->
     <div class="post-section">
-      <p class="post-section-eyebrow">01 — El Acento</p>
-      <h2 class="post-section-title">El acento mas neutro <em>de Sudamerica</em></h2>
-      <p class="post-p">Para un estudiante de español, no hay nada más frustrante que aterrizar en un lugar donde la jerga local o la velocidad del habla hacen que los años de estudio parezcan inútiles. En Sucre, sucede lo contrario.</p>
-      <p class="post-p">Los sucrenses son conocidos por tener uno de los acentos más claros, pausados y neutros de todo el continente. Aquí se pronuncian todas las letras: a diferencia de las zonas costeras, en Sucre no se "comen" las eses ni se acortan las palabras. El ritmo del habla es natural pero comprensible, ideal para quienes están entrenando el oído.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Por qué importa</p>
-        <p class="post-callout-text">"Se utiliza un español estándar que te servirá desde México hasta Argentina. Lo que aprendes aquí, funciona en cualquier parte."</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">01 — The Accent</p>
+        <h2 class="post-section-title">The most neutral accent <em>in South America</em></h2>
+        <p class="post-p">For a Spanish student, nothing is more frustrating than landing somewhere where local slang or speaking pace makes years of study seem useless. In Sucre, the opposite happens.</p>
+        <p class="post-p">Locals are known for having one of the clearest, most measured and most neutral accents on the entire continent. Every letter is pronounced here: unlike coastal regions, in Sucre people don't drop their S sounds or shorten words. The pace of speech is natural but comprehensible, ideal for those training their ear.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Why it matters</p>
+          <p class="post-callout-text">"A standard Spanish is used here that will serve you from Mexico to Argentina. What you learn here works anywhere."</p>
+        </div>
+        <p class="post-p">Zero confusing voseo, zero coastal shortcuts. The Spanish you hear in Sucre is the same you find in textbooks — except it's real, alive, and on the street.</p>
       </div>
-      <p class="post-p">Cero voseo confuso, cero acortamientos costeros. El español que escucharás en Sucre es el mismo que encontrarás en los libros de texto — excepto que es real, vivo y está en la calle.</p>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">01 — El Acento</p>
+        <h2 class="post-section-title">El acento mas neutro <em>de Sudamerica</em></h2>
+        <p class="post-p">Para un estudiante de español, no hay nada más frustrante que aterrizar en un lugar donde la jerga local o la velocidad del habla hacen que los años de estudio parezcan inútiles. En Sucre, sucede lo contrario.</p>
+        <p class="post-p">Los sucrenses son conocidos por tener uno de los acentos más claros, pausados y neutros de todo el continente. Aquí se pronuncian todas las letras: a diferencia de las zonas costeras, en Sucre no se "comen" las eses ni se acortan las palabras. El ritmo del habla es natural pero comprensible, ideal para quienes están entrenando el oído.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Por qué importa</p>
+          <p class="post-callout-text">"Se utiliza un español estándar que te servirá desde México hasta Argentina. Lo que aprendes aquí, funciona en cualquier parte."</p>
+        </div>
+        <p class="post-p">Cero voseo confuso, cero acortamientos costeros. El español que escucharás en Sucre es el mismo que encontrarás en los libros de texto — excepto que es real, vivo y está en la calle.</p>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">01 — L'Accent</p>
+        <h2 class="post-section-title">L'accent le plus neutre <em>d'Amérique du Sud</em></h2>
+        <p class="post-p">Pour un étudiant d'espagnol, rien n'est plus frustrant que d'atterrir dans un endroit où le jargon local ou la vitesse de la parole rendent des années d'études inutiles. À Sucre, c'est le contraire qui se passe.</p>
+        <p class="post-p">Les habitants sont connus pour avoir l'un des accents les plus clairs, les plus mesurés et les plus neutres de tout le continent. Ici, toutes les lettres sont prononcées : à la différence des régions côtières, à Sucre on n'avale pas les S ni on ne raccourcit les mots. Le rythme de la parole est naturel mais compréhensible, idéal pour ceux qui entraînent leur oreille.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Pourquoi c'est important</p>
+          <p class="post-callout-text">« Un espagnol standard est utilisé ici, qui vous servira du Mexique à l'Argentine. Ce que vous apprenez ici fonctionne partout. »</p>
+        </div>
+        <p class="post-p">Zéro voseo confus, zéro raccourcis côtiers. L'espagnol que vous entendrez à Sucre est le même que celui des manuels scolaires — sauf qu'il est réel, vivant et dans la rue.</p>
+      </div>
     </div>
 
     <hr class="post-divider" />
 
     <!-- Universidad -->
     <div class="post-section">
-      <p class="post-section-eyebrow">02 — La Ciudad Universitaria</p>
-      <h2 class="post-section-title">Una universidad <em>desde 1624</em></h2>
-      <p class="post-p">Sucre es el hogar de la Universidad San Francisco Xavier (USFX), una de las más antiguas de América, fundada en 1624. Esto impregna a la ciudad de una energía joven y culta que se siente en cada esquina.</p>
-      <p class="post-p">El intercambio es natural. Es fácil conocer estudiantes locales en los cafés o plazas que están listos para conversar. La ciudad entera se siente como un campus: segura, caminable y llena de rincones tranquilos para leer y practicar.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Nota local</p>
-        <p class="post-callout-text">El Patio de la USFX, en el centro histórico, es uno de los lugares más hermosos para estudiar al aire libre — y siempre hay alguien dispuesto a charlar.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">02 — The University City</p>
+        <h2 class="post-section-title">A university <em>since 1624</em></h2>
+        <p class="post-p">Sucre is home to the Universidad San Francisco Xavier (USFX), one of the oldest universities in the Americas, founded in 1624. This fills the city with a young, cultured energy that you feel on every corner.</p>
+        <p class="post-p">The exchange is natural. It is easy to meet local students in cafés or squares who are ready to talk. The whole city feels like a campus: safe, walkable and full of quiet corners for reading and practicing.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Local note</p>
+          <p class="post-callout-text">The USFX courtyard, in the historic center, is one of the most beautiful places to study outdoors — and there is always someone willing to chat.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">02 — La Ciudad Universitaria</p>
+        <h2 class="post-section-title">Una universidad <em>desde 1624</em></h2>
+        <p class="post-p">Sucre es el hogar de la Universidad San Francisco Xavier (USFX), una de las más antiguas de América, fundada en 1624. Esto impregna a la ciudad de una energía joven y culta que se siente en cada esquina.</p>
+        <p class="post-p">El intercambio es natural. Es fácil conocer estudiantes locales en los cafés o plazas que están listos para conversar. La ciudad entera se siente como un campus: segura, caminable y llena de rincones tranquilos para leer y practicar.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Nota local</p>
+          <p class="post-callout-text">El Patio de la USFX, en el centro histórico, es uno de los lugares más hermosos para estudiar al aire libre — y siempre hay alguien dispuesto a charlar.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">02 — La Ville Universitaire</p>
+        <h2 class="post-section-title">Une université <em>depuis 1624</em></h2>
+        <p class="post-p">Sucre est le foyer de l'Universidad San Francisco Xavier (USFX), l'une des plus anciennes universités des Amériques, fondée en 1624. Cela imprègne la ville d'une énergie jeune et cultivée que l'on ressent à chaque coin de rue.</p>
+        <p class="post-p">L'échange est naturel. Il est facile de rencontrer des étudiants locaux dans les cafés ou sur les places qui sont prêts à converser. Toute la ville ressemble à un campus : sûre, praticable à pied et pleine de coins tranquilles pour lire et pratiquer.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Note locale</p>
+          <p class="post-callout-text">La cour de l'USFX, dans le centre historique, est l'un des plus beaux endroits pour étudier en plein air — et il y a toujours quelqu'un prêt à bavarder.</p>
+        </div>
       </div>
     </div>
 
     <hr class="post-divider" />
 
-    <!-- Inversion -->
+    <!-- Inmersion -->
     <div class="post-section">
-      <p class="post-section-eyebrow">03 — La Inversion</p>
-      <h2 class="post-section-title">Inmersion total <em>a bajo costo</em></h2>
-      <p class="post-p">A diferencia de ciudades más grandes como Buenos Aires o Medellín, en Sucre la inmersión es real. Al ser una ciudad pequeña, te verás obligado a usar tu español en el mercado, en el micro o al pedir un café.</p>
-      <p class="post-p">Además, el costo de vida permite quedarse semanas o meses, lo cual es la única forma real de alcanzar la fluidez. Las clases cuestan menos, el alojamiento cuesta menos, la comida cuesta menos — pero la calidad de la experiencia no tiene comparación.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">La diferencia clave</p>
-        <p class="post-callout-text">No es solo una clase de gramática. Es vivir el idioma en la ciudad donde mejor suena.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">03 — The Immersion</p>
+        <h2 class="post-section-title">Total immersion <em>at low cost</em></h2>
+        <p class="post-p">Unlike larger cities such as Buenos Aires or Medellín, in Sucre the immersion is real. Being a small city, you will be forced to use your Spanish at the market, on the bus, or when ordering a coffee.</p>
+        <p class="post-p">Furthermore, the cost of living allows you to stay for weeks or months, which is the only real way to reach fluency. Classes cost less, accommodation costs less, food costs less — but the quality of the experience is unmatched.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">The key difference</p>
+          <p class="post-callout-text">It's not just a grammar class. It's living the language in the city where it sounds best.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">03 — La Inversion</p>
+        <h2 class="post-section-title">Inmersion total <em>a bajo costo</em></h2>
+        <p class="post-p">A diferencia de ciudades más grandes como Buenos Aires o Medellín, en Sucre la inmersión es real. Al ser una ciudad pequeña, te verás obligado a usar tu español en el mercado, en el micro o al pedir un café.</p>
+        <p class="post-p">Además, el costo de vida permite quedarse semanas o meses, lo cual es la única forma real de alcanzar la fluidez. Las clases cuestan menos, el alojamiento cuesta menos, la comida cuesta menos — pero la calidad de la experiencia no tiene comparación.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">La diferencia clave</p>
+          <p class="post-callout-text">No es solo una clase de gramática. Es vivir el idioma en la ciudad donde mejor suena.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">03 — L'Immersion</p>
+        <h2 class="post-section-title">Immersion totale <em>à faible coût</em></h2>
+        <p class="post-p">Contrairement à des villes plus grandes comme Buenos Aires ou Medellín, à Sucre l'immersion est réelle. Étant une petite ville, vous serez obligé d'utiliser votre espagnol au marché, dans le bus ou pour commander un café.</p>
+        <p class="post-p">De plus, le coût de la vie permet de rester des semaines ou des mois, ce qui est la seule vraie façon d'atteindre la fluidité. Les cours coûtent moins cher, le logement coûte moins cher, la nourriture coûte moins cher — mais la qualité de l'expérience n'a pas d'équivalent.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">La différence clé</p>
+          <p class="post-callout-text">Ce n'est pas seulement un cours de grammaire. C'est vivre la langue dans la ville où elle sonne le mieux.</p>
+        </div>
       </div>
     </div>
 
@@ -183,13 +337,35 @@
 
     <!-- Conclusion -->
     <div class="post-section">
-      <p class="post-section-eyebrow">04 — Conclusion</p>
-      <h2 class="post-section-title">Donde tu progreso <em>es tangible</em></h2>
-      <p class="post-p">Si buscas un lugar donde tu progreso sea tangible desde la primera semana, Sucre no tiene competencia. El acento neutro, la energía universitaria, el costo accesible y la inmersión forzada por el tamaño de la ciudad crean una combinación que es difícil de replicar en cualquier otro lugar del mundo hispanohablante.</p>
-      <p class="post-p">Venimos diciendo lo mismo toda la vida — y los miles de estudiantes que pasan por aquí cada año nos siguen dando la razón.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Escrito por</p>
-        <p class="post-callout-text">El equipo de Me Gusta Sucre &mdash; 100% Sucrenses.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">04 — Conclusion</p>
+        <h2 class="post-section-title">Where your progress <em>is tangible</em></h2>
+        <p class="post-p">If you are looking for a place where your progress is tangible from the first week, Sucre has no competition. The neutral accent, the university energy, the accessible cost and the immersion forced by the city's size create a combination that is hard to replicate anywhere else in the Spanish-speaking world.</p>
+        <p class="post-p">We have been saying the same thing our whole lives — and the thousands of students who pass through here every year keep proving us right.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Written by</p>
+          <p class="post-callout-text">The Me Gusta Sucre team &mdash; 100% from Sucre.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">04 — Conclusion</p>
+        <h2 class="post-section-title">Donde tu progreso <em>es tangible</em></h2>
+        <p class="post-p">Si buscas un lugar donde tu progreso sea tangible desde la primera semana, Sucre no tiene competencia. El acento neutro, la energía universitaria, el costo accesible y la inmersión forzada por el tamaño de la ciudad crean una combinación que es difícil de replicar en cualquier otro lugar del mundo hispanohablante.</p>
+        <p class="post-p">Venimos diciendo lo mismo toda la vida — y los miles de estudiantes que pasan por aquí cada año nos siguen dando la razón.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Escrito por</p>
+          <p class="post-callout-text">El equipo de Me Gusta Sucre &mdash; 100% Sucrenses.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">04 — Conclusion</p>
+        <h2 class="post-section-title">Là où vos progrès <em>sont tangibles</em></h2>
+        <p class="post-p">Si vous cherchez un endroit où vos progrès sont tangibles dès la première semaine, Sucre n'a pas de concurrence. L'accent neutre, l'énergie universitaire, le coût accessible et l'immersion imposée par la taille de la ville créent une combinaison difficile à reproduire ailleurs dans le monde hispanophone.</p>
+        <p class="post-p">Nous disons la même chose depuis toujours — et les milliers d'étudiants qui passent par ici chaque année continuent de nous donner raison.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Écrit par</p>
+          <p class="post-callout-text">L'équipe de Me Gusta Sucre &mdash; 100% Sucrenses.</p>
+        </div>
       </div>
     </div>
 
@@ -201,7 +377,7 @@
 
       <!-- Logo + nombre -->
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:48px;justify-content:center">
-        <img src="imagenes/logos/logo-me-gusta-spanish.png" alt="Me Gusta Spanish School" style="height:56px;width:auto" />
+        <img src="imagenes/logos/logo-me-gusta-spanish.png" alt="Me Gusta Spanish School" style="height:56px;width:auto" / width="2756" height="2756">
         <div style="border-left:1px solid rgba(255,255,255,0.15);padding-left:16px">
           <p style="font-family:'Fraunces',serif;font-size:1.4rem;font-weight:800;color:#fff;line-height:1;margin-bottom:4px">Me Gusta <span style="color:#c9252d;font-style:italic">Spanish</span></p>
           <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.35)">Escuela de Español — Sucre, Bolivia</p>
@@ -210,33 +386,53 @@
 
       <!-- Headline -->
       <div style="text-align:center;margin-bottom:56px">
-        <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Todo lo que leiste<br><em style="color:#c9252d;font-style:italic">lo puedes vivir</em></h2>
-        <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">El acento neutro, la ciudad universitaria, la inversion total — eso es exactamente lo que ofrecemos. Clases disenadas para que progreses desde la primera semana.</p>
+        <div data-lang-block="en">
+          <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Everything you just read<br><em style="color:#c9252d;font-style:italic">you can live it</em></h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">The neutral accent, the university city, the total immersion — that is exactly what we offer. Classes designed so you make progress from the first week.</p>
+        </div>
+        <div data-lang-block="es" style="display:none">
+          <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Todo lo que leiste<br><em style="color:#c9252d;font-style:italic">lo puedes vivir</em></h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">El acento neutro, la ciudad universitaria, la inversion total — eso es exactamente lo que ofrecemos. Clases disenadas para que progreses desde la primera semana.</p>
+        </div>
+        <div data-lang-block="fr" style="display:none">
+          <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Tout ce que vous venez de lire<br><em style="color:#c9252d;font-style:italic">vous pouvez le vivre</em></h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">L'accent neutre, la ville universitaire, l'immersion totale — c'est exactement ce que nous offrons. Des cours conçus pour que vous progressiez dès la première semaine.</p>
+        </div>
       </div>
 
       <!-- Features -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.07);margin-bottom:56px">
         <div style="background:#111;padding:32px 28px;text-align:center">
-          <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Todo el año</p>
-          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Clases individuales y privadas</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">La escuela no cierra. Empieza cualquier lunes, el tiempo que necesites — una semana o seis meses.</p>
+          <div data-lang-block="en"><p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">All year</p><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Individual &amp; private classes</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">The school never closes. Start any Monday, for as long as you need — one week or six months.</p></div>
+          <div data-lang-block="es" style="display:none"><p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Todo el año</p><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Clases individuales y privadas</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">La escuela no cierra. Empieza cualquier lunes, el tiempo que necesites — una semana o seis meses.</p></div>
+          <div data-lang-block="fr" style="display:none"><p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Toute l'année</p><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Cours individuels et privés</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">L'école ne ferme jamais. Commencez n'importe quel lundi, le temps qu'il vous faut — une semaine ou six mois.</p></div>
         </div>
         <div style="background:#111;padding:32px 28px;text-align:center;border-left:1px solid rgba(255,255,255,0.07);border-right:1px solid rgba(255,255,255,0.07)">
           <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">20+</p>
-          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Anos de experiencia</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Ensenamos espanol a viajeros de todo el mundo desde hace mas de dos decadas.</p>
+          <div data-lang-block="en"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Years of experience</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">We have been teaching Spanish to travelers from around the world for more than two decades.</p></div>
+          <div data-lang-block="es" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Anos de experiencia</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Ensenamos espanol a viajeros de todo el mundo desde hace mas de dos decadas.</p></div>
+          <div data-lang-block="fr" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Ans d'expérience</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Nous enseignons l'espagnol à des voyageurs du monde entier depuis plus de deux décennies.</p></div>
         </div>
         <div style="background:#111;padding:32px 28px;text-align:center">
           <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">A1–C2</p>
-          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Todos los niveles</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Desde cero absoluto hasta perfeccionamiento avanzado. Empieza donde estas.</p>
+          <div data-lang-block="en"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">All levels</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">From absolute beginner to advanced refinement. Start where you are.</p></div>
+          <div data-lang-block="es" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Todos los niveles</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Desde cero absoluto hasta perfeccionamiento avanzado. Empieza donde estas.</p></div>
+          <div data-lang-block="fr" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9252d;margin-bottom:10px">Tous les niveaux</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Du débutant absolu au perfectionnement avancé. Commencez là où vous en êtes.</p></div>
         </div>
       </div>
 
       <!-- CTAs -->
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <a href="clases.html" class="btn-red" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none">Ver clases y precios</a>
-        <a href="https://megustaspanish.com" target="_blank" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);transition:all 0.2s">Sitio de la escuela ↗</a>
+        <a href="clases.html" class="btn-red" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none">
+          <span data-lang-block="en">See classes &amp; prices</span>
+          <span data-lang-block="es" style="display:none">Ver clases y precios</span>
+          <span data-lang-block="fr" style="display:none">Voir cours et tarifs</span>
+        </a>
+        <a href="https://megustaspanish.com" target="_blank" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);transition:all 0.2s">
+          <span data-lang-block="en">School website ↗</span>
+          <span data-lang-block="es" style="display:none">Sitio de la escuela ↗</span>
+          <span data-lang-block="fr" style="display:none">Site de l'école ↗</span>
+        </a>
       </div>
 
     </div>
@@ -250,22 +446,46 @@
       <div class="post-related-grid">
         <a href="blog-el-manual.html" class="post-related-card">
           <div class="post-related-img">
-            <img src="imagenes/wikipedia/plaza_25mayo.webp" alt="El Manual del Viajero" loading="lazy" />
+            <img src="imagenes/wikipedia/plaza_25mayo.webp" alt="El Manual del Viajero" loading="lazy" / width="800" height="385">
           </div>
           <div class="post-related-body">
-            <p class="post-related-tag">El Manual</p>
-            <p class="post-related-name">El Manual del Viajero</p>
-            <p class="post-related-desc">Altitud, moneda, transporte, clima y seguridad. Todo lo que necesitas saber antes de llegar.</p>
+            <div data-lang-block="en">
+              <p class="post-related-tag">The Manual</p>
+              <p class="post-related-name">The Traveler's Manual</p>
+              <p class="post-related-desc">Altitude, currency, transport, climate and safety. Everything you need to know before you arrive.</p>
+            </div>
+            <div data-lang-block="es" style="display:none">
+              <p class="post-related-tag">El Manual</p>
+              <p class="post-related-name">El Manual del Viajero</p>
+              <p class="post-related-desc">Altitud, moneda, transporte, clima y seguridad. Todo lo que necesitas saber antes de llegar.</p>
+            </div>
+            <div data-lang-block="fr" style="display:none">
+              <p class="post-related-tag">Le Manuel</p>
+              <p class="post-related-name">Le Manuel du Voyageur</p>
+              <p class="post-related-desc">Altitude, monnaie, transport, climat et sécurité. Tout ce qu'il faut savoir avant d'arriver.</p>
+            </div>
           </div>
         </a>
         <a href="blog-insider-tips.html" class="post-related-card">
           <div class="post-related-img">
-            <img src="imagenes/wikipedia/catedral.webp" alt="10 Secretos Locales" loading="lazy" />
+            <img src="imagenes/wikipedia/catedral.webp" alt="10 Secretos Locales" loading="lazy" / width="1400" height="1050">
           </div>
           <div class="post-related-body">
-            <p class="post-related-tag">Local Secrets</p>
-            <p class="post-related-name">10 Secretos Locales</p>
-            <p class="post-related-desc">Las cosas que una vida entera en Sucre te enseña — y que realmente cambian como vives el viaje.</p>
+            <div data-lang-block="en">
+              <p class="post-related-tag">Local Secrets</p>
+              <p class="post-related-name">10 Local Secrets</p>
+              <p class="post-related-desc">The things a lifetime in Sucre teaches you — and that truly change how you experience the trip.</p>
+            </div>
+            <div data-lang-block="es" style="display:none">
+              <p class="post-related-tag">Local Secrets</p>
+              <p class="post-related-name">10 Secretos Locales</p>
+              <p class="post-related-desc">Las cosas que una vida entera en Sucre te enseña — y que realmente cambian como vives el viaje.</p>
+            </div>
+            <div data-lang-block="fr" style="display:none">
+              <p class="post-related-tag">Secrets Locaux</p>
+              <p class="post-related-name">10 Secrets Locaux</p>
+              <p class="post-related-desc">Les choses qu'une vie entière à Sucre vous apprend — et qui changent vraiment la façon dont vous vivez le voyage.</p>
+            </div>
           </div>
         </a>
       </div>

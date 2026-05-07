@@ -40,6 +40,10 @@ function applyTranslations(lang) {
     if (val !== undefined && val !== null) el.innerHTML = val;
   });
   document.documentElement.lang = lang;
+  // Show/hide language-specific content blocks
+  document.querySelectorAll('[data-lang-block]').forEach(el => {
+    el.style.display = el.dataset.langBlock === lang ? '' : 'none';
+  });
 }
 
 // Init i18n on page load

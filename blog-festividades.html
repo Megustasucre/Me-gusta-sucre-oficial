@@ -30,7 +30,7 @@
         <a href="guia.html" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
       </div>
       <a href="index.html" class="flex items-center gap-3 md:absolute md:left-1/2 md:-translate-x-1/2">
-        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" width="1148" height="1116">
         <span class="logo-text text-white font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
       </a>
       <div class="hidden md:flex items-center justify-end gap-7" style="flex:1">
@@ -52,7 +52,7 @@
     </div>
     <div id="mobile-menu" class="hidden bg-white shadow-xl px-6 pb-5">
       <div class="flex justify-center items-center gap-3 py-4 border-b border-gray-100 mb-2">
-        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" style="filter:none">
+        <img src="imagenes/logos/logo-me-gusta-sucre-chinchilla.png" alt="Me Gusta Sucre" class="logo-img" style="filter:none" width="1148" height="1116">
         <span class="logo-text font-bold" style="font-family:'Fraunces',serif;font-size:1.75rem;letter-spacing:-0.5px;white-space:nowrap;color:#111">Me Gusta <span class="logo-accent" style="color:#c9252d;font-style:italic">Sucre</span></span>
       </div>
       <a href="clases.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.classes">Spanish Classes</a>
@@ -60,7 +60,8 @@
       <a href="guia.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.guide">City Guide</a>
       <a href="hospedaje.html" class="block py-2 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.stay">Stay</a>
       <a href="contacto.html" class="block py-2 text-sm font-semibold text-gray-800" data-i18n="nav.contact">Contact</a>
-      <div class="py-4 mt-2 border-t border-b border-gray-100 mb-4">
+      <a href="hospedaje.html" class="btn-red block text-center mt-2 mb-3" style="border-radius:0" data-i18n="nav.book">Book a Stay</a>
+      <div class="py-3 border-t border-gray-100">
         <p class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-wider">Language</p>
         <div class="flex items-center gap-5">
           <button class="lang-btn text-sm font-bold text-gray-900" data-lang="en">EN</button>
@@ -70,7 +71,6 @@
           <button class="lang-btn text-sm font-bold text-gray-400" data-lang="fr">FR</button>
         </div>
       </div>
-      <a href="hospedaje.html" class="btn-red block text-center mt-4" style="border-radius:0" data-i18n="nav.book">Book a Stay</a>
     </div>
   </nav>
 
@@ -86,16 +86,38 @@
         <span>/</span>
         <span style="color:rgba(255,255,255,0.7)">Festividades</span>
       </div>
-      <p class="post-tag">Festividades</p>
-      <h1 class="post-title">
-        Las celebraciones que<br><em>definen Sucre</em>
-      </h1>
-      <div class="post-meta">
-        <span>Equipo Me Gusta Sucre</span>
-        <span class="post-meta-dot"></span>
-        <span>Sucre, Bolivia</span>
-        <span class="post-meta-dot"></span>
-        <span>2026</span>
+      <div data-lang-block="en">
+        <p class="post-tag">Festivities</p>
+        <h1 class="post-title">The celebrations that<br><em>define Sucre</em></h1>
+        <div class="post-meta">
+          <span>Me Gusta Sucre Team</span>
+          <span class="post-meta-dot"></span>
+          <span>Sucre, Bolivia</span>
+          <span class="post-meta-dot"></span>
+          <span>2026</span>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-tag">Festividades</p>
+        <h1 class="post-title">Las celebraciones que<br><em>definen Sucre</em></h1>
+        <div class="post-meta">
+          <span>Equipo Me Gusta Sucre</span>
+          <span class="post-meta-dot"></span>
+          <span>Sucre, Bolivia</span>
+          <span class="post-meta-dot"></span>
+          <span>2026</span>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-tag">Festivités</p>
+        <h1 class="post-title">Les célébrations qui<br><em>définissent Sucre</em></h1>
+        <div class="post-meta">
+          <span>L'équipe Me Gusta Sucre</span>
+          <span class="post-meta-dot"></span>
+          <span>Sucre, Bolivia</span>
+          <span class="post-meta-dot"></span>
+          <span>2026</span>
+        </div>
       </div>
     </div>
   </section>
@@ -105,34 +127,98 @@
 
     <a href="guia.html#cronicas" class="post-back">
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-      Volver a Las Crónicas
+      <span data-lang-block="en">Back to Las Crónicas</span>
+      <span data-lang-block="es" style="display:none">Volver a Las Crónicas</span>
+      <span data-lang-block="fr" style="display:none">Retour à Las Crónicas</span>
     </a>
 
-    <p class="post-lead">
-      En Sucre, las festividades no son un espectaculo para el turista — son parte de la vida de la ciudad. El carnaval de antaño, el Pujllay de Tarabuco, la Semana Santa con sus platos de aji, el Dia de los Muertos en el cementerio, y la Virgen de Guadalupe en septiembre. Cinco fechas que vale la pena conocer y, si el calendario lo permite, vivir.
-    </p>
+    <div data-lang-block="en">
+      <p class="post-lead">
+        In Sucre, festivities are not a spectacle for tourists — they are part of the city's life. Carnaval de antaño, the Pujllay of Tarabuco, Holy Week with its ají dishes, Day of the Dead at the cemetery, and the Virgen de Guadalupe in September. Five dates worth knowing and, if the calendar allows, worth living.
+      </p>
+    </div>
+    <div data-lang-block="es" style="display:none">
+      <p class="post-lead">
+        En Sucre, las festividades no son un espectaculo para el turista — son parte de la vida de la ciudad. El carnaval de antaño, el Pujllay de Tarabuco, la Semana Santa con sus platos de aji, el Dia de los Muertos en el cementerio, y la Virgen de Guadalupe en septiembre. Cinco fechas que vale la pena conocer y, si el calendario lo permite, vivir.
+      </p>
+    </div>
+    <div data-lang-block="fr" style="display:none">
+      <p class="post-lead">
+        À Sucre, les festivités ne sont pas un spectacle pour les touristes — elles font partie de la vie de la ville. Le carnaval de antaño, le Pujllay de Tarabuco, la Semaine Sainte avec ses plats d'ají, le Jour des Morts au cimetière, et la Virgen de Guadalupe en septembre. Cinq dates qui méritent d'être connues et, si le calendrier le permet, vécues.
+      </p>
+    </div>
 
     <!-- Quick facts bar -->
-    <div class="post-facts">
-      <div class="post-fact">
-        <p class="post-fact-label">Carnaval</p>
-        <p class="post-fact-value">Feb / Mar</p>
-        <p class="post-fact-desc">Carnaval de antaño. Cascarones perfumados.</p>
+    <div data-lang-block="en">
+      <div class="post-facts">
+        <div class="post-fact">
+          <p class="post-fact-label">Carnaval</p>
+          <p class="post-fact-value">Feb / Mar</p>
+          <p class="post-fact-desc">Carnaval de antaño. Perfumed cascarón eggs.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Pujllay</p>
+          <p class="post-fact-value">3rd Sunday Mar</p>
+          <p class="post-fact-desc">Tarabuco. Cultural heritage of Bolivia.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Day of the Dead</p>
+          <p class="post-fact-value">2 Nov</p>
+          <p class="post-fact-desc">Cementerio General. Mondongo and tanta wawas.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Virgen Guadalupe</p>
+          <p class="post-fact-value">September</p>
+          <p class="post-fact-desc">Patron saint of the city. The biggest festivity.</p>
+        </div>
       </div>
-      <div class="post-fact">
-        <p class="post-fact-label">Pujllay</p>
-        <p class="post-fact-value">3er domingo Mar</p>
-        <p class="post-fact-desc">Tarabuco. Patrimonio cultural de Bolivia.</p>
+    </div>
+    <div data-lang-block="es" style="display:none">
+      <div class="post-facts">
+        <div class="post-fact">
+          <p class="post-fact-label">Carnaval</p>
+          <p class="post-fact-value">Feb / Mar</p>
+          <p class="post-fact-desc">Carnaval de antaño. Cascarones perfumados.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Pujllay</p>
+          <p class="post-fact-value">3er domingo Mar</p>
+          <p class="post-fact-desc">Tarabuco. Patrimonio cultural de Bolivia.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Dia de Muertos</p>
+          <p class="post-fact-value">2 Nov</p>
+          <p class="post-fact-desc">Cementerio General. Mondongo y tanta wawas.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Virgen Guadalupe</p>
+          <p class="post-fact-value">Septiembre</p>
+          <p class="post-fact-desc">Patrona de la ciudad. La festividad mas grande.</p>
+        </div>
       </div>
-      <div class="post-fact">
-        <p class="post-fact-label">Dia de Muertos</p>
-        <p class="post-fact-value">2 Nov</p>
-        <p class="post-fact-desc">Cementerio General. Mondongo y tanta wawas.</p>
-      </div>
-      <div class="post-fact">
-        <p class="post-fact-label">Virgen Guadalupe</p>
-        <p class="post-fact-value">Septiembre</p>
-        <p class="post-fact-desc">Patrona de la ciudad. La festividad mas grande.</p>
+    </div>
+    <div data-lang-block="fr" style="display:none">
+      <div class="post-facts">
+        <div class="post-fact">
+          <p class="post-fact-label">Carnaval</p>
+          <p class="post-fact-value">Fév / Mar</p>
+          <p class="post-fact-desc">Carnaval de antaño. Oeufs cascarón parfumés.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Pujllay</p>
+          <p class="post-fact-value">3e dim. mars</p>
+          <p class="post-fact-desc">Tarabuco. Patrimoine culturel de Bolivie.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Jour des Morts</p>
+          <p class="post-fact-value">2 nov.</p>
+          <p class="post-fact-desc">Cementerio General. Mondongo et tanta wawas.</p>
+        </div>
+        <div class="post-fact">
+          <p class="post-fact-label">Virgen Guadalupe</p>
+          <p class="post-fact-value">Septembre</p>
+          <p class="post-fact-desc">Patronne de la ville. La plus grande fête.</p>
+        </div>
       </div>
     </div>
 
@@ -140,13 +226,35 @@
 
     <!-- Carnaval -->
     <div class="post-section">
-      <p class="post-section-eyebrow">01 — Carnaval</p>
-      <h2 class="post-section-title">El carnaval de antaño <em>que no se parece a ninguno</em></h2>
-      <p class="post-p">El carnaval de Sucre no compite con el de Oruro — es otra cosa. Aqui se celebra el llamado carnaval de antaño: una entrada donde la gente se viste como en la antiguedad, con trajes tradicionales, y desfila por las calles de la ciudad reviviendo una forma de festejar que viene de generaciones atras.</p>
-      <p class="post-p">La protagonista de la jornada es el huevo de cascarón perfumado. En lugar de globos con agua, los sucrenses se lanzan estos cascarones — pequeños, llenos de agua con esencia — como lo hacian sus abuelos. Detras de la costumbre hay una historia romantica: si un joven mojaba a una mujer con su cascarón, era señal de que estaba interesado en ella. La tradicion cambio, pero el ritual permanece.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Lo que hay que saber</p>
-        <p class="post-callout-text">Si estas en Sucre durante el carnaval, preparate para mojarte. Es parte del juego y nadie se salva — tampoco deberias querer salvarte.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">01 — Carnaval</p>
+        <h2 class="post-section-title">The carnaval de antaño <em>like no other</em></h2>
+        <p class="post-p">Sucre's carnival does not compete with Oruro's — it is something else entirely. Here, what is celebrated is the carnaval de antaño: a parade where people dress as in times past, in traditional costumes, and march through the city's streets reviving a form of celebration that goes back generations.</p>
+        <p class="post-p">The star of the day is the perfumed cascarón egg. Instead of water balloons, locals throw these small shells — filled with scented water — just as their grandparents did. Behind the custom lies a romantic story: if a young man soaked a woman with his cascarón, it was a sign that he was interested in her. The tradition has changed, but the ritual remains.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">What you need to know</p>
+          <p class="post-callout-text">If you're in Sucre during carnival, be prepared to get wet. It's part of the game and nobody is spared — you wouldn't want to be.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">01 — Carnaval</p>
+        <h2 class="post-section-title">El carnaval de antaño <em>que no se parece a ninguno</em></h2>
+        <p class="post-p">El carnaval de Sucre no compite con el de Oruro — es otra cosa. Aqui se celebra el llamado carnaval de antaño: una entrada donde la gente se viste como en la antiguedad, con trajes tradicionales, y desfila por las calles de la ciudad reviviendo una forma de festejar que viene de generaciones atras.</p>
+        <p class="post-p">La protagonista de la jornada es el huevo de cascarón perfumado. En lugar de globos con agua, los sucrenses se lanzan estos cascarones — pequeños, llenos de agua con esencia — como lo hacian sus abuelos. Detras de la costumbre hay una historia romantica: si un joven mojaba a una mujer con su cascarón, era señal de que estaba interesado en ella. La tradicion cambio, pero el ritual permanece.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Lo que hay que saber</p>
+          <p class="post-callout-text">Si estas en Sucre durante el carnaval, preparate para mojarte. Es parte del juego y nadie se salva — tampoco deberias querer salvarte.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">01 — Carnaval</p>
+        <h2 class="post-section-title">Le carnaval de antaño <em>comme nulle part ailleurs</em></h2>
+        <p class="post-p">Le carnaval de Sucre ne rivalise pas avec celui d'Oruro — c'est quelque chose d'entièrement différent. Ici, ce qu'on célèbre, c'est le carnaval de antaño : un défilé où les gens s'habillent comme autrefois, en costumes traditionnels, et parcourent les rues de la ville en faisant revivre une façon de fêter qui remonte à des générations.</p>
+        <p class="post-p">La vedette de la journée est l'oeuf cascarón parfumé. Au lieu de ballons d'eau, les habitants se lancent ces petites coquilles — remplies d'eau parfumée — comme le faisaient leurs grands-parents. Derrière la coutume se cache une histoire romantique : si un jeune homme mouillait une femme avec son cascarón, c'était le signe qu'il s'intéressait à elle. La tradition a changé, mais le rituel demeure.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Ce qu'il faut savoir</p>
+          <p class="post-callout-text">Si vous êtes à Sucre pendant le carnaval, préparez-vous à être mouillé. C'est une règle du jeu à laquelle personne n'échappe — et vous ne devriez pas chercher à y échapper.</p>
+        </div>
       </div>
     </div>
 
@@ -154,13 +262,35 @@
 
     <!-- Pujllay -->
     <div class="post-section">
-      <p class="post-section-eyebrow">02 — Pujllay de Tarabuco</p>
-      <h2 class="post-section-title">Una celebracion indigena <em>declarada patrimonio</em></h2>
-      <p class="post-p">El tercer domingo de marzo, el pueblo de Tarabuco — a unos 65 km de Sucre — se convierte en el escenario del Pujllay, una de las festividades indigenas mas importantes de Bolivia. La palabra en quechua significa "jugar" o "celebrar", y la festividad conmemora la batalla de Jumbati de 1816, en la que los yamparaes resistieron al ejercito realista.</p>
-      <p class="post-p">Los danzarines y musicos llegan desde comunidades de toda la region vistiendo sus trajes tradicionales — los sombreros de cuero con monedas, los ponchos de colores intensos — en una explosion de identidad cultural que no tiene equivalente. El mercado de textiles artesanales que rodea la celebracion es uno de los mas autenticos del pais.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Como llegar</p>
-        <p class="post-callout-text">Desde Sucre salen vans compartidas y servicios de tour organizados. Conviene salir temprano — la festividad arranca con fuerza en la mañana y el regreso se hace antes de que caiga la tarde.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">02 — Pujllay de Tarabuco</p>
+        <h2 class="post-section-title">An indigenous celebration <em>declared heritage</em></h2>
+        <p class="post-p">On the third Sunday of March, the town of Tarabuco — about 65 km from Sucre — becomes the setting for the Pujllay, one of Bolivia's most important indigenous festivities. The Quechua word means "to play" or "to celebrate," and the festivity commemorates the Battle of Jumbati in 1816, in which the yamparaes resisted the royalist army.</p>
+        <p class="post-p">Dancers and musicians arrive from communities throughout the region wearing their traditional costumes — leather hats adorned with coins, brightly colored ponchos — in an explosion of cultural identity that has no equal. The artisan textile market surrounding the celebration is one of the most authentic in the country.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">How to get there</p>
+          <p class="post-callout-text">Shared vans and organized tours leave from Sucre. It's worth leaving early — the festivity starts strong in the morning and the return is best made before afternoon falls.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">02 — Pujllay de Tarabuco</p>
+        <h2 class="post-section-title">Una celebracion indigena <em>declarada patrimonio</em></h2>
+        <p class="post-p">El tercer domingo de marzo, el pueblo de Tarabuco — a unos 65 km de Sucre — se convierte en el escenario del Pujllay, una de las festividades indigenas mas importantes de Bolivia. La palabra en quechua significa "jugar" o "celebrar", y la festividad conmemora la batalla de Jumbati de 1816, en la que los yamparaes resistieron al ejercito realista.</p>
+        <p class="post-p">Los danzarines y musicos llegan desde comunidades de toda la region vistiendo sus trajes tradicionales — los sombreros de cuero con monedas, los ponchos de colores intensos — en una explosion de identidad cultural que no tiene equivalente. El mercado de textiles artesanales que rodea la celebracion es uno de los mas autenticos del pais.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Como llegar</p>
+          <p class="post-callout-text">Desde Sucre salen vans compartidas y servicios de tour organizados. Conviene salir temprano — la festividad arranca con fuerza en la mañana y el regreso se hace antes de que caiga la tarde.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">02 — Pujllay de Tarabuco</p>
+        <h2 class="post-section-title">Une célébration indigène <em>classée patrimoine</em></h2>
+        <p class="post-p">Le troisième dimanche de mars, le village de Tarabuco — à environ 65 km de Sucre — devient le théâtre du Pujllay, l'une des festivités indigènes les plus importantes de Bolivie. Le mot en quechua signifie « jouer » ou « célébrer », et la fête commémore la bataille de Jumbati de 1816, au cours de laquelle les yamparaes ont résisté à l'armée royaliste.</p>
+        <p class="post-p">Des danseurs et des musiciens arrivent de communautés de toute la région vêtus de leurs costumes traditionnels — les chapeaux de cuir ornés de pièces de monnaie, les ponchos aux couleurs vives — dans une explosion d'identité culturelle sans équivalent. Le marché de textiles artisanaux qui entoure la célébration est l'un des plus authentiques du pays.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Comment y aller</p>
+          <p class="post-callout-text">Des vans partagés et des circuits organisés partent de Sucre. Il vaut mieux partir tôt — la festivité démarre fort le matin et il est préférable de rentrer avant que l'après-midi ne tombe.</p>
+        </div>
       </div>
     </div>
 
@@ -168,13 +298,35 @@
 
     <!-- Semana Santa -->
     <div class="post-section">
-      <p class="post-section-eyebrow">03 — Semana Santa</p>
-      <h2 class="post-section-title">La mesa de aji <em>que espera todo el año</em></h2>
-      <p class="post-p">En Sucre, la Semana Santa no se vive solo en procesiones — se vive tambien en la cocina. El aji es el ingrediente emblema de Chuquisaca, y en estas fechas toma el centro absoluto de la mesa. Hay platos que los sucrenses preparan una vez al año, especificamente para estos dias, y que forman parte de la memoria colectiva de la ciudad.</p>
-      <p class="post-p">La mesa tradicional de Semana Santa incluye papas rellenas, locro de zapallo, aji de sardina, aji de arveja, pastel de papa, huminta al horno y en olla, y aji de huevo. Cada familia tiene su version, su orden, su receta heredada. Comer en una casa sucrense durante Semana Santa es entender algo de la ciudad que ningun restaurante puede enseñar.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">El ingrediente que lo define</p>
-        <p class="post-callout-text">El aji chuquisaqueno — en sus distintas variedades — no es simplemente picante. Es la base de sabor de toda una cocina. Sin aji, la Semana Santa en Sucre no existe.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">03 — Holy Week</p>
+        <h2 class="post-section-title">The ají table <em>that waits all year</em></h2>
+        <p class="post-p">In Sucre, Holy Week is lived not only in processions — it is lived in the kitchen. Ají is the emblematic ingredient of Chuquisaca, and during these days it takes the absolute center of the table. There are dishes that locals prepare once a year, specifically for this time, that form part of the city's collective memory.</p>
+        <p class="post-p">The traditional Holy Week table includes stuffed potatoes, locro de zapallo, ají de sardina, ají de arveja, potato cake, huminta baked and in pot, and ají de huevo. Every family has its own version, its own order, its inherited recipe. Eating in a Sucre home during Holy Week is understanding something about the city that no restaurant can teach.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">The ingredient that defines it</p>
+          <p class="post-callout-text">Chuquisaqueño ají — in its various varieties — is not simply spicy. It is the flavor base of an entire cuisine. Without ají, Holy Week in Sucre does not exist.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">03 — Semana Santa</p>
+        <h2 class="post-section-title">La mesa de aji <em>que espera todo el año</em></h2>
+        <p class="post-p">En Sucre, la Semana Santa no se vive solo en procesiones — se vive tambien en la cocina. El aji es el ingrediente emblema de Chuquisaca, y en estas fechas toma el centro absoluto de la mesa. Hay platos que los sucrenses preparan una vez al año, especificamente para estos dias, y que forman parte de la memoria colectiva de la ciudad.</p>
+        <p class="post-p">La mesa tradicional de Semana Santa incluye papas rellenas, locro de zapallo, aji de sardina, aji de arveja, pastel de papa, huminta al horno y en olla, y aji de huevo. Cada familia tiene su version, su orden, su receta heredada. Comer en una casa sucrense durante Semana Santa es entender algo de la ciudad que ningun restaurante puede enseñar.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">El ingrediente que lo define</p>
+          <p class="post-callout-text">El aji chuquisaqueno — en sus distintas variedades — no es simplemente picante. Es la base de sabor de toda una cocina. Sin aji, la Semana Santa en Sucre no existe.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">03 — Semaine Sainte</p>
+        <h2 class="post-section-title">La table d'ají <em>qui attend toute l'année</em></h2>
+        <p class="post-p">À Sucre, la Semaine Sainte ne se vit pas seulement dans les processions — elle se vit aussi dans la cuisine. L'ají est l'ingrédient emblématique de Chuquisaca, et pendant ces jours, il occupe le centre absolu de la table. Il existe des plats que les habitants préparent une fois par an, spécifiquement pour cette période, et qui font partie de la mémoire collective de la ville.</p>
+        <p class="post-p">La table traditionnelle de la Semaine Sainte comprend des pommes de terre farcies, du locro de zapallo, de l'ají de sardina, de l'ají de arveja, du gâteau de pommes de terre, de l'huminta au four et en marmite, et de l'ají de huevo. Chaque famille a sa version, son ordre, sa recette héritée. Manger dans une maison de Sucre pendant la Semaine Sainte, c'est comprendre quelque chose sur la ville qu'aucun restaurant ne peut enseigner.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">L'ingrédient qui tout définit</p>
+          <p class="post-callout-text">L'ají chuquisaqueno — dans ses différentes variétés — n'est pas simplement piquant. C'est la base aromatique de toute une cuisine. Sans ají, la Semaine Sainte à Sucre n'existe pas.</p>
+        </div>
       </div>
     </div>
 
@@ -182,13 +334,35 @@
 
     <!-- Dia de los Muertos -->
     <div class="post-section">
-      <p class="post-section-eyebrow">04 — Dia de los Muertos</p>
-      <h2 class="post-section-title">El reencuentro <em>en el Cementerio General</em></h2>
-      <p class="post-p">El 2 de noviembre, el Cementerio General de Sucre se transforma. Las familias llegan desde temprano para arreglar las tumbas de sus seres queridos, cubrirlas de flores, y preparar la bienvenida. A mediodia, segun la tradicion, los difuntos regresan — y la familia los recibe con sus platos favoritos en vida, dispuestos sobre la tumba como si fueran a sentarse juntos a comer.</p>
-      <p class="post-p">No es un acto melancolico. Es una celebracion fervorosa, llena de color, musica y conversacion. El cementerio ese dia es un lugar vivo en el sentido mas literal — lleno de gente que quiere a sus muertos y los celebra como lo que son: parte de la familia.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Lo que se come</p>
-        <p class="post-callout-text">El plato de la jornada es el mondongo — uno de los emblemas de la cocina sucrense — acompañado de tanta wawas, panes artesanales con forma humana que se comparten entre los presentes como parte del ritual.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">04 — Day of the Dead</p>
+        <h2 class="post-section-title">The reunion <em>at the Cementerio General</em></h2>
+        <p class="post-p">On November 2nd, Sucre's Cementerio General is transformed. Families arrive early to tend the graves of their loved ones, cover them with flowers, and prepare a welcome. At midday, according to tradition, the deceased return — and the family receives them with their favorite dishes in life, laid out on the tomb as if they were about to sit down and eat together.</p>
+        <p class="post-p">It is not a melancholic act. It is a fervent celebration, full of color, music and conversation. The cemetery that day is a living place in the most literal sense — full of people who love their dead and celebrate them for what they are: part of the family.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">What is eaten</p>
+          <p class="post-callout-text">The dish of the day is mondongo — one of the emblems of Sucre's cuisine — accompanied by tanta wawas, artisan breads in human form that are shared among those present as part of the ritual.</p>
+        </div>
+      </div>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">04 — Dia de los Muertos</p>
+        <h2 class="post-section-title">El reencuentro <em>en el Cementerio General</em></h2>
+        <p class="post-p">El 2 de noviembre, el Cementerio General de Sucre se transforma. Las familias llegan desde temprano para arreglar las tumbas de sus seres queridos, cubrirlas de flores, y preparar la bienvenida. A mediodia, segun la tradicion, los difuntos regresan — y la familia los recibe con sus platos favoritos en vida, dispuestos sobre la tumba como si fueran a sentarse juntos a comer.</p>
+        <p class="post-p">No es un acto melancolico. Es una celebracion fervorosa, llena de color, musica y conversacion. El cementerio ese dia es un lugar vivo en el sentido mas literal — lleno de gente que quiere a sus muertos y los celebra como lo que son: parte de la familia.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Lo que se come</p>
+          <p class="post-callout-text">El plato de la jornada es el mondongo — uno de los emblemas de la cocina sucrense — acompañado de tanta wawas, panes artesanales con forma humana que se comparten entre los presentes como parte del ritual.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">04 — Jour des Morts</p>
+        <h2 class="post-section-title">Les retrouvailles <em>au Cementerio General</em></h2>
+        <p class="post-p">Le 2 novembre, le Cementerio General de Sucre se transforme. Les familles arrivent tôt pour arranger les tombes de leurs proches, les couvrir de fleurs et préparer un accueil. À midi, selon la tradition, les défunts reviennent — et la famille les reçoit avec leurs plats préférés de leur vivant, disposés sur la tombe comme s'ils allaient s'asseoir ensemble pour manger.</p>
+        <p class="post-p">Ce n'est pas un acte mélancolique. C'est une célébration fervente, pleine de couleurs, de musique et de conversations. Le cimetière ce jour-là est un lieu vivant au sens le plus littéral — rempli de gens qui aiment leurs morts et les célèbrent pour ce qu'ils sont : une partie de la famille.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Ce qu'on mange</p>
+          <p class="post-callout-text">Le plat du jour est le mondongo — l'un des emblèmes de la cuisine de Sucre — accompagné de tanta wawas, des pains artisanaux en forme humaine que l'on partage entre les présents dans le cadre du rituel.</p>
+        </div>
       </div>
     </div>
 
@@ -196,17 +370,47 @@
 
     <!-- Virgen de Guadalupe -->
     <div class="post-section">
-      <p class="post-section-eyebrow">05 — Virgen de Guadalupe</p>
-      <h2 class="post-section-title">La patrona <em>que mueve a la ciudad entera</em></h2>
-      <p class="post-p">En septiembre, Sucre celebra a su patrona: la Virgen de Guadalupe. Es una de las festividades mas grandes del calendario sucrense, y la que mejor refleja la devocion popular de la ciudad. Las confraternidades — grupos organizados de fieles — se reunen durante semanas para ensayar, preparar sus trajes y coordinar las entradas que se realizan en honor a la Virgen.</p>
-      <p class="post-p">Las calles del centro historico se llenan de musica, danzantes y procesiones que mezclan lo religioso con lo festivo de una forma que solo Bolivia sabe hacer. Para quien visita Sucre en septiembre y no conocia esta festividad, la experiencia cambia completamente la percepcion de la ciudad.</p>
-      <div class="post-callout">
-        <p class="post-callout-label">Por que importa</p>
-        <p class="post-callout-text">La Virgen de Guadalupe no es solo una celebracion religiosa — es el momento en que la identidad de Sucre se manifiesta mas claramente. Vale mucho estar aqui en septiembre.</p>
+      <div data-lang-block="en">
+        <p class="post-section-eyebrow">05 — Virgen de Guadalupe</p>
+        <h2 class="post-section-title">The patron saint <em>who moves the whole city</em></h2>
+        <p class="post-p">In September, Sucre celebrates its patron saint: the Virgen de Guadalupe. It is one of the biggest festivities in the Sucre calendar, and the one that best reflects the city's popular devotion. Confraternities — organized groups of the faithful — come together for weeks to rehearse, prepare their costumes and coordinate the parades held in honor of the Virgin.</p>
+        <p class="post-p">The streets of the historic center fill with music, dancers and processions that mix the religious with the festive in a way only Bolivia knows how. For visitors who come to Sucre in September and did not know this festivity, the experience completely changes their perception of the city.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Why it matters</p>
+          <p class="post-callout-text">The Virgen de Guadalupe is not just a religious celebration — it is the moment when the identity of Sucre manifests itself most clearly. It is very much worth being here in September.</p>
+        </div>
+        <div class="post-callout">
+          <p class="post-callout-label">Written by</p>
+          <p class="post-callout-text">The Me Gusta Sucre team &mdash; 100% from Sucre.</p>
+        </div>
       </div>
-      <div class="post-callout">
-        <p class="post-callout-label">Escrito por</p>
-        <p class="post-callout-text">El equipo de Me Gusta Sucre &mdash; 100% Sucrenses.</p>
+      <div data-lang-block="es" style="display:none">
+        <p class="post-section-eyebrow">05 — Virgen de Guadalupe</p>
+        <h2 class="post-section-title">La patrona <em>que mueve a la ciudad entera</em></h2>
+        <p class="post-p">En septiembre, Sucre celebra a su patrona: la Virgen de Guadalupe. Es una de las festividades mas grandes del calendario sucrense, y la que mejor refleja la devocion popular de la ciudad. Las confraternidades — grupos organizados de fieles — se reunen durante semanas para ensayar, preparar sus trajes y coordinar las entradas que se realizan en honor a la Virgen.</p>
+        <p class="post-p">Las calles del centro historico se llenan de musica, danzantes y procesiones que mezclan lo religioso con lo festivo de una forma que solo Bolivia sabe hacer. Para quien visita Sucre en septiembre y no conocia esta festividad, la experiencia cambia completamente la percepcion de la ciudad.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Por que importa</p>
+          <p class="post-callout-text">La Virgen de Guadalupe no es solo una celebracion religiosa — es el momento en que la identidad de Sucre se manifiesta mas claramente. Vale mucho estar aqui en septiembre.</p>
+        </div>
+        <div class="post-callout">
+          <p class="post-callout-label">Escrito por</p>
+          <p class="post-callout-text">El equipo de Me Gusta Sucre &mdash; 100% Sucrenses.</p>
+        </div>
+      </div>
+      <div data-lang-block="fr" style="display:none">
+        <p class="post-section-eyebrow">05 — Virgen de Guadalupe</p>
+        <h2 class="post-section-title">La patronne <em>qui mobilise toute la ville</em></h2>
+        <p class="post-p">En septembre, Sucre célèbre sa patronne : la Virgen de Guadalupe. C'est l'une des plus grandes festivités du calendrier de Sucre, et celle qui reflète le mieux la dévotion populaire de la ville. Les confréries — groupes organisés de fidèles — se réunissent pendant des semaines pour répéter, préparer leurs costumes et coordonner les défilés organisés en l'honneur de la Vierge.</p>
+        <p class="post-p">Les rues du centre historique se remplissent de musique, de danseurs et de processions qui mêlent le religieux au festif d'une façon que seule la Bolivie sait faire. Pour ceux qui visitent Sucre en septembre et ne connaissaient pas cette festivité, l'expérience change complètement leur perception de la ville.</p>
+        <div class="post-callout">
+          <p class="post-callout-label">Pourquoi c'est important</p>
+          <p class="post-callout-text">La Virgen de Guadalupe n'est pas seulement une célébration religieuse — c'est le moment où l'identité de Sucre se manifeste le plus clairement. Cela vaut vraiment la peine d'être ici en septembre.</p>
+        </div>
+        <div class="post-callout">
+          <p class="post-callout-label">Écrit par</p>
+          <p class="post-callout-text">L'équipe de Me Gusta Sucre &mdash; 100% Sucrenses.</p>
+        </div>
       </div>
     </div>
 
@@ -218,8 +422,18 @@
 
       <!-- Headline -->
       <div style="text-align:center;margin-bottom:56px">
-        <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Planea tu visita<br><em style="color:#14b8a6;font-style:italic">en el momento justo</em></h2>
-        <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">El Inn esta en el centro historico, donde todo sucede. Si quieres vivir alguna de estas festividades, escribenos — te ayudamos a planear la fecha perfecta.</p>
+        <div data-lang-block="en">
+          <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Plan your visit<br><em style="color:#14b8a6;font-style:italic">at exactly the right time</em></h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">The Inn is in the historic center, where everything happens. If you want to experience one of these festivities, write to us — we'll help you plan the perfect date.</p>
+        </div>
+        <div data-lang-block="es" style="display:none">
+          <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Planea tu visita<br><em style="color:#14b8a6;font-style:italic">en el momento justo</em></h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">El Inn esta en el centro historico, donde todo sucede. Si quieres vivir alguna de estas festividades, escribenos — te ayudamos a planear la fecha perfecta.</p>
+        </div>
+        <div data-lang-block="fr" style="display:none">
+          <h2 style="font-family:'Fraunces',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:1.05;margin-bottom:20px">Planifiez votre visite<br><em style="color:#14b8a6;font-style:italic">au moment idéal</em></h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.8">L'Inn est dans le centre historique, là où tout se passe. Si vous souhaitez vivre l'une de ces festivités, écrivez-nous — nous vous aiderons à planifier la date parfaite.</p>
+        </div>
       </div>
 
       <!-- Features -->
@@ -227,23 +441,31 @@
         <div style="background:#111;padding:32px 28px;text-align:center">
           <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Centro</p>
           <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">La Paz #571</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">En el corazon del centro historico. Las procesiones, entradas y celebraciones pasan a metros de la puerta.</p>
+          <div data-lang-block="en"><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">In the heart of the historic center. Processions, parades and celebrations pass meters from the door.</p></div>
+          <div data-lang-block="es" style="display:none"><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">En el corazon del centro historico. Las procesiones, entradas y celebraciones pasan a metros de la puerta.</p></div>
+          <div data-lang-block="fr" style="display:none"><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Au coeur du centre historique. Les processions, défilés et célébrations passent à quelques mètres de la porte.</p></div>
         </div>
         <div style="background:#111;padding:32px 28px;text-align:center;border-left:1px solid rgba(255,255,255,0.07);border-right:1px solid rgba(255,255,255,0.07)">
           <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">Boutique</p>
-          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Solo 8 habitaciones</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">No es un hotel anonimo. Cada huesped recibe atencion directa del equipo que conoce la ciudad de memoria.</p>
+          <div data-lang-block="en"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Only 8 rooms</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Not an anonymous hotel. Each guest receives direct attention from the team that knows the city by heart.</p></div>
+          <div data-lang-block="es" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Solo 8 habitaciones</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">No es un hotel anonimo. Cada huesped recibe atencion directa del equipo que conoce la ciudad de memoria.</p></div>
+          <div data-lang-block="fr" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Seulement 8 chambres</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Ce n'est pas un hôtel anonyme. Chaque hôte reçoit une attention directe de l'équipe qui connaît la ville par coeur.</p></div>
         </div>
         <div style="background:#111;padding:32px 28px;text-align:center">
           <p style="font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:#fff;margin-bottom:8px">24/7</p>
-          <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Siempre disponibles</p>
-          <p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Preguntanos en que fechas cae cada festividad, que ver, y como moverte. Sabemos porque vivimos aqui.</p>
+          <div data-lang-block="en"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Always available</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Ask us when each festivity falls, what to see, and how to get around. We know because we live here.</p></div>
+          <div data-lang-block="es" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Siempre disponibles</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Preguntanos en que fechas cae cada festividad, que ver, y como moverte. Sabemos porque vivimos aqui.</p></div>
+          <div data-lang-block="fr" style="display:none"><p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#14b8a6;margin-bottom:10px">Toujours disponibles</p><p style="font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7">Demandez-nous quand tombe chaque festivité, quoi voir et comment se déplacer. Nous savons parce que nous vivons ici.</p></div>
         </div>
       </div>
 
       <!-- CTAs -->
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <a href="hospedaje.html" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;background:#14b8a6;color:#fff">Ver el Inn</a>
+        <a href="hospedaje.html" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;background:#14b8a6;color:#fff">
+          <span data-lang-block="en">See the Inn</span>
+          <span data-lang-block="es" style="display:none">Ver el Inn</span>
+          <span data-lang-block="fr" style="display:none">Voir l'Inn</span>
+        </a>
         <a href="https://wa.me/59173425725" target="_blank" style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:18px 48px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7)">WhatsApp</a>
       </div>
 
@@ -258,22 +480,46 @@
       <div class="post-related-grid">
         <a href="blog-gastronomia.html" class="post-related-card">
           <div class="post-related-img">
-            <img src="imagenes/wikipedia/sucre_street.webp" alt="Que Comer en Sucre" loading="lazy" />
+            <img src="imagenes/wikipedia/sucre_street.webp" alt="Que Comer en Sucre" loading="lazy" / width="1600" height="1065">
           </div>
           <div class="post-related-body">
-            <p class="post-related-tag">Gastronomia</p>
-            <p class="post-related-name">Que Comer en Sucre</p>
-            <p class="post-related-desc">Salteñas con papaya Salvietti, chorizos chuquisaquenos, api con pastel y helados en el Parque Bolivar.</p>
+            <div data-lang-block="en">
+              <p class="post-related-tag">Food</p>
+              <p class="post-related-name">What to Eat in Sucre</p>
+              <p class="post-related-desc">Salteñas with papaya Salvietti, chuquisaqueño chorizos, api con pastel and ice cream at Parque Bolívar.</p>
+            </div>
+            <div data-lang-block="es" style="display:none">
+              <p class="post-related-tag">Gastronomia</p>
+              <p class="post-related-name">Que Comer en Sucre</p>
+              <p class="post-related-desc">Salteñas con papaya Salvietti, chorizos chuquisaquenos, api con pastel y helados en el Parque Bolivar.</p>
+            </div>
+            <div data-lang-block="fr" style="display:none">
+              <p class="post-related-tag">Gastronomie</p>
+              <p class="post-related-name">Que manger à Sucre</p>
+              <p class="post-related-desc">Salteñas avec papaya Salvietti, chorizos chuquisaquenos, api con pastel et glaces au Parque Bolívar.</p>
+            </div>
           </div>
         </a>
         <a href="blog-insider-tips.html" class="post-related-card">
           <div class="post-related-img">
-            <img src="imagenes/wikipedia/catedral.webp" alt="10 Secretos Locales" loading="lazy" />
+            <img src="imagenes/wikipedia/catedral.webp" alt="10 Secretos Locales" loading="lazy" / width="1400" height="1050">
           </div>
           <div class="post-related-body">
-            <p class="post-related-tag">Secretos Locales</p>
-            <p class="post-related-name">10 Secretos Locales</p>
-            <p class="post-related-desc">Las cosas que una vida entera en Sucre te enseña — y que realmente cambian como vives el viaje.</p>
+            <div data-lang-block="en">
+              <p class="post-related-tag">Local Secrets</p>
+              <p class="post-related-name">10 Local Secrets</p>
+              <p class="post-related-desc">The things a lifetime in Sucre teaches you — and that truly change how you experience the trip.</p>
+            </div>
+            <div data-lang-block="es" style="display:none">
+              <p class="post-related-tag">Secretos Locales</p>
+              <p class="post-related-name">10 Secretos Locales</p>
+              <p class="post-related-desc">Las cosas que una vida entera en Sucre te enseña — y que realmente cambian como vives el viaje.</p>
+            </div>
+            <div data-lang-block="fr" style="display:none">
+              <p class="post-related-tag">Secrets Locaux</p>
+              <p class="post-related-name">10 Secrets Locaux</p>
+              <p class="post-related-desc">Les choses qu'une vie entière à Sucre vous apprend — et qui changent vraiment la façon dont vous vivez le voyage.</p>
+            </div>
           </div>
         </a>
       </div>
