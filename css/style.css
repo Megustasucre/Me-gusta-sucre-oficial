@@ -694,7 +694,7 @@ footer a:hover { color: var(--gold); }
   padding: 20px 0 24px;
   text-align: center;
   font-size: 12px;
-  color: #333;
+  color: rgba(255,255,255,0.45);
 }
 .footer-bottom a { color: var(--red); text-decoration: none; }
 
