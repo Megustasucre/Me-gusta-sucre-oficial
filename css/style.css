@@ -34,7 +34,6 @@ body {
   background: var(--cream);
   color: var(--text);
   overflow-x: hidden;
-  position: relative;
 }
 
 /* ─── NOISE OVERLAY ─── */
