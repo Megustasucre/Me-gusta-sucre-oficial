@@ -618,7 +618,8 @@ footer a:hover { color: var(--gold); }
 .footer-logo-img {
   height: 40px;
   width: auto;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
+  mix-blend-mode: screen;
   opacity: 0.88;
 }
 .footer-wordmark {
