@@ -1,5 +1,5 @@
 # Me Gusta Sucre — Estado del proyecto
-_Actualizado: 2026-05-07 (sesion 2)_
+_Actualizado: 2026-05-08 (sesion 3)_
 
 ---
 
@@ -32,6 +32,12 @@ _Actualizado: 2026-05-07 (sesion 2)_
 - Blog destacado: blog-aprende-espanol.html
 - Side list (5 cards): barrios, gastronomia, festividades, insider-tips, el-manual
 - Eliminadas referencias a blogs inexistentes (blog-tradiciones-domingo.html, blog-sucre-after-dark.html)
+
+### Mejoras UX/UI — guia_tecnica_mejoras.md (sesion 3)
+- **Narrativa "moderno/nuevo"**: `heroSub`, `narrativeDesc1`, `am4Desc` actualizados en EN/ES/FR en translations.js — eliminadas todas las referencias coloniales
+- **Badges narrativa**: reemplazados en los 3 idiomas → "New & Modern Building / Edificio Nuevo y Moderno / Bâtiment Neuf & Moderne" · "3 min from Plaza" · "Near SAS Supermarket / Cerca del Supermercado SAS / Près du Supermarché SAS"
+- **Botón flotante sticky WhatsApp**: agregado en hospedaje.html (CSS en `<head>`, HTML antes de scripts) — solo visible en mobile ≤768px, traducible via `data-i18n="hospedaje.stickyBtn"` (EN/ES/FR)
+- **Alt text terraza**: `terraza_3.webp` actualizado a "Modern Rooftop View — Me Gusta Inn" (SEO)
 
 ### Auditoria UX/SEO completada (sesion 2)
 - **Blogs EN/ES/FR**: sistema `data-lang-block` — los 5 blogs (barrios, gastronomia, festividades, insider-tips, aprende-espanol) ahora tienen contenido en los 3 idiomas. Cada seccion tiene bloque EN/ES/FR; se muestra el activo segun el idioma seleccionado.
