@@ -33,7 +33,7 @@ body {
   font-optical-sizing: auto;
   background: var(--cream);
   color: var(--text);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* ─── NOISE OVERLAY ─── */
