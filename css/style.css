@@ -27,7 +27,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
+html { scroll-behavior: smooth; overflow-x: clip; }
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-optical-sizing: auto;
@@ -618,7 +618,8 @@ footer a:hover { color: var(--gold); }
 
 /* ─── TESTIMONIALS MARQUEE ─── */
 .testimonial-strip {
-  overflow: hidden;
+  overflow: hidden; /* fallback */
+  overflow: clip;   /* prevents animation from escaping on iOS Safari */
   white-space: nowrap;
   margin-bottom: 20px;
   mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
@@ -832,6 +833,19 @@ footer a:hover { color: var(--gold); }
 
   /* Map frame */
   .map-frame { height: 300px !important; }
+
+  /* ── Overflow fixes ──────────────────────────────────────── */
+
+  /* hospedaje.html: container padding + narrative text padding */
+  .container { padding-left: 20px !important; padding-right: 20px !important; }
+  .s-narrative-text { padding: 40px 24px !important; }
+
+  /* Blog CTA sections: collapse 3-column stats grid to 1 column.
+     These divs use inline style="grid-template-columns:repeat(3,1fr)".
+     Without this, 2rem headings overflow narrow columns past the viewport edge. */
+  [style*="grid-template-columns:repeat(3,1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════
