@@ -3,7 +3,7 @@
  * Allows users to add/remove items and send a consolidated WhatsApp order.
  */
 
-const WHATSAPP_NUMBER = '59173425725';
+const WHATSAPP_NUMBER = '59174325725';
 
 // Price map — keyed by product prefix
 const PRICES = {

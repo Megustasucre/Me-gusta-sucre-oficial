@@ -10,7 +10,7 @@
   <meta property="og:title" content="Sucre City Guide — Me Gusta Sucre" />
   <meta property="og:description"
     content="Everything you need to know to explore Sucre, Bolivia's most beautiful city — colonial history, Andean day trips, food, and practical tips." />
-  <meta property="og:image" content="https://megustasucre.com/imagenes/og-image.svg" />
+  <meta property="og:image" content="https://megustasucre.com/imagenes/wikipedia/hero_guia.webp" />
   <meta property="og:url" content="https://megustasucre.com/guia.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Me Gusta Sucre" />
@@ -19,11 +19,11 @@
   <meta name="twitter:title" content="Sucre City Guide — Me Gusta Sucre, Bolivia" />
   <meta name="twitter:description"
     content="The complete travel guide to Sucre, Bolivia. Must-see spots, day trips, practical tips, food, and where to stay in the White City." />
-  <meta name="twitter:image" content="https://megustasucre.com/imagenes/og-image.svg" />
+  <meta name="twitter:image" content="https://megustasucre.com/imagenes/wikipedia/hero_guia.webp" />
   <link rel="canonical" href="https://megustasucre.com/guia.html" />
-  <link rel="icon" type="image/svg+xml" href="imagenes/favicon-guia.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-guia-32.png">
-  <link rel="apple-touch-icon" href="imagenes/apple-touch-icon.png">
+  
+  <link rel="icon" type="image/png" href="imagenes/logos/logo-me-gusta-sucre-chinchilla.png">
+  <link rel="apple-touch-icon" href="imagenes/logos/logo-me-gusta-sucre-chinchilla.png">
   <link rel="manifest" href="site.webmanifest">
   <script type="application/ld+json">
   {
@@ -50,6 +50,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;0,9..144,800;1,9..144,700;1,9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sacramento&display=swap"
     rel="stylesheet" />
+  <link rel="preload" as="image" href="imagenes/wikipedia/hero_guia.webp" />
   <link rel="stylesheet" href="css/tw.css" />
   <link rel="stylesheet" href="css/style.css?v=3" />
   <link rel="stylesheet" href="css/sucre-fonts.css" />
@@ -126,6 +127,7 @@
       <p class="eyebrow mb-2" style="color:#c9252d" data-i18n="guia.heroEyebrow">Sucre, Bolivia</p>
       <h1
         style="font-family:'Fraunces',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:800;color:#fff;line-height:1.1;margin-bottom:16px">
+        <span class="sr-only">Comprehensive Sucre Travel Guide &amp; City Tips — </span>
         <span data-i18n="guia.heroTitle">Bienvenido a</span> <span style="color:#c9252d;font-style:italic"
           data-i18n="guia.heroAccent">la ciudad más linda de Bolivia</span></h1>
       <p style="font-size:1rem;color:rgba(255,255,255,0.72);max-width:480px;line-height:1.7;margin-bottom:28px" data-i18n="guia.heroSub">Patrimonio UNESCO, gastronomía única, fiestas que no se olvidan. Todo lo que hay que ver, comer y vivir — contado por sucrenses.</p>
@@ -154,9 +156,9 @@
   <!-- ═══ LOS CAPÍTULOS ════════════════════════════════ -->
   <section class="chapters-section">
     <div class="chapters-inner">
-      <p class="chapters-eyebrow">La Guía</p>
+      <p class="chapters-eyebrow" data-i18n="guia.chapEyebrow">La Guía</p>
       <h2 class="chapters-title">
-        <span>Los</span> <span style="color:#c9252d;font-style:italic">Capítulos</span>
+        <span data-i18n="guia.chapTitleWord1">Los</span> <span style="color:#c9252d;font-style:italic" data-i18n="guia.chapTitleWord2">Capítulos</span>
       </h2>
       <div class="chapters-grid">
 
@@ -254,8 +256,7 @@
             <p
               style="font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;opacity:0.8;margin-bottom:4px">
               <span data-i18n="guia.aboutBadgeTop">Why travelers love it</span></p>
-            <p style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin:0"><span
-                >Year-round sunshine,<br />no crowds.</span></p>
+            <p style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;margin:0"><span data-i18n-html="guia.aboutBadgeBottom">Year-round sunshine,<br />no crowds.</span></p>
           </div>
         </div>
       </div>
@@ -305,17 +306,17 @@
         <div class="sp-stat">
           <span class="sp-num">4.9</span>
           <span class="sp-stars">★★★★★</span>
-          <p class="sp-label">Google Rating</p>
+          <p class="sp-label" data-i18n="guia.spLabel1">Google Rating</p>
         </div>
         <div class="sp-divider"></div>
         <div class="sp-stat">
           <span class="sp-num">750<span style="font-size:1.8rem">+</span></span>
-          <p class="sp-label">Students from 50+ countries</p>
+          <p class="sp-label" data-i18n="guia.spLabel2">Students from 50+ countries</p>
         </div>
         <div class="sp-divider"></div>
         <div class="sp-stat">
           <span class="sp-num">20<span style="font-size:1.8rem">+</span></span>
-          <p class="sp-label">Years in Sucre</p>
+          <p class="sp-label" data-i18n="guia.spLabel3">Years in Sucre</p>
         </div>
       </div>
     </div>
@@ -345,7 +346,7 @@
         </div>
 
         <div class="carousel-sides">
-          <button class="carousel-side-btn" id="spots-prev" aria-label="Previous">
+          <button class="carousel-side-btn" id="spots-prev" aria-label="Ver atracción anterior">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 12L4 7l5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
 
@@ -360,7 +361,7 @@
                 <span style="background:#c9252d;color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must1Pill2">Free</span>
               </div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Central Square</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must1Cat">Central Square</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must1Title">Plaza 25 de Mayo</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must1Narrative">The heart of the city. Every Sunday, the local military band plays, families gather for ice cream, and the colonial history feels current.</p>
               </div>
@@ -368,14 +369,14 @@
 
             <!-- 2: Casa de la Libertad -->
             <div class="spot-card" data-spot-num="2" data-filters="paid family">
-              <img src="imagenes/wikipedia/casa_libertad.webp" alt="Casa de la Libertad" style="object-position:center 30%" />
+              <img src="imagenes/wikipedia/casa_libertad.webp" alt="Casa de la Libertad" style="object-position:center 30%" loading="lazy" />
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must2Pill">Museum</span>
               </div>
               <div class="spot-price">$</div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Museum</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must2Cat">Museum</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must2Title">Casa de la Libertad</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must2Narrative">The birth certificate of Bolivia was signed here. A serene museum with one of the finest colonial courtyards in South America.</p>
               </div>
@@ -383,13 +384,13 @@
 
             <!-- 3: Recoleta -->
             <div class="spot-card" data-spot-num="3" data-filters="free family night">
-              <img src="imagenes/wikipedia/recoleta.webp" alt="La Recoleta viewpoint Sucre" />
+              <img src="imagenes/wikipedia/recoleta.webp" alt="La Recoleta viewpoint Sucre" loading="lazy" />
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must3Pill">Viewpoint · Free</span>
               </div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Viewpoint</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must3Cat">Viewpoint</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must3Title">Recoleta Viewpoint</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must3Narrative">The best sunset in the city. A steep walk up, but the orange glow over the white roofs is worth every step.</p>
               </div>
@@ -397,13 +398,13 @@
 
             <!-- 4: Cathedral -->
             <div class="spot-card" data-spot-num="4" data-filters="free family night">
-              <img src="imagenes/wikipedia/catedral.webp" alt="Catedral Sucre" style="object-position:center 20%" / width="1400" height="1050">
+              <img src="imagenes/wikipedia/catedral.webp" alt="Catedral Sucre" style="object-position:center 20%" loading="lazy" width="1400" height="1050">
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must4Pill">Architecture · Free to enter</span>
               </div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Architecture</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must4Cat">Architecture</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must4Title">Metropolitan Cathedral</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must4Narrative">Baroque masterpiece on the main plaza. The bell tower at sunset is unmissable. Small religious museum inside.</p>
               </div>
@@ -411,13 +412,13 @@
 
             <!-- 5: USFX -->
             <div class="spot-card" data-spot-num="5" data-filters="free">
-              <img src="imagenes/wikipedia/patio-usfx.webp" alt="Facultad de Derecho USFX Sucre" style="object-position:center 35%" />
+              <img src="imagenes/wikipedia/patio-usfx.webp" alt="Facultad de Derecho USFX Sucre" style="object-position:center 35%" loading="lazy" />
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must5Pill">Architecture · Free</span>
               </div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Architecture</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must5Cat">Architecture</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must5Title">USFX — Faculty of Law</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must5Narrative">One of the oldest universities in the Americas, founded in 1624. Its colonial courtyard is among Sucre's finest hidden gems.</p>
               </div>
@@ -426,8 +427,8 @@
             <!-- 6: Cal Orck'o -->
             <div class="spot-card" data-spot-num="6" data-filters="paid family">
               <div style="position:absolute;inset:0;overflow:hidden">
-                <img src="imagenes/wikipedia/cal_orcko_parque.webp" alt="Parque Cretácico dinosaurios Sucre" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:calSlide1 8s infinite" />
-                <img src="imagenes/wikipedia/cal_orcko.webp" alt="Cal Orcko huellas de dinosaurio" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;animation:calSlide2 8s infinite" />
+                <img src="imagenes/wikipedia/cal_orcko_parque.webp" alt="Parque Cretácico dinosaurios Sucre" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:calSlide1 8s infinite" loading="lazy" />
+                <img src="imagenes/wikipedia/cal_orcko.webp" alt="Cal Orcko huellas de dinosaurio" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.7;animation:calSlide2 8s infinite" loading="lazy" />
               </div>
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
@@ -435,7 +436,7 @@
               </div>
               <div class="spot-price">$$</div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Dinosaur Park</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must6Cat">Dinosaur Park</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must6Title">Cal Orck'o Dinosaurs</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must6Narrative">The largest collection of dinosaur footprints in the world — over 5,000 tracks on a near-vertical cliff face, 68 million years old.</p>
               </div>
@@ -443,14 +444,14 @@
 
             <!-- 7: ASUR Museum -->
             <div class="spot-card" data-spot-num="7" data-filters="paid">
-              <img src="imagenes/wikipedia/asur.webp" alt="ASUR Museo de Arte Indígena Sucre" />
+              <img src="imagenes/wikipedia/asur.webp" alt="ASUR Museo de Arte Indígena Sucre" loading="lazy" />
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must7Pill">Museum</span>
               </div>
               <div class="spot-price">$</div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Museum — Indigenous Textiles</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must7Cat">Museum — Indigenous Textiles</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must7Title">ASUR Textile Museum</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must7Narrative">World-class collection of Jalq'a and Tarabuco indigenous textiles. Master weavers work on-site. Two blocks from the plaza.</p>
               </div>
@@ -458,14 +459,14 @@
 
             <!-- 8: San Felipe Neri -->
             <div class="spot-card" data-spot-num="8" data-filters="paid">
-              <img src="imagenes/wikipedia/san-felipe-neri.webp" alt="San Felipe Neri rooftop Sucre" />
+              <img src="imagenes/wikipedia/san-felipe-neri.webp" alt="San Felipe Neri rooftop Sucre" loading="lazy" />
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must8Pill">Viewpoint</span>
               </div>
               <div class="spot-price">$</div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Rooftop — Church Towers</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must8Cat">Rooftop — Church Towers</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must8Title">San Felipe Neri Rooftop</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must8Narrative">Walk across the church rooftop between colonial bell towers. The most intimate panorama in the city — closer and quieter than Recoleta.</p>
               </div>
@@ -473,13 +474,13 @@
 
             <!-- 9: Iglesia San Francisco -->
             <div class="spot-card" data-spot-num="9" data-filters="free family night">
-              <img src="imagenes/wikipedia/iglesia-san-francisco.webp" alt="Iglesia San Francisco Sucre Bolivia" / width="1800" height="1350">
+              <img src="imagenes/wikipedia/iglesia-san-francisco.webp" alt="Iglesia San Francisco Sucre Bolivia" loading="lazy" width="1800" height="1350">
               <div class="spot-overlay"></div>
               <div style="position:absolute;top:20px;left:20px">
                 <span style="background:rgba(0,0,0,0.4);backdrop-filter:blur(12px);color:#fff;padding:5px 14px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.must9Pill">Architecture · Free</span>
               </div>
               <div style="position:absolute;bottom:28px;left:28px;right:28px">
-                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px">Architecture — 1538</p>
+                <p style="font-size:10px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:8px" data-i18n="guia.must9Cat">Architecture — 1538</p>
                 <h3 style="font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;color:#fff;margin-bottom:8px" data-i18n="guia.must9Title">Iglesia San Francisco</h3>
                 <p style="font-size:12px;color:rgba(255,255,255,0.7);line-height:1.7" data-i18n="guia.must9Narrative">Founded in 1538, one of the oldest churches in South America. The bell tower houses La María, the colonial bell that rang the first cry of independence.</p>
               </div>
@@ -491,7 +492,7 @@
             <span id="spots-counter">1 / 9</span>
           </div>
 
-          <button class="carousel-side-btn" id="spots-next" aria-label="Next">
+          <button class="carousel-side-btn" id="spots-next" aria-label="Ver siguiente atracción">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </div>
@@ -513,7 +514,7 @@
 
       <div class="carousel-wrap fade-up">
         <div class="carousel-sides">
-        <button class="carousel-side-btn" id="daytrips-prev" aria-label="Previous">
+        <button class="carousel-side-btn" id="daytrips-prev" aria-label="Ver excursión anterior">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M9 12L4 7l5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <div class="carousel-track" id="daytrips-track">
@@ -540,7 +541,7 @@
           <!-- 2: Maragua -->
           <div class="daytrip-card" style="background:#fff;border:1px solid #e8dfd0;box-shadow:0 8px 24px rgba(0,0,0,0.05)">
             <div style="height:260px;overflow:hidden;position:relative;flex-shrink:0">
-              <img src="imagenes/wikipedia/maragua.webp" alt="Maragua crater hiking" style="width:100%;height:100%;object-fit:cover" />
+              <img src="imagenes/wikipedia/maragua.webp" alt="Maragua crater hiking" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
               <div style="position:absolute;top:18px;left:18px;display:flex;gap:8px">
                 <span style="background:rgba(0,0,0,0.5);backdrop-filter:blur(10px);color:#fff;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day2Pill1">90km · 1.5h</span>
                 <span style="background:#111;color:#fff;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day2Pill2">Moderate</span>
@@ -559,7 +560,7 @@
           <!-- 3: Potosi -->
           <div class="daytrip-card" style="background:#111;box-shadow:0 8px 24px rgba(0,0,0,0.12)">
             <div style="height:260px;overflow:hidden;position:relative;flex-shrink:0">
-              <img src="imagenes/wikipedia/potosi.webp" alt="Potosi Bolivia silver mining" style="width:100%;height:100%;object-fit:cover;opacity:0.75" />
+              <img src="imagenes/wikipedia/potosi.webp" alt="Potosi Bolivia silver mining" style="width:100%;height:100%;object-fit:cover;opacity:0.75" loading="lazy" />
               <div style="position:absolute;top:18px;left:18px">
                 <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day3Pill">130km · 3h</span>
               </div>
@@ -578,7 +579,7 @@
           <!-- 4: Chataquila -->
           <div class="daytrip-card" style="background:#fff;border:1px solid #e8dfd0;box-shadow:0 8px 24px rgba(0,0,0,0.05)">
             <div style="height:260px;overflow:hidden;position:relative;flex-shrink:0">
-              <img src="imagenes/wikipedia/chataquila.webp" alt="Chataquila camino inca Sucre Bolivia" style="width:100%;height:100%;object-fit:cover" />
+              <img src="imagenes/wikipedia/chataquila.webp" alt="Chataquila camino inca Sucre Bolivia" style="width:100%;height:100%;object-fit:cover" loading="lazy" />
               <div style="position:absolute;top:18px;left:18px;display:flex;gap:8px">
                 <span style="background:rgba(0,0,0,0.5);backdrop-filter:blur(10px);color:#fff;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day4Pill1">40km · 45min</span>
                 <span style="background:#e8dfd0;color:#111;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day4Pill2">Easy</span>
@@ -598,7 +599,7 @@
           <!-- 5: Puente Sucre -->
           <div class="daytrip-card" style="background:#fff;border:1px solid #e8dfd0;box-shadow:0 8px 24px rgba(0,0,0,0.05)">
             <div style="height:260px;overflow:hidden;position:relative;flex-shrink:0">
-              <img src="imagenes/wikipedia/sucre_street.webp" alt="Puente Sucre natural rock bridge Bolivia" style="width:100%;height:100%;object-fit:cover" / width="1600" height="1065">
+              <img src="imagenes/wikipedia/sucre_street.webp" alt="Puente Sucre natural rock bridge Bolivia" style="width:100%;height:100%;object-fit:cover" loading="lazy" width="1600" height="1065">
               <div style="position:absolute;top:18px;left:18px;display:flex;gap:8px">
                 <span style="background:rgba(0,0,0,0.5);backdrop-filter:blur(10px);color:#fff;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day5Pill1">30km · 40min</span>
                 <span style="background:#e8dfd0;color:#111;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:1px" data-i18n="guia.day5Pill2">Easy</span>
@@ -621,7 +622,7 @@
           <span id="daytrips-counter">1 / 4</span>
         </div>
 
-        <button class="carousel-side-btn" id="daytrips-next" aria-label="Next">
+        <button class="carousel-side-btn" id="daytrips-next" aria-label="Ver siguiente excursión">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M5 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         </div>
@@ -760,9 +761,9 @@
             <img src="imagenes/fotos_escuela/hero1.webp" alt="Aprender Español en Sucre" loading="lazy" / width="1920" height="1210">
           </div>
           <div class="art-body">
-            <span class="art-tag">Clases de Español</span>
-            <h3 class="art-title-lg">El secreto mejor guardado para aprender español</h3>
-            <p class="art-excerpt">El acento mas neutro del continente. Ciudad universitaria desde 1624. Inmersion total a bajo costo.</p>
+            <span class="art-tag" data-i18n="guia.cronSchoolPill">Clases de Español</span>
+            <h3 class="art-title-lg" data-i18n="guia.cronSchoolTitle">El secreto mejor guardado para aprender español</h3>
+            <p class="art-excerpt" data-i18n="guia.cronSchoolDesc">El acento mas neutro del continente. Ciudad universitaria desde 1624. Inmersion total a bajo costo.</p>
             <div class="art-meta">8 MIN · 2026</div>
           </div>
         </a>
@@ -775,9 +776,9 @@
               <img src="imagenes/wikipedia/la_recoleta.webp" alt="Sucre contada desde adentro" loading="lazy" / width="1600" height="900">
             </div>
             <div class="art-minimal-body">
-              <span class="art-tag">La Ciudad</span>
-              <h4 class="art-minimal-title">Sucre contada desde adentro</h4>
-              <p class="art-minimal-excerpt">De La Recoleta al Parque Bolívar — la ciudad en orden histórico, desde donde nació hasta los domingos con mesas en la calle.</p>
+              <span class="art-tag" data-i18n="guia.cronBarTag">La Ciudad</span>
+              <h4 class="art-minimal-title" data-i18n="guia.cronBarTitle">Sucre contada desde adentro</h4>
+              <p class="art-minimal-excerpt" data-i18n="guia.cronBarDesc">De La Recoleta al Parque Bolívar — la ciudad en orden histórico, desde donde nació hasta los domingos con mesas en la calle.</p>
             </div>
           </a>
 
@@ -786,9 +787,9 @@
               <img src="imagenes/wikipedia/plaza_25mayo.webp" alt="Que Comer en Sucre" loading="lazy" / width="800" height="385">
             </div>
             <div class="art-minimal-body">
-              <span class="art-tag">Gastronomia</span>
-              <h4 class="art-minimal-title">Lo que hay que comer en Sucre</h4>
-              <p class="art-minimal-excerpt">Salteñas con papaya Salvietti, chorizos de 7 Lunares, api con pastel en el mercado y helados de Sandra en el parque.</p>
+              <span class="art-tag" data-i18n="guia.cronGasTag">Gastronomia</span>
+              <h4 class="art-minimal-title" data-i18n="guia.cronGasTitle">Lo que hay que comer en Sucre</h4>
+              <p class="art-minimal-excerpt" data-i18n="guia.cronGasDesc">Salteñas con papaya Salvietti, chorizos de 7 Lunares, api con pastel en el mercado y helados de Sandra en el parque.</p>
             </div>
           </a>
 
@@ -797,9 +798,9 @@
               <img src="imagenes/wikipedia/tarabuco.webp" alt="Festividades de Sucre" loading="lazy" / width="900" height="675">
             </div>
             <div class="art-minimal-body">
-              <span class="art-tag">Festividades</span>
-              <h4 class="art-minimal-title">Las celebraciones que definen Sucre</h4>
-              <p class="art-minimal-excerpt">Carnaval de antaño, Pujllay de Tarabuco, Semana Santa, Dia de los Muertos y la Virgen de Guadalupe.</p>
+              <span class="art-tag" data-i18n="guia.cronFesTag">Festividades</span>
+              <h4 class="art-minimal-title" data-i18n="guia.cronFesTitle">Las celebraciones que definen Sucre</h4>
+              <p class="art-minimal-excerpt" data-i18n="guia.cronFesDesc">Carnaval de antaño, Pujllay de Tarabuco, Semana Santa, Dia de los Muertos y la Virgen de Guadalupe.</p>
             </div>
           </a>
 
@@ -808,9 +809,9 @@
               <img src="imagenes/wikipedia/san-felipe-neri.webp" alt="10 Secretos Locales" loading="lazy" />
             </div>
             <div class="art-minimal-body">
-              <span class="art-tag">Secretos Locales</span>
-              <h4 class="art-minimal-title">10 cosas que solo los locales saben</h4>
-              <p class="art-minimal-excerpt">Lo que una vida entera en Sucre te enseña — y que realmente cambia como vives el viaje.</p>
+              <span class="art-tag" data-i18n="guia.cronInsTag">Secretos Locales</span>
+              <h4 class="art-minimal-title" data-i18n="guia.cronInsTitle">10 cosas que solo los locales saben</h4>
+              <p class="art-minimal-excerpt" data-i18n="guia.cronInsDesc">Lo que una vida entera en Sucre te enseña — y que realmente cambia como vives el viaje.</p>
             </div>
           </a>
 
@@ -819,9 +820,9 @@
               <img src="imagenes/wikipedia/sucre_street.webp" alt="El Manual del Viajero" loading="lazy" / width="1600" height="1065">
             </div>
             <div class="art-minimal-body">
-              <span class="art-tag">El Manual</span>
-              <h4 class="art-minimal-title">Todo lo que necesitas saber antes de llegar</h4>
-              <p class="art-minimal-excerpt">Altitud, moneda, transporte, clima y seguridad. La informacion practica — completa, sin relleno.</p>
+              <span class="art-tag" data-i18n="guia.cron5Tag">El Manual</span>
+              <h4 class="art-minimal-title" data-i18n="guia.cron5Title">Todo lo que necesitas saber antes de llegar</h4>
+              <p class="art-minimal-excerpt" data-i18n="guia.cron5Desc">Altitud, moneda, transporte, clima y seguridad. La informacion practica — completa, sin relleno.</p>
             </div>
           </a>
 
@@ -891,7 +892,7 @@
         <h2 id="modal-spot-title" style="font-family:'Fraunces',serif;font-size:1.9rem;font-weight:800;color:#111;line-height:1.1;margin-bottom:20px"></h2>
         <p id="modal-spot-desc" style="font-size:14px;color:#555;line-height:1.9"></p>
       </div>
-      <button id="modal-close" style="position:absolute;top:14px;right:14px;z-index:1;background:rgba(0,0,0,0.55);border:none;color:#fff;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center" aria-label="Close">
+      <button id="modal-close" style="position:absolute;top:14px;right:14px;z-index:1;background:rgba(0,0,0,0.55);border:none;color:#fff;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center" aria-label="Cerrar detalles">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
           <path d="M1 1l12 12M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
         </svg>
@@ -932,7 +933,7 @@
           <div class="footer-loc">
             <span class="footer-loc-brand footer-loc-brand--inn" data-i18n="index.brand2Name">Me Gusta Sucre Inn</span>
             <p class="footer-loc-addr">La Paz #571 &middot; Sucre</p>
-            <a href="https://wa.me/59173425725" target="_blank" class="footer-loc-wa"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>+591 734 25725</a>
+            <a href="https://wa.me/59164415223" target="_blank" class="footer-loc-wa"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>+591 644 15223</a>
           </div>
 
           <div class="footer-loc">
@@ -944,7 +945,7 @@
           <div class="footer-loc">
             <span class="footer-loc-brand footer-loc-brand--school">Me Gusta Spanish</span>
             <p class="footer-loc-addr">Audiencia #97 &middot; Sucre</p>
-            <a href="https://wa.me/59173400447" target="_blank" class="footer-loc-wa"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>+591 734 00447</a>
+            <a href="https://wa.me/59174325725" target="_blank" class="footer-loc-wa"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>+591 743 25725</a>
           </div>
         </div>
 
@@ -956,7 +957,7 @@
   </footer>
 
   <script src="js/translations.js"></script>
-  <a href="https://wa.me/59173425725" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <a href="https://wa.me/59164415223" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
       <path
         d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />

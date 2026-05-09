@@ -1,83 +1,105 @@
-# Pendiente — Traducciones guia.html
-_Auditado: 2026-05-08_
+# Traducciones guia.html — Completado
+_Auditado: 2026-05-08 · Implementado: 2026-05-09_
+
+Todo implementado. No quedan items pendientes.
 
 ---
 
-## Alta prioridad
+## Alta prioridad — DONE
 
-### Las Crónicas (blog index) — 16 items
-Todo el bloque está hardcodeado en español. Requiere `data-lang-block` o `data-i18n` para EN/ES/FR.
+### Las Crónicas (blog index) — 15 items con data-i18n + 1 hardcoded intencional
 
-| Elemento | Texto actual (ES) | Línea |
+| Elemento | Clave | Nota |
 |---|---|---|
-| Tag artículo destacado | "Clases de Español" | ~760 |
-| Título artículo destacado | "El secreto mejor guardado para aprender español" | ~761 |
-| Excerpt artículo destacado | "El acento mas neutro del continente. Ciudad universitaria desde 1624. Inmersion total a bajo costo." | ~762 |
-| Meta artículo destacado | "8 MIN · 2026" | ~763 |
-| Tag barrios | "La Ciudad" | ~775 |
-| Título barrios | "Sucre contada desde adentro" | ~776 |
-| Excerpt barrios | "De La Recoleta al Parque Bolívar — la ciudad en orden histórico..." | ~777 |
-| Tag gastronomia | "Gastronomia" | ~786 |
-| Título gastronomia | "Lo que hay que comer en Sucre" | ~787 |
-| Excerpt gastronomia | "Salteñas con papaya Salvietti, chorizos de 7 Lunares..." | ~788 |
-| Tag festividades | "Festividades" | ~797 |
-| Título festividades | "Las celebraciones que definen Sucre" | ~798 |
-| Excerpt festividades | "Carnaval de antaño, Pujllay de Tarabuco, Semana Santa..." | ~799 |
-| Tag insider tips | "Secretos Locales" | ~808 |
-| Título insider tips | "10 cosas que solo los locales saben" | ~809 |
-| Excerpt insider tips | "Lo que una vida entera en Sucre te enseña..." | ~810 |
-| Tag el manual | "El Manual" | ~819 |
-| Título el manual | "Todo lo que necesitas saber antes de llegar" | ~820 |
-| Excerpt el manual | "Altitud, moneda, transporte, clima y seguridad..." | ~821 |
+| Tag artículo destacado | `guia.cronSchoolPill` | Reutilizada (ya existía) |
+| Título artículo destacado | `guia.cronSchoolTitle` | Reutilizada |
+| Excerpt artículo destacado | `guia.cronSchoolDesc` | Reutilizada |
+| Meta "8 MIN · 2026" | — | Hardcoded intencional (no es traducible) |
+| Tag barrios | `guia.cronBarTag` | Nueva clave EN/ES/FR |
+| Título barrios | `guia.cronBarTitle` | Nueva clave EN/ES/FR |
+| Excerpt barrios | `guia.cronBarDesc` | Nueva clave EN/ES/FR |
+| Tag gastronomia | `guia.cronGasTag` | Nueva clave EN/ES/FR |
+| Título gastronomia | `guia.cronGasTitle` | Nueva clave EN/ES/FR |
+| Excerpt gastronomia | `guia.cronGasDesc` | Nueva clave EN/ES/FR |
+| Tag festividades | `guia.cronFesTag` | Nueva clave EN/ES/FR |
+| Título festividades | `guia.cronFesTitle` | Nueva clave EN/ES/FR |
+| Excerpt festividades | `guia.cronFesDesc` | Nueva clave EN/ES/FR |
+| Tag insider tips | `guia.cronInsTag` | Nueva clave EN/ES/FR |
+| Título insider tips | `guia.cronInsTitle` | Nueva clave EN/ES/FR |
+| Excerpt insider tips | `guia.cronInsDesc` | Nueva clave EN/ES/FR |
+| Tag el manual | `guia.cron5Tag` | Reutilizada |
+| Título el manual | `guia.cron5Title` | Reutilizada |
+| Excerpt el manual | `guia.cron5Desc` | Reutilizada |
 
 ---
 
-## Media prioridad
+## Media prioridad — DONE
 
 ### Must-see spots — eyebrows de categoría (9 items)
-Labels hardcodeados en inglés encima del título de cada spot, sin `data-i18n`.
 
-| Texto actual (EN) | Spot | Línea |
-|---|---|---|
-| "Central Square" | Plaza 25 de Mayo | ~360 |
-| "Museum" | Casa de la Libertad | ~375 |
-| "Viewpoint" | Recoleta | ~389 |
-| "Architecture" | Catedral | ~403 |
-| "Architecture" | USFX Derecho | ~417 |
-| "Dinosaur Park" | Cal Orck'o | ~435 |
-| "Museum — Indigenous Textiles" | ASUR | ~450 |
-| "Rooftop — Church Towers" | San Felipe Neri | ~465 |
-| "Architecture — 1538" | Iglesia San Francisco | ~479 |
+| Clave | Spot |
+|---|---|
+| `guia.must1Cat` | Plaza 25 de Mayo |
+| `guia.must2Cat` | Casa de la Libertad |
+| `guia.must3Cat` | Recoleta |
+| `guia.must4Cat` | Catedral |
+| `guia.must5Cat` | USFX Derecho |
+| `guia.must6Cat` | Cal Orck'o |
+| `guia.must7Cat` | ASUR |
+| `guia.must8Cat` | San Felipe Neri |
+| `guia.must9Cat` | Iglesia San Francisco |
 
 ### Los Capítulos — header (2 items)
 
-| Texto actual | Idioma | Línea |
-|---|---|---|
-| "La Guía" | ES (eyebrow) | ~154 |
-| "Los Capítulos" | ES (heading) | ~156 |
+| Clave | Elemento |
+|---|---|
+| `guia.chapEyebrow` | "La Guía" / "The Guide" / "Le Guide" |
+| `guia.chapTitleWord1` | "Los" / "The" / "Les" |
+| `guia.chapTitleWord2` | "Capítulos" / "Chapters" / "Chapitres" |
 
 ---
 
-## Baja prioridad
+## Baja prioridad — DONE
 
-### Quick Facts bar — labels (3 items)
+### Quick Facts bar — labels (4 items)
+Tenían `data-i18n` en el HTML pero faltaban las claves en translations.js. Corregido.
 
-| Texto actual (EN) | Línea |
+| Clave | Texto EN |
 |---|---|
-| "Google Rating" | ~305 |
-| "Students from 50+ countries" | ~310 |
-| "Years in Sucre" | ~315 |
+| `guia.qf1Label` | "Altitude" |
+| `guia.qf2Label` | "Founded" |
+| `guia.qf3Label` | "UNESCO Listed" |
+| `guia.qf4Label` | "Sunny days / year" |
+
+### Social Proof — labels (3 items)
+
+| Clave | Texto EN |
+|---|---|
+| `guia.spLabel1` | "Google Rating" |
+| `guia.spLabel2` | "Students from 50+ countries" |
+| `guia.spLabel3` | "Years in Sucre" |
 
 ### About Sucre — badge flotante (1 item)
 
-| Texto actual (EN) | Línea |
+| Clave | Nota |
 |---|---|
-| "Year-round sunshine, no crowds." | ~255 |
+| `guia.aboutBadgeBottom` | `data-i18n-html` (contiene `<br>`) |
 
 ---
 
-## Notas técnicas
+## Extras aplicados en la misma sesión
 
-- Las Crónicas: usar `data-lang-block="en/es/fr"` igual que los blogs individuales
-- Must-see spots + stats + badge: agregar claves `guia.must1Cat`, `guia.statLabel1`, etc. a translations.js (EN/ES/FR) y `data-i18n` en el HTML
-- Los Capítulos header: agregar claves `guia.chapEyebrow` y `guia.chapTitle` a translations.js
+### hospedaje.html — texto base desactualizado
+Dos elementos con texto hardcodeado que no coincidía con la traducción activa:
+- `heroSub`: "Una casa colonial..." → "Un hostal de construcción nueva..."
+- `narrativeTitleHtml`: "Una casa colonial hecha hogar" → "Comodidad y calma, en el corazón de Sucre"
+
+### index.html + style.css — auditoría SEO/Performance
+- `og:image` y `twitter:image`: SVG → PNG (compatible con todas las plataformas)
+- `ld+json logo`: SVG → PNG
+- `<link rel="preload">` para hero image (mejora LCP)
+- H1 con `<span class="sr-only">` para keywords SEO
+- Inn image: `width="800" height="520"` (prevención de CLS)
+- WhatsApp float: `aria-label="Contactar por WhatsApp"`
+- `.ticker-track { will-change: transform }` en style.css
+- `.sr-only` definida en style.css (no venía de Tailwind)
