@@ -1,21 +1,40 @@
 /* ═══════════════════════════════════════════════════
-   SUCRE FONTS — sistema tipográfico definitivo
-   Fraunces (display) · Plus Jakarta Sans (body) · Sacramento (accent)
+   SUCRE FONTS — Manual de Marca Me Gusta Sucre
+   ─────────────────────────────────────────────────
+   JERARQUIA:
+   Titulares  → Aztec Beat · UPPERCASE · rojo/negro
+   Subtítulos → Inter · Bold · UPPERCASE
+   Cuerpo     → Inter · Medium (500) · mixed case
+   CTA        → Inter · Bold · UPPERCASE · fondo rojo
    ═══════════════════════════════════════════════════ */
 
-/* El @import principal vive en style.css — no duplicar aquí */
+/* Las @font-face viven en style.css */
 
-/* Clases semánticas — refuerzan el sistema sin !important */
+/* Titular — Aztec Beat siempre uppercase */
 .serif,
 .section-title,
 .brand-card-name {
-  font-family: 'Fraunces', serif;
+  font-family: 'Aztec Beat', serif;
+  text-transform: uppercase;
 }
 
-.handwritten {
-  font-family: 'Sacramento', cursive;
+/* Subtítulo — Inter Bold uppercase */
+.subtitle-brand {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
+/* Cuerpo — Inter Medium */
+.body-brand,
 .polaroid::after {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* Accent italic */
+.handwritten {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 500;
 }
