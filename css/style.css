@@ -1030,7 +1030,7 @@ footer a:hover { color: var(--red); }
 .blog-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 .blog-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
 .blog-title { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1; }
-.blog-title em { color: var(--red); }
+.blog-title em { color: var(--red); font-style: normal; }
 .blog-sub { font-size: 14px; color: rgba(255,255,255,0.45); max-width: 320px; line-height: 1.6; padding-bottom: 6px; }
 
 /* Editorial Grid */
@@ -1388,7 +1388,7 @@ footer a:hover { color: var(--red); }
 ═══════════════════════════════════════════════════════════ */
 .food-section {
   padding: 120px 0;
-  background: #fff;
+  background: #FFDCDC;
 }
 .food-inner {
   max-width: 1280px;
@@ -1402,7 +1402,7 @@ footer a:hover { color: var(--red); }
   gap: 40px;
   margin-bottom: 80px;
   padding-bottom: 40px;
-  border-bottom: 1px solid #e8dfd0;
+  border-bottom: 1px solid rgba(214,26,22,0.2);
 }
 .food-eyebrow {
   font-size: 11px;
@@ -1594,7 +1594,7 @@ footer a:hover { color: var(--red); }
    MGCTA — Products cross-sell (guia.html)
 ═══════════════════════════════════════════════════════════ */
 .mgcta {
-  background: #0e0e0e;
+  background: #ffffff;
 }
 
 /* ── Header ── */
@@ -1612,14 +1612,14 @@ footer a:hover { color: var(--red); }
 .mgcta-title {
   font-family: 'Aztec Beat', serif;
   font-size: clamp(2.4rem, 4vw, 3.6rem);
-  font-weight: 400; color: #fff; line-height: 1.08;
+  font-weight: 400; color: #111; line-height: 1.08;
   margin-bottom: 20px;
 }
 .mgcta-title em {
   color: #d61a16; font-style: normal;
 }
 .mgcta-sub {
-  font-size: 15px; color: rgba(255,255,255,0.38);
+  font-size: 15px; color: rgba(0,0,0,0.5);
   line-height: 1.75; max-width: 560px; margin: 0 auto;
 }
 
@@ -1627,7 +1627,7 @@ footer a:hover { color: var(--red); }
 .mgcta-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 /* ── Card base ── */
@@ -1637,7 +1637,7 @@ footer a:hover { color: var(--red); }
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  border-right: 1px solid rgba(255,255,255,0.07);
+  border-right: 1px solid rgba(0,0,0,0.08);
   transition: opacity 0.2s;
 }
 .mgcard:last-child { border-right: none; }
@@ -1648,7 +1648,7 @@ footer a:hover { color: var(--red); }
   grid-column: 1 / -1;
   min-height: 460px;
   border-right: none;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .mgcard-img {
   position: absolute; inset: 0;
@@ -1818,7 +1818,7 @@ footer a:hover { color: var(--red); }
    LOS CAPÍTULOS — Chapter navigation section
 ═══════════════════════════════════════════════════════════ */
 .chapters-section {
-  background: var(--pink);
+  background: #ffffff;
   padding: 100px 0;
 }
 .chapters-inner {
