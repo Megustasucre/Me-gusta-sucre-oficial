@@ -1025,13 +1025,13 @@ footer a:hover { color: var(--red); }
 /* ═══════════════════════════════════════════════════════════
    LAS CRÓNICAS — Blog section in guia.html
 ═══════════════════════════════════════════════════════════ */
-.blog-section { padding: 80px 0; background: var(--cream); }
+.blog-section { padding: 80px 0; background: #000000; }
 .blog-inner { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
-.blog-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; padding-bottom: 28px; border-bottom: 1px solid #e8dfd0; }
+.blog-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 .blog-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--red); margin-bottom: 12px; }
-.blog-title { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 400; color: #111; line-height: 1; }
+.blog-title { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 400; color: #fff; line-height: 1; }
 .blog-title em { color: var(--red); }
-.blog-sub { font-size: 14px; color: #777; max-width: 320px; line-height: 1.6; padding-bottom: 6px; }
+.blog-sub { font-size: 14px; color: rgba(255,255,255,0.45); max-width: 320px; line-height: 1.6; padding-bottom: 6px; }
 
 /* Editorial Grid */
 .blog-grid-premium { display: grid; grid-template-columns: 1.2fr 1fr; gap: 52px; align-items: stretch; }
@@ -1046,15 +1046,15 @@ footer a:hover { color: var(--red); }
 .art-tag { display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 10px; background: rgba(214, 26, 22, 0.06); padding: 4px 12px; transition: all 0.3s; }
 .art-featured:hover .art-tag, .art-minimal:hover .art-tag { background: var(--red); color: #fff; }
 
-.art-title-lg { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 400; color: #111; line-height: 1.1; margin-bottom: 14px; transition: color 0.3s; }
+.art-title-lg { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 400; color: #fff; line-height: 1.1; margin-bottom: 14px; transition: color 0.3s; }
 .art-featured:hover .art-title-lg { color: var(--red); }
 
-.art-excerpt { font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 16px; max-width: 90%; }
-.art-meta { font-size: 10px; font-weight: 700; color: #999; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
+.art-excerpt { font-size: 15px; color: rgba(255,255,255,0.55); line-height: 1.8; margin-bottom: 16px; max-width: 90%; }
+.art-meta { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.3); letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
 
 /* Side List Minimal */
 .art-side-list { display: flex; flex-direction: column; gap: 0; justify-content: space-between; }
-.art-minimal { display: grid; grid-template-columns: 150px 1fr; gap: 24px; text-decoration: none; color: inherit; padding-bottom: 28px; border-bottom: 1px solid #e8dfd0; transition: transform 0.3s ease; }
+.art-minimal { display: grid; grid-template-columns: 150px 1fr; gap: 24px; text-decoration: none; color: inherit; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease; }
 .art-minimal:last-child { border-bottom: none; padding-bottom: 0; }
 .art-minimal:hover { transform: translateX(10px); }
 
@@ -1063,9 +1063,9 @@ footer a:hover { color: var(--red); }
 .art-minimal:hover .art-minimal-img img { transform: scale(1.1); }
 
 .art-minimal-body { display: flex; flex-direction: column; justify-content: center; }
-.art-minimal-title { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: 1.15rem; font-weight: 400; color: #111; line-height: 1.2; margin-bottom: 8px; transition: color 0.3s; }
+.art-minimal-title { font-family: 'Aztec Beat', serif; text-transform: uppercase; font-size: 1.15rem; font-weight: 400; color: #fff; line-height: 1.2; margin-bottom: 8px; transition: color 0.3s; }
 .art-minimal:hover .art-minimal-title { color: var(--red); }
-.art-minimal-excerpt { font-size: 13px; color: #666; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.art-minimal-excerpt { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
 @media (max-width: 1100px) {
   .blog-grid-premium { grid-template-columns: 1fr; gap: 48px; }
@@ -1419,7 +1419,7 @@ footer a:hover { color: var(--red); }
   color: #111;
   line-height: 1.05;
 }
-.food-title em { color: #d61a16; font-style: italic; }
+.food-title em { color: #d61a16; font-style: normal; }
 .food-intro {
   font-size: 15px;
   color: #666;
@@ -1520,9 +1520,9 @@ footer a:hover { color: var(--red); }
   color: #111;
   line-height: 1.1;
 }
-.dish-name.featured { color: #d61a16; font-style: italic; }
-.dish-name.gold     { color: #b8860b; font-style: italic; }
-.dish-name.green    { color: #3a7d44; font-style: italic; }
+.dish-name.featured { color: #d61a16; font-style: normal; }
+.dish-name.gold     { color: #b8860b; font-style: normal; }
+.dish-name.green    { color: #3a7d44; font-style: normal; }
 .dish-badge {
   font-size: 9px;
   font-weight: 700;
@@ -1616,7 +1616,7 @@ footer a:hover { color: var(--red); }
   margin-bottom: 20px;
 }
 .mgcta-title em {
-  color: #d61a16; font-style: italic;
+  color: #d61a16; font-style: normal;
 }
 .mgcta-sub {
   font-size: 15px; color: rgba(255,255,255,0.38);
@@ -1672,18 +1672,18 @@ footer a:hover { color: var(--red); }
 
 /* ── Hostal ── */
 .mgcard--hostal {
-  background: #081420;
+  background: #000000;
   min-height: 380px;
 }
 .mgcard--hostal::before {
   content: '';
   position: absolute; top: 0; left: 0; right: 0;
-  height: 2px; background: #2ECEC4;
+  height: 2px; background: #000000;
 }
 
 /* ── Café ── */
 .mgcard--cafe {
-  background: #120a04;
+  background: #000000;
   min-height: 380px;
 }
 .mgcard--cafe::before {
@@ -1706,7 +1706,7 @@ footer a:hover { color: var(--red); }
   text-transform: uppercase; margin-bottom: 16px; display: block;
 }
 .mgcard--school .mgcard-tag  { color: #FF3B6B; }
-.mgcard--hostal .mgcard-tag  { color: #2ECEC4; }
+.mgcard--hostal .mgcard-tag  { color: rgba(255,255,255,0.6); }
 .mgcard--cafe   .mgcard-tag  { color: #5aaa6a; }
 
 .mgcard-name {
@@ -1743,9 +1743,9 @@ footer a:hover { color: var(--red); }
   transition: filter 0.2s;
 }
 .mgcard-btn:hover { filter: brightness(1.1); }
-.mgcard-btn--coral { background: #FF3B6B; color: #fff; }
-.mgcard-btn--teal  { background: #2ECEC4; color: #0a1a28; font-weight: 800; }
-.mgcard-btn--green { background: #5aaa6a; color: #fff; }
+.mgcard-btn--coral { background: transparent; color: #FF3B6B; border: 1px solid #FF3B6B; }
+.mgcard-btn--black { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); }
+.mgcard-btn--green { background: transparent; color: #5aaa6a; border: 1px solid #5aaa6a; }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
@@ -1764,8 +1764,8 @@ footer a:hover { color: var(--red); }
    EL MANIFIESTO — Founder's letter section
 ═══════════════════════════════════════════════════════════ */
 .manifest-section {
-  background: #fdf6ec;
-  padding: 100px 0;
+  background: var(--pink);
+  padding: 160px 24px;
 }
 .manifest-inner {
   max-width: 760px;
@@ -1787,18 +1787,20 @@ footer a:hover { color: var(--red); }
 }
 .manifest-text {
   font-family: 'Inter', sans-serif;
-  font-size: 16px; color: #555;
-  line-height: 1.95; margin-bottom: 40px;
-  text-align: left;
+  font-size: 1.25rem; color: #000000;
+  line-height: 2.2; margin-bottom: 40px;
+  text-align: left; letter-spacing: -0.01em;
+  opacity: 0.8;
 }
 .manifest-sig {
-  border-top: 1px solid #e8dfd0;
+  border-top: 1px solid rgba(0,0,0,0.12);
   padding-top: 28px;
   text-align: right;
 }
 .manifest-sig-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem; color: #111;
+  font-family: 'Aztec Beat', serif;
+  font-size: 2.5rem; color: #111;
+  font-weight: 400; text-transform: uppercase;
   line-height: 1.2; margin-bottom: 4px;
 }
 .manifest-sig-since {
@@ -1816,7 +1818,7 @@ footer a:hover { color: var(--red); }
    LOS CAPÍTULOS — Chapter navigation section
 ═══════════════════════════════════════════════════════════ */
 .chapters-section {
-  background: #111111;
+  background: var(--pink);
   padding: 100px 0;
 }
 .chapters-inner {
@@ -1833,7 +1835,7 @@ footer a:hover { color: var(--red); }
 .chapters-title {
   font-family: 'Aztec Beat', serif;
   font-size: clamp(2.2rem, 4vw, 3.5rem);
-  font-weight: 400; color: #fff;
+  font-weight: 400; color: #000000;
   line-height: 1.1; margin-bottom: 56px;
 }
 .chapters-grid {
@@ -1869,7 +1871,7 @@ footer a:hover { color: var(--red); }
   top: 28px; left: 28px;
   font-family: 'Aztec Beat', serif;
   font-size: 2.4rem; font-weight: 400;
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.05);
   line-height: 1;
 }
 .chapter-body {
@@ -1907,10 +1909,10 @@ footer a:hover { color: var(--red); }
    SOCIAL PROOF — Stats bar
 ═══════════════════════════════════════════════════════════ */
 .social-proof-section {
-  background: #fdf6ec;
+  background: #ffffff;
   padding: 72px 0;
-  border-top: 1px solid #e8dfd0;
-  border-bottom: 1px solid #e8dfd0;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .sp-stats {
   display: flex;
@@ -2209,9 +2211,9 @@ footer a:hover { color: var(--red); }
 .carousel-arrow:hover { background: #111; border-color: #111; color: #fff !important; }
 .carousel-counter { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; font-family: 'Inter', sans-serif; color: #999; min-width: 36px; text-align: center; }
 .spots-filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; }
-.spot-filter { padding: 8px 20px; border: 1.5px solid #ddd; background: none; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #888; cursor: pointer; transition: all 0.15s; }
-.spot-filter:hover { border-color: #111; color: #111; }
-.spot-filter.active { background: #111; border-color: #111; color: #fff; }
+.spot-filter { padding: 8px 20px; border: 1.5px solid rgba(255,255,255,0.2); background: none; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.15s; }
+.spot-filter:hover { border-color: rgba(255,255,255,0.6); color: #fff; }
+.spot-filter.active { background: #d61a16; border-color: #d61a16; color: #fff; }
 .carousel-sides { display: flex; align-items: center; gap: 16px; }
 .carousel-side-btn { flex-shrink: 0; width: 44px; height: 44px; border: 1.5px solid #ddd; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s, border-color 0.15s; box-shadow: 0 4px 16px rgba(0,0,0,0.08); color: #111; }
 .carousel-side-btn:hover { background: #111; border-color: #111; color: #fff; }
