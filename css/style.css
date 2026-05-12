@@ -1388,7 +1388,7 @@ footer a:hover { color: var(--red); }
 ═══════════════════════════════════════════════════════════ */
 .food-section {
   padding: 120px 0;
-  background: #FFDCDC;
+  background: #ffffff;
 }
 .food-inner {
   max-width: 1280px;
@@ -1402,7 +1402,7 @@ footer a:hover { color: var(--red); }
   gap: 40px;
   margin-bottom: 80px;
   padding-bottom: 40px;
-  border-bottom: 1px solid rgba(214,26,22,0.2);
+  border-bottom: 1px solid #e8dfd0;
 }
 .food-eyebrow {
   font-size: 11px;
@@ -1594,7 +1594,7 @@ footer a:hover { color: var(--red); }
    MGCTA — Products cross-sell (guia.html)
 ═══════════════════════════════════════════════════════════ */
 .mgcta {
-  background: #ffffff;
+  background: #0e0e0e;
 }
 
 /* ── Header ── */
@@ -1612,14 +1612,14 @@ footer a:hover { color: var(--red); }
 .mgcta-title {
   font-family: 'Aztec Beat', serif;
   font-size: clamp(2.4rem, 4vw, 3.6rem);
-  font-weight: 400; color: #111; line-height: 1.08;
+  font-weight: 400; color: #fff; line-height: 1.08;
   margin-bottom: 20px;
 }
 .mgcta-title em {
   color: #d61a16; font-style: normal;
 }
 .mgcta-sub {
-  font-size: 15px; color: rgba(0,0,0,0.5);
+  font-size: 15px; color: rgba(255,255,255,0.38);
   line-height: 1.75; max-width: 560px; margin: 0 auto;
 }
 
@@ -1627,7 +1627,7 @@ footer a:hover { color: var(--red); }
 .mgcta-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 1px solid rgba(255,255,255,0.07);
 }
 
 /* ── Card base ── */
@@ -1637,7 +1637,7 @@ footer a:hover { color: var(--red); }
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  border-right: 1px solid rgba(0,0,0,0.08);
+  border-right: 1px solid rgba(255,255,255,0.07);
   transition: opacity 0.2s;
 }
 .mgcard:last-child { border-right: none; }
@@ -1648,7 +1648,7 @@ footer a:hover { color: var(--red); }
   grid-column: 1 / -1;
   min-height: 460px;
   border-right: none;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
 }
 .mgcard-img {
   position: absolute; inset: 0;
