@@ -47,14 +47,14 @@
   <!-- Me Gusta Café — page-scoped brand overrides -->
   <style>
     .eyebrow                  { color: #5aaa6a !important; }
-    .section-title .accent    { color: #8b4513 !important; }
-    .accent                   { color: #8b4513 !important; }
+    .section-title .accent    { color: #5aaa6a !important; }
+    .accent                   { color: #5aaa6a !important; }
     .nav-link::after          { background: #5aaa6a !important; }
-    .top-bar                  { background: #2c1a0e !important; border-color: #3d2510 !important; }
+    .top-bar                  { background: #000000 !important; border-color: #111111 !important; }
     .top-bar a                { color: #5aaa6a !important; border-color: #5aaa6a !important; }
     .cafe-btn-primary {
       display: inline-block;
-      background: #8b4513;
+      background: #000000;
       color: #fff;
       padding: 15px 32px;
       font-family: 'Inter', sans-serif;
@@ -62,10 +62,10 @@
       font-weight: 700;
       letter-spacing: 0.4px;
       text-decoration: none;
-      border: 2px solid #8b4513;
+      border: 2px solid #000000;
       transition: background 0.2s, border-color 0.2s;
     }
-    .cafe-btn-primary:hover   { background: #6e360f; border-color: #6e360f; }
+    .cafe-btn-primary:hover   { background: #222222; border-color: #222222; }
     .cafe-btn-outline {
       display: inline-block;
       background: transparent;
@@ -82,7 +82,7 @@
     .cafe-btn-outline:hover   { background: rgba(90,170,106,0.1); }
   </style>
 </head>
-<body style="background:#fdf6ec">
+<body style="background:#ffffff">
 
 <!-- TOP ANNOUNCEMENT BAR -->
   <!-- NAVBAR -->
@@ -158,13 +158,13 @@
           <img src="imagenes/logos/me-gusta-cafe.png" alt="Me Gusta Café" style="height:52px;width:auto;flex-shrink:0;padding:4px 8px" />
           <div style="width:1px;height:36px;background:rgba(255,255,255,0.15);flex-shrink:0"></div>
           <div style="padding:0 16px 0 14px;display:flex;flex-direction:column;justify-content:center;gap:2px">
-            <span style="font-family:'Aztec Beat',serif;font-size:1.2rem;font-weight:400;color:#8b4513;line-height:1">Me Gusta</span>
+            <span style="font-family:'Aztec Beat',serif;font-size:1.2rem;font-weight:400;color:#ffffff;line-height:1">Me Gusta</span>
             <span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:4px;color:#5aaa6a">CAFÉ</span>
           </div>
         </div>
       </div>
-      <p class="eyebrow mb-2" style="color:#8b4513" data-i18n="cafe.heroEyebrow">Bolivar #603, Sucre</p>
-      <h1 style="font-family:'Aztec Beat',serif;font-size:clamp(2.8rem,5.5vw,4.8rem);font-weight:400;color:#fff;line-height:1.05;margin-bottom:16px"><span class="sr-only">Me Gusta Café — Best Specialty Coffee &amp; Breakfast in Sucre — </span>Me Gusta <span style="color:#8b4513">Café</span></h1>
+      <p class="eyebrow mb-2" style="color:#5aaa6a" data-i18n="cafe.heroEyebrow">Bolivar #603, Sucre</p>
+      <h1 class="serif" style="font-size:clamp(3rem,6vw,5.2rem);color:#fff;line-height:1.05;margin-bottom:16px"><span class="sr-only">Me Gusta Café — Best Specialty Coffee &amp; Breakfast in Sucre — </span>Me Gusta <span style="color:#5aaa6a">CAFÉ</span></h1>
       <p style="font-size:16px;color:rgba(255,255,255,0.68);line-height:1.85;max-width:480px;margin-bottom:28px" data-i18n="cafe.heroSub">Italian precision, Bolivian altitude. Two coffees — Lavazza from a century of Roman roasting, Jaqaku from the valleys above — poured into a colonial patio where the morning belongs to you.</p>
       <div class="flex flex-wrap gap-4">
         <a href="https://www.megustaspanish.com/cafe" target="_blank" class="cafe-btn-primary" style="padding:12px 28px" data-i18n="cafe.heroCta1">Visit Me Gusta Café ↗</a>
@@ -174,19 +174,19 @@
   </section>
 
   <!-- INFO BAR -->
-  <div id="cafe-info" style="background:#2c1a0e;padding:20px 0;border-bottom:1px solid #3d2510">
+  <div id="cafe-info" style="background:#000000;padding:20px 0;border-bottom:1px solid #111111">
     <div class="max-w-7xl mx-auto px-6">
       <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center">
         <div style="display:flex;align-items:center;gap-10px;gap:10px">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#8b4513"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#5aaa6a"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           <span style="font-size:14px;color:rgba(255,255,255,0.75)" data-i18n="cafe.address">Bolivar #603, Sucre, Bolivia</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#8b4513"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#5aaa6a"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
           <span style="font-size:14px;color:rgba(255,255,255,0.75)" data-i18n="cafe.hours">Mon–Sat · 7:00 am – 8:00 pm</span>
         </div>
         <div style="display:flex;align-items:center;gap:10px">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#8b4513"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#5aaa6a"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>
           <span style="font-size:14px;color:rgba(255,255,255,0.75)" data-i18n="cafe.tag1">Bolivian Coffee</span>
         </div>
       </div>
@@ -206,45 +206,45 @@
           </h2>
           <p style="font-size:15px;color:#555;line-height:1.85;margin-bottom:28px" data-i18n="cafe.storyP1">Stone arches, morning light through colonial glass, and coffee roasted above three thousand meters. No background music that demands your attention. No queue. Just the kind of stillness that Sucre regulars treat as a daily ritual.</p>
           <div style="display:flex;flex-wrap:wrap;gap:10px">
-            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8b4513;background:#f3e8dc;padding:7px 14px;border-radius:4px" data-i18n="cafe.tag1">Bolivian Altitude Coffee</span>
-            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8b4513;background:#f3e8dc;padding:7px 14px;border-radius:4px" data-i18n="cafe.tag2">Homemade Kitchen</span>
-            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8b4513;background:#f3e8dc;padding:7px 14px;border-radius:4px" data-i18n="cafe.tag3">Colonial Patio</span>
-            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#8b4513;background:#f3e8dc;padding:7px 14px;border-radius:4px" data-i18n="cafe.tag4">Free Wi-Fi</span>
+            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#000000;background:rgba(255,220,220,0.35);border:1px solid rgba(0,0,0,0.08);padding:7px 14px;border-radius:4px" data-i18n="cafe.tag1">Bolivian Altitude Coffee</span>
+            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#000000;background:rgba(255,220,220,0.35);border:1px solid rgba(0,0,0,0.08);padding:7px 14px;border-radius:4px" data-i18n="cafe.tag2">Homemade Kitchen</span>
+            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#000000;background:rgba(255,220,220,0.35);border:1px solid rgba(0,0,0,0.08);padding:7px 14px;border-radius:4px" data-i18n="cafe.tag3">Colonial Patio</span>
+            <span style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#000000;background:rgba(255,220,220,0.35);border:1px solid rgba(0,0,0,0.08);padding:7px 14px;border-radius:4px" data-i18n="cafe.tag4">Free Wi-Fi</span>
           </div>
         </div>
 
         <!-- Carrusel -->
-        <div class="fade-up" style="position:relative;overflow:hidden;border-radius:8px;height:440px">
+        <div class="fade-up" style="position:relative;overflow:hidden;border-radius:0;height:440px">
 
           <div class="cafe-slide" role="img" aria-label="Colonial patio and interior of Me Gusta Café Sucre" style="position:absolute;inset:0;transition:opacity 0.7s ease;opacity:1;background-image:url('imagenes/fotos_cafe/cafe_desde_dentro.webp');background-size:cover;background-position:center 50%">
             <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,6,2,0.65) 0%,transparent 55%)"></div>
             <div style="position:absolute;bottom:22px;left:24px">
-              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8b4513;margin-bottom:4px" data-i18n="cafe.slide1Label">The Space</p>
-              <p style="font-family:'Aztec Beat',serif;font-size:1.05rem;font-weight:400;color:#fff" data-i18n="cafe.slide1Cap">Bolivar #603, Sucre's historic center</p>
+              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#5aaa6a;margin-bottom:4px" data-i18n="cafe.slide1Label">The Space</p>
+              <p style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;color:#fff" data-i18n="cafe.slide1Cap">Bolivar #603, Sucre's historic center</p>
             </div>
           </div>
 
           <div class="cafe-slide" role="img" aria-label="Specialty latte art at Me Gusta Café" style="position:absolute;inset:0;transition:opacity 0.7s ease;opacity:0;background-image:url('imagenes/fotos_cafe/latte.webp');background-size:cover;background-position:center 40%">
             <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,6,2,0.65) 0%,transparent 55%)"></div>
             <div style="position:absolute;bottom:22px;left:24px">
-              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8b4513;margin-bottom:4px" data-i18n="cafe.slide2Label">The Menu</p>
-              <p style="font-family:'Aztec Beat',serif;font-size:1.05rem;font-weight:400;color:#fff" data-i18n="cafe.slide2Cap">Coffee and food made from scratch — every morning</p>
+              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#5aaa6a;margin-bottom:4px" data-i18n="cafe.slide2Label">The Menu</p>
+              <p style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;color:#fff" data-i18n="cafe.slide2Cap">Coffee and food made from scratch — every morning</p>
             </div>
           </div>
 
           <div class="cafe-slide" role="img" aria-label="Coworking space and cozy atmosphere at Me Gusta Café" style="position:absolute;inset:0;transition:opacity 0.7s ease;opacity:0;background-image:url('imagenes/fotos_cafe/mocaccino.webp');background-size:cover;background-position:center">
             <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,6,2,0.65) 0%,transparent 55%)"></div>
             <div style="position:absolute;bottom:22px;left:24px">
-              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8b4513;margin-bottom:4px" data-i18n="cafe.slide3Label">The Vibe</p>
-              <p style="font-family:'Aztec Beat',serif;font-size:1.05rem;font-weight:400;color:#fff" data-i18n="cafe.slide3Cap">Good WiFi, no rush — stay as long as you like</p>
+              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#5aaa6a;margin-bottom:4px" data-i18n="cafe.slide3Label">The Vibe</p>
+              <p style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;color:#fff" data-i18n="cafe.slide3Cap">Good WiFi, no rush — stay as long as you like</p>
             </div>
           </div>
 
           <div class="cafe-slide" role="img" aria-label="Sunny colonial courtyard seating in Sucre" style="position:absolute;inset:0;transition:opacity 0.7s ease;opacity:0;background-image:url('imagenes/fotos_cafe/ventana_cafe.webp');background-size:cover;background-position:center 30%">
             <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,6,2,0.65) 0%,transparent 55%)"></div>
             <div style="position:absolute;bottom:22px;left:24px">
-              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8b4513;margin-bottom:4px" data-i18n="cafe.slide4Label">The Patio</p>
-              <p style="font-family:'Aztec Beat',serif;font-size:1.05rem;font-weight:400;color:#fff" data-i18n="cafe.slide4Cap">A colonial courtyard with afternoon light to spare</p>
+              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#5aaa6a;margin-bottom:4px" data-i18n="cafe.slide4Label">The Patio</p>
+              <p style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;color:#fff" data-i18n="cafe.slide4Cap">A colonial courtyard with afternoon light to spare</p>
             </div>
           </div>
 
@@ -252,8 +252,8 @@
           <div class="cafe-slide" role="img" aria-label="Expert barista preparing specialty coffee in Sucre" style="position:absolute;inset:0;transition:opacity 0.7s ease;opacity:0;background-image:url('imagenes/fotos_cafe/barista.webp');background-size:cover;background-position:center 40%">
             <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,6,2,0.65) 0%,transparent 55%)"></div>
             <div style="position:absolute;bottom:22px;left:24px">
-              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8b4513;margin-bottom:4px" data-i18n="cafe.slide5Label">The Craft</p>
-              <p style="font-family:'Aztec Beat',serif;font-size:1.05rem;font-weight:400;color:#fff" data-i18n="cafe.slide5Cap">Every cup made by hand, with care</p>
+              <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#5aaa6a;margin-bottom:4px" data-i18n="cafe.slide5Label">The Craft</p>
+              <p style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:500;color:#fff" data-i18n="cafe.slide5Cap">Every cup made by hand, with care</p>
             </div>
           </div>
 
@@ -267,7 +267,7 @@
 
           <!-- Dots -->
           <div style="position:absolute;bottom:22px;right:20px;display:flex;gap:5px;z-index:10">
-            <button onclick="cafeGoTo(0)" class="cafe-dot" style="width:7px;height:7px;border-radius:50%;border:none;cursor:pointer;background:#8b4513"></button>
+            <button onclick="cafeGoTo(0)" class="cafe-dot" style="width:7px;height:7px;border-radius:50%;border:none;cursor:pointer;background:#5aaa6a"></button>
             <button onclick="cafeGoTo(1)" class="cafe-dot" style="width:7px;height:7px;border-radius:50%;border:none;cursor:pointer;background:rgba(255,255,255,0.65)"></button>
             <button onclick="cafeGoTo(2)" class="cafe-dot" style="width:7px;height:7px;border-radius:50%;border:none;cursor:pointer;background:rgba(255,255,255,0.65)"></button>
             <button onclick="cafeGoTo(3)" class="cafe-dot" style="width:7px;height:7px;border-radius:50%;border:none;cursor:pointer;background:rgba(255,255,255,0.65)"></button>
@@ -290,7 +290,7 @@
         dots[cur].style.background = 'rgba(255,255,255,0.65)';
         cur = (n + slides.length) % slides.length;
         slides[cur].style.opacity = '1';
-        dots[cur].style.background = '#8b4513';
+        dots[cur].style.background = '#5aaa6a';
       }
       window.cafeCarousel = function(dir){ clearInterval(timer); show(cur+dir); startAuto(); };
       window.cafeGoTo     = function(n){   clearInterval(timer); show(n);       startAuto(); };
@@ -304,24 +304,24 @@
   <!-- ═══ DOS CAFÉS ═══════════════════════════════════════════════════ -->
   <section style="padding:88px 0;position:relative;overflow:hidden">
     <div style="position:absolute;inset:0;background-image:url('imagenes/fotos_cafe/granos_cafe.jpg');background-size:cover;background-position:center"></div>
-    <div style="position:absolute;inset:0;background:rgba(20,10,4,0.88)"></div>
+    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.90)"></div>
     <div class="max-w-5xl mx-auto px-6 relative">
       <div class="text-center fade-up" style="margin-bottom:56px">
         <p class="eyebrow mb-4" style="color:#5aaa6a" data-i18n="cafe.coffeeEyebrow">Two Coffees</p>
         <h2 style="font-family:'Aztec Beat',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;color:#fff;line-height:1.1">
-          <span data-i18n="cafe.coffeeTitle">Two origins.</span> <span style="color:#8b4513" data-i18n="cafe.coffeeAccent">One table.</span>
+          <span data-i18n="cafe.coffeeTitle">Two origins.</span> <span style="color:#5aaa6a" data-i18n="cafe.coffeeAccent">One table.</span>
         </h2>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
         <!-- LAVAZZA -->
-        <div class="fade-up" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:40px 36px;position:relative;backdrop-filter:blur(8px)">
-          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#8b4513"></div>
-          <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8b4513;margin-bottom:12px" data-i18n="cafe.lavazzaType">Italian Roast</p>
+        <div class="fade-up" style="background:#111111;border:1px solid rgba(255,255,255,0.08);padding:40px 36px;position:relative">
+          <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#D61A16"></div>
+          <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#D61A16;margin-bottom:12px" data-i18n="cafe.lavazzaType">Italian Roast</p>
           <h3 style="font-family:'Aztec Beat',serif;font-size:1.7rem;font-weight:400;color:#fff;line-height:1.1;margin-bottom:20px">Lavazza</h3>
           <p style="font-size:15px;color:rgba(255,255,255,0.55);line-height:1.8" data-i18n="cafe.lavazzaDesc">More than a century of Italian roasting behind every pour. Lavazza delivers the dense crema, the aromatic depth, and the clean, lingering finish that makes an espresso feel like a small ceremony. The foundation of our espressos, lattes, and cappuccinos.</p>
         </div>
         <!-- JAQAKU -->
-        <div class="fade-up" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:40px 36px;position:relative;backdrop-filter:blur(8px);transition-delay:0.12s">
+        <div class="fade-up" style="background:#111111;border:1px solid rgba(255,255,255,0.08);padding:40px 36px;position:relative;transition-delay:0.12s">
           <div style="position:absolute;top:0;left:0;right:0;height:3px;background:#5aaa6a"></div>
           <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#5aaa6a;margin-bottom:12px" data-i18n="cafe.jaqakuType">Bolivian Highland Coffee</p>
           <h3 style="font-family:'Aztec Beat',serif;font-size:1.7rem;font-weight:400;color:#fff;line-height:1.1;margin-bottom:20px">Jaqaku</h3>
@@ -333,18 +333,19 @@
 
   <div class="divider-line" data-anim="line"></div>
 
-  <!-- ═══ CTA FINAL — CAFÉ WEBSITE ════════════════════════════ -->
-  <section class="scale-in" data-anim="scale" style="background:#fdf6ec;padding:110px 24px;position:relative;overflow:hidden">
-    <div class="relative" style="max-width:640px;margin:0 auto;text-align:center">
-      <img src="imagenes/logos/me-gusta-cafe.png" alt="Me Gusta Café" style="height:108px;width:auto;margin:0 auto 36px;display:block" />
-      <p style="font-family:'Inter',sans-serif;font-size:2.6rem;color:#8b4513;display:block;margin-bottom:18px;line-height:1" data-i18n="cafe.ctaTag">Where the morning takes its time.</p>
-      <h2 style="font-family:'Aztec Beat',serif;font-size:clamp(2.2rem,5vw,3.4rem);font-weight:400;color:#1a1a1a;line-height:1.08;margin-bottom:24px" data-i18n="cafe.ctaTitle">The kind of place where one hour turns into three.</h2>
-      <p style="font-size:16px;color:#444;line-height:1.9;margin-bottom:44px" data-i18n="cafe.ctaSub">Bolivian coffee at altitude, food made from scratch, and a colonial patio where Sucre slows down. The full menu and hours — on the official website.</p>
-      <div class="flex flex-wrap justify-center" style="gap:14px">
-        <a href="https://www.megustaspanish.com/cafe" target="_blank" class="cafe-btn-primary" style="padding:16px 44px;font-size:15px" data-i18n="cafe.ctaBtn">Discover Me Gusta Café ↗</a>
-        <a href="https://maps.google.com/?q=Bolivar+603+Sucre+Bolivia" target="_blank" rel="noopener noreferrer" aria-label="Ver ubicación de Me Gusta Café en Google Maps" class="cafe-btn-outline" style="padding:16px 32px;font-size:15px" data-i18n="cafe.ctaBtn2">Find Us on Maps</a>
+  <!-- ═══ CTA EDITORIAL — CAFÉ ════════════════════════════════ -->
+  <section class="scale-in" data-anim="scale" style="background:#ffffff;padding:140px 24px;position:relative;overflow:hidden">
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Aztec Beat',serif;font-size:35vw;color:#FFDCDC;opacity:0.12;pointer-events:none;z-index:0;letter-spacing:-10px;line-height:1">CAFE</div>
+    <div style="position:relative;z-index:1;max-width:800px;margin:0 auto;text-align:center">
+      <p class="eyebrow" style="color:#5aaa6a;margin-bottom:32px" data-i18n="cafe.heroEyebrow">Bolivar #603 · Sucre</p>
+      <h2 class="serif" style="font-size:clamp(2.5rem,6vw,4.2rem);color:#000000;line-height:1;margin-bottom:40px">
+        Where the morning<br><span style="color:#5aaa6a">takes its time.</span>
+      </h2>
+      <p style="font-family:'Inter',sans-serif;font-size:18px;color:#555;line-height:1.8;max-width:540px;margin:0 auto 56px" data-i18n="cafe.ctaSub">Bolivian coffee at altitude, food made from scratch, and a colonial patio where Sucre slows down.</p>
+      <div class="flex flex-wrap justify-center" style="gap:24px">
+        <a href="https://www.megustaspanish.com/cafe" target="_blank" class="btn-black" style="padding:18px 48px" data-i18n="cafe.ctaBtn">Visit our Website ↗</a>
+        <a href="https://maps.google.com/?q=Bolivar+603+Sucre+Bolivia" target="_blank" rel="noopener noreferrer" style="font-family:'Inter',sans-serif;font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:2px;color:#000;text-decoration:none;display:flex;align-items:center;gap:8px" data-i18n="cafe.ctaBtn2">Find Us on Maps</a>
       </div>
-      <p style="font-size:12px;color:#999;margin-top:32px;letter-spacing:1.5px;text-transform:uppercase" data-i18n="cafe.hours">Mon–Sat · 7:00 am – 8:00 pm</p>
     </div>
   </section>
 
