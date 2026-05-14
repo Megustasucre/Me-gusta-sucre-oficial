@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Me Gusta Sucre</title>
+  <meta name="robots" content="noindex, nofollow" />
+  
+  <link rel="icon" type="image/svg+xml" href="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logo_tam_reducido_2.svg">
+  <link rel="apple-touch-icon" href="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logo_tam_reducido_2.svg">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/tw.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/sucre-fonts.css" />
+</head>
+<body style="background:#0a0600">
+
+<!-- NAVBAR -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50" style="background:transparent">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
+
+      <div class="hidden md:flex items-center gap-7" style="flex:1">
+        <a href="/clases" class="nav-link nav-secondary text-white" data-i18n="nav.classes">Spanish Classes</a>
+        <a href="/cafe" class="nav-link nav-secondary text-white" data-i18n="nav.cafe">Café</a>
+        <a href="/guia" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
+      </div>
+
+      <a href="/" class="flex items-center gap-3 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img" width="1148" height="1116">
+        <span class="logo-text text-white font-bold" style="font-family:'Aztec Beat',serif;font-size:1.75rem;letter-spacing:0;white-space:nowrap;text-transform:uppercase">Me Gusta <span class="logo-accent" style="color:var(--red)">Sucre</span></span>
+      </a>
+
+      <div class="hidden md:flex items-center justify-end gap-5" style="flex:1">
+        <a href="/hospedaje" class="nav-link nav-primary text-white" data-i18n="nav.stay">Stay</a>
+        <a href="/contacto" class="nav-link nav-secondary text-white" data-i18n="nav.contact">Contact</a>
+        <div class="flex items-center gap-3 border-l lang-container border-white/20 pl-6 ml-2">
+          <button class="lang-btn text-xs font-bold text-white uppercase active" data-lang="en">EN</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="es">ES</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="fr">FR</button>
+        </div>
+      </div>
+
+      <button id="menu-btn" class="md:hidden text-white p-1">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-white shadow-xl px-6 pb-5">
+      <div class="flex justify-center py-4 border-b border-gray-100 mb-2">
+        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" style="height:56px" width="1148" height="1116">
+      </div>
+      <a href="/clases"        class="block py-3 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.classes">Spanish Classes</a>
+      <a href="/cafe"           class="block py-3 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.cafe">Café</a>
+      <a href="/guia"           class="block py-3 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.guide">City Guide</a>
+      <a href="/hospedaje"      class="block py-3 text-sm font-semibold text-gray-800 border-b border-gray-100" data-i18n="nav.stay">Stay</a>
+      <a href="/contacto"       class="block py-3 text-sm font-semibold text-gray-800" data-i18n="nav.contact">Contact</a>
+      <a href="/hospedaje" class="btn-red block text-center mt-2 mb-3" data-i18n="nav.book">Book a Stay</a>
+      <div class="py-3 border-t border-gray-100">
+        <p class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-wider" data-i18n="nav.langLabel">Language</p>
+        <div class="flex items-center gap-5">
+          <button class="lang-btn text-sm font-bold text-gray-900" data-lang="en">EN</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="es">ES</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="fr">FR</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+    <div style="position:absolute;inset:0;background-image:url('imagenes/wikipedia/hero_sucre.webp');background-size:cover;background-position:center;opacity:0.18"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,6,2,0.75) 0%,rgba(10,6,2,0.97) 100%)"></div>
+    <div style="position:absolute;top:0;left:0;right:0;height:5px;background:#000"></div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:5px;background:#000"></div>
+
+    <div class="relative text-center px-6 py-32 max-w-2xl mx-auto">
+
+      <p style="font-family:'Inter',sans-serif;font-size:1.5rem;color:#d61a16;margin-bottom:8px" data-i18n="error.handwritten">¡Ay, no!</p>
+
+      <div style="font-family:'Aztec Beat',serif;font-size:clamp(7rem,20vw,11rem);font-weight:400;color:#fff;line-height:1;margin-bottom:16px">
+        4<span style="color:#d61a16">0</span>4
+      </div>
+
+      <h1 style="font-family:'Aztec Beat',serif;font-size:clamp(1.5rem,4vw,2.3rem);font-weight:400;color:#fff;line-height:1.25;margin-bottom:16px;text-transform:uppercase">
+        <span data-i18n="error.title">This page got lost</span><br/>
+        <em style="color:#d61a16" data-i18n="error.accent">somewhere in Sucre.</em>
+      </h1>
+
+      <p style="font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:500;color:rgba(255,255,255,0.55);max-width:440px;margin:0 auto 40px;line-height:1.7" data-i18n="error.sub">
+        The page you're looking for doesn't exist or may have been moved. Let's get you back on track.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <a href="/" class="btn-red px-8 py-3 text-sm flex items-center gap-2" style="font-family:'Inter',sans-serif">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span data-i18n="error.homeBtn">Back to Home</span>
+        </a>
+        <a href="/contacto" class="btn-outline px-8 py-3 text-sm" style="font-family:'Inter',sans-serif" data-i18n="error.contactBtn">
+          Contact Us
+        </a>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.1);padding-top:36px">
+        <p style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px" data-i18n="error.quick">Or go directly to</p>
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-3">
+          <a href="/clases"        style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,0.45)" class="hover:text-white transition-colors" data-i18n="nav.classes">Spanish Classes</a>
+          <a href="/hospedaje"     style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,0.45)" class="hover:text-white transition-colors" data-i18n="nav.stay">Stay</a>
+          <a href="/cafe"          style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,0.45)" class="hover:text-white transition-colors" data-i18n="nav.cafe">Café</a>
+          <a href="/guia"          style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(255,255,255,0.45)" class="hover:text-white transition-colors" data-i18n="nav.guide">City Guide</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="/js/translations.js"></script>
+    <a href="https://wa.me/59164415223" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

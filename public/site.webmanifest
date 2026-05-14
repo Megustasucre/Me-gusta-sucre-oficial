@@ -1,0 +1,12 @@
+{
+  "name": "Me Gusta Sucre",
+  "short_name": "Me Gusta",
+  "description": "Spanish classes, hostal, café and city guide in Sucre, Bolivia.",
+  "icons": [
+    { "src": "/imagenes/logos/logo_me_gusta_sucre_of/SVG/logo_tam_reducido_2.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#c9252d",
+  "background_color": "#0a0a0a",
+  "display": "browser",
+  "start_url": "/"
+}

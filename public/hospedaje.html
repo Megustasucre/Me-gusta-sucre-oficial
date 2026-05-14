@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://megustasucre.com/hospedaje" />
+  <link rel="alternate" hreflang="en" href="https://megustasucre.com/hospedaje?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://megustasucre.com/hospedaje?lang=es" />
+  <link rel="alternate" hreflang="fr" href="https://megustasucre.com/hospedaje?lang=fr" />
+  <link rel="alternate" hreflang="x-default" href="https://megustasucre.com/hospedaje" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="hospedaje.seoTitle">Me Gusta Sucre Inn — Hospedaje Boutique en Sucre, Bolivia</title>
+  <meta name="description" content="Disfruta de un hostal de construcción nueva y moderna en el corazón de Sucre. Comodidad, tranquilidad y la mejor ubicación para tu estadía en la Ciudad Blanca." data-i18n-attr="content:hospedaje.seoDesc" />
+  
+  <!-- Preconnects -->
+
+  <!-- Hero image preload (LCP) -->
+  <link rel="preload" as="image" href="/imagenes/hostal/hostal_general/vista_terraza.webp" />
+
+  <!-- CSS Global + Tailwind (sucre-fonts.css ya carga las fuentes) -->
+  <link rel="stylesheet" href="/css/tw.css" />
+  <link rel="stylesheet" href="/css/style.css?v=3" />
+  <link rel="stylesheet" href="/css/sucre-fonts.css" />
+  <style>
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+      background: #d61a16;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .mobile-sticky-cta { display: flex; }
+    }
+    /* Inn logo keeps real colors — drop-shadow for visibility on dark hero */
+    .navbar-brand-logo { filter: drop-shadow(0 1px 4px rgba(0,0,0,0.55)) !important; }
+    #navbar.scrolled .navbar-brand-logo { filter: none !important; }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logo_tam_reducido_2.svg">
+  <link rel="apple-touch-icon" href="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logo_tam_reducido_2.svg">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body style="background:#fff">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50" style="background:transparent">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
+
+      <div class="hidden md:flex items-center gap-7" style="flex:1">
+        <a href="/clases" class="nav-link nav-secondary text-white" data-i18n="nav.classes">Spanish Classes</a>
+        <a href="/cafe" class="nav-link nav-secondary text-white" data-i18n="nav.cafe">Café</a>
+        <a href="/guia" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
+      </div>
+
+      <a href="/" class="flex items-center md:absolute md:left-1/2 md:-translate-x-1/2">
+        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img">
+      </a>
+
+      <div class="hidden md:flex items-center justify-end gap-5" style="flex:1">
+        <a href="/hospedaje" class="nav-link nav-primary text-white" data-i18n="nav.stay">Stay</a>
+        <a href="/contacto" class="nav-link nav-secondary text-white" data-i18n="nav.contact">Contact</a>
+        <div class="flex items-center gap-3 border-l lang-container border-white/20 pl-6 ml-2">
+          <button class="lang-btn text-xs font-bold text-white uppercase active" data-lang="en">EN</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="es">ES</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="fr">FR</button>
+        </div>
+      </div>
+
+      <button id="menu-btn" class="md:hidden text-white p-1">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-white shadow-xl px-6 pb-5">
+      <a href="/clases"        class="block py-3 text-sm font-bold text-gray-800 border-b border-gray-100" data-i18n="nav.classes">Spanish Classes</a>
+      <a href="/cafe"          class="block py-3 text-sm font-bold text-gray-800 border-b border-gray-100" data-i18n="nav.cafe">Café</a>
+      <a href="/guia"          class="block py-3 text-sm font-bold text-gray-800 border-b border-gray-100" data-i18n="nav.guide">City Guide</a>
+      <a href="/hospedaje"     class="block py-3 text-sm font-bold text-gray-800 border-b border-gray-100" data-i18n="nav.stay">Stay</a>
+      <a href="/contacto"      class="block py-3 text-sm font-bold text-gray-800" data-i18n="nav.contact">Contact</a>
+      <a href="/hospedaje" class="btn-red block text-center mt-2 mb-3" data-i18n="nav.book">Book a Stay</a>
+      <div class="py-3 border-t border-gray-100">
+        <p class="text-[10px] font-bold text-gray-400 mb-3 uppercase tracking-wider" data-i18n="nav.langLabel">Language</p>
+        <div class="flex items-center gap-5">
+          <button class="lang-btn text-sm font-bold text-gray-900" data-lang="en">EN</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="es">ES</button>
+          <span class="text-gray-300">|</span>
+          <button class="lang-btn text-sm font-bold text-gray-400" data-lang="fr">FR</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 01. HERO -->
+  <section class="s-hero">
+    <div class="s-hero-overlay"></div>
+    <div class="s-hero-content">
+      <span class="eyebrow-teal" data-i18n="hospedaje.heroEyebrow">Hostal · Sucre, Bolivia</span>
+      <h1 class="fade-up">
+        <span class="sr-only">Me Gusta Sucre Inn — Premier Lodging &amp; Guest House in Sucre, Bolivia — </span>
+        <span data-i18n="hospedaje.heroTitle">Tu hogar</span><br>
+        <em data-i18n="hospedaje.heroAccent">en la Ciudad Blanca</em>
+      </h1>
+      <p class="fade-up delay-1" data-i18n="hospedaje.heroSub">Un hostal de construcción nueva y moderna en el corazón del centro histórico. A pasos de la plaza principal y del supermercado más grande de la ciudad.</p>
+      
+      <div class="booking-bar fade-up delay-2">
+        <div class="bb-field">
+          <label class="bb-label" for="bar-checkin" data-i18n="hospedaje.heroBarArrival">Llegada</label>
+          <input type="date" id="bar-checkin" class="bb-input" aria-label="Seleccionar fecha de llegada" oninput="syncFromBar('checkin')" />
+        </div>
+        <div class="bb-div"></div>
+        <div class="bb-field">
+          <label class="bb-label" for="bar-checkout" data-i18n="hospedaje.heroBarDeparture">Salida</label>
+          <input type="date" id="bar-checkout" class="bb-input" aria-label="Seleccionar fecha de salida" oninput="syncFromBar('checkout')" />
+        </div>
+        <div class="bb-div"></div>
+        <div class="bb-field" style="flex:0 0 auto;min-width:90px">
+          <label class="bb-label" for="bar-guests-inp" data-i18n="hospedaje.heroBarGuests">Huéspedes</label>
+          <input type="number" id="bar-guests-inp" class="bb-input" aria-label="Número de huéspedes" min="1" max="20" value="2" oninput="syncFromBar('guests')" />
+        </div>
+        <button class="bb-btn" onclick="scrollToForm()" data-i18n="hospedaje.heroBarBtn">Consultar Disponibilidad</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. NARRATIVA -->
+  <section class="s-narrative">
+    <div class="s-narrative-text">
+      <span class="overline" data-i18n="hospedaje.narrativeEyebrow">La Paz #571 · Centro Histórico · Sucre</span>
+      <h2 data-i18n-html="hospedaje.narrativeTitleHtml">Comodidad y calma,<br><em>en el corazón de Sucre</em></h2>
+      <p data-i18n="hospedaje.narrativeDesc1">Me Gusta Sucre Inn es una construcción nueva, diseñada desde cero para ofrecer máximo silencio, confort y modernidad en pleno centro histórico. A diferencia de las casas antiguas, contamos con aislamiento acústico y agua caliente de alta presión constante.</p>
+      <p data-i18n="hospedaje.narrativeDesc2">No es un hotel. Es el lugar donde te quedas cuando quieres vivir Sucre, no solo visitarla.</p>
+      <div class="s-narrative-badges">
+        <span class="s-narrative-badge-item" data-i18n="hospedaje.narrativeBadge1">Patrimonio UNESCO</span>
+        <span class="s-narrative-badge-item" data-i18n="hospedaje.narrativeBadge2">Centro Histórico</span>
+        <span class="s-narrative-badge-item" data-i18n="hospedaje.narrativeBadge3">3 min de la Plaza</span>
+      </div>
+    </div>
+    <div class="s-narrative-img">
+      <img src="/imagenes/hostal/hostal_general/Entrada.webp" alt="Me Gusta Sucre Inn — Tu casa lejos de casa" loading="lazy" />
+      <div class="s-narrative-overlay"></div>
+      <div class="s-narrative-float">
+        <div class="s-narrative-float-label" data-i18n="hospedaje.narrativeFloatLabel">Nuestra dirección</div>
+        <div class="s-narrative-float-value">La Paz #571 · Sucre, Bolivia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03. HABITACIONES -->
+  <section class="s-rooms" id="habitaciones">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-4" data-i18n="hospedaje.roomsEyebrow">Nuestras Habitaciones</span>
+        <h2 data-i18n-html="hospedaje.roomsTitleHtml">Espacios para<br><em>descansar de verdad</em></h2>
+        <p data-i18n="hospedaje.roomsSub">Cuatro opciones para cada viajero — desde la mayor privacidad hasta la opción más social. Los precios no incluyen desayuno.</p>
+      </div>
+
+      <div class="rooms-list">
+        <!-- Privada c/ Baño Privado -->
+        <div class="room-card fade-up">
+          <div class="room-card-img">
+            <img src="/imagenes/hostal/baño_privado/DSC08147-HDR-2.webp" alt="Private room with private bathroom at Me Gusta Sucre Inn lodging" loading="lazy" width="600" height="400" />
+            <span class="room-card-badge" data-i18n="hospedaje.room1Badge">Mayor Comodidad</span>
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room1Price">230 Bs</div>
+              <div class="unit" data-i18n="hospedaje.unitNight">/ noche</div>
+              <div style="font-size:10px;opacity:0.65;margin-top:2px;letter-spacing:0.5px">≈ $42 USD</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room1Name">Privada con<br>Baño Privado</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room1Desc">La mayor privacidad y confort. Baño privado en suite, luz natural y vistas despejadas. Ideal para estadías largas y nómadas digitales.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chipPrivateBath">Baño Privado</span>
+              <span class="chip" data-i18n="hospedaje.chipHotWater">Agua Caliente 24h</span>
+              <span class="chip" data-i18n="hospedaje.chipFiberWifi">WiFi Fibra</span>
+              <span class="chip" data-i18n="hospedaje.chipUpTo2">Hasta 2 personas</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room1DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 190 Bs para 2 personas · 150 Bs para 1 persona</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-private-bath')" data-i18n="hospedaje.btnReserve" aria-label="Seleccionar esta habitación para mi reserva">Seleccionar →</a>
+          </div>
+        </div>
+
+        <!-- Privada c/ Baño Compartido -->
+        <div class="room-card room-card--alt fade-up" style="animation-delay:0.1s">
+          <div class="room-card-img">
+            <img src="/imagenes/hostal/baño_compartido/DSC08217-HDR.webp" alt="Affordable private room with shared bathroom in Sucre guest house" style="object-position: center 30%;" loading="lazy" width="600" height="400" />
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room2Price">180 Bs</div>
+              <div class="unit" data-i18n="hospedaje.unitNight">/ noche</div>
+              <div style="font-size:10px;opacity:0.65;margin-top:2px;letter-spacing:0.5px">≈ $28 USD</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room2Name">Privada con<br>Baño Compartido</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room2Desc">Toda la privacidad de tu propio cuarto a un precio más accesible. Baño compartido impecablemente limpio.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chipPrivateRoom">Habitación Privada</span>
+              <span class="chip" data-i18n="hospedaje.chipSharedBath">Baño Compartido</span>
+              <span class="chip" data-i18n="hospedaje.chipHotWater">Agua Caliente 24h</span>
+              <span class="chip" data-i18n="hospedaje.chipFiberWifi">WiFi Fibra</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room2DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 150 Bs para 2 personas · 130 Bs para 1 persona</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-private-shared')" data-i18n="hospedaje.btnReserve" aria-label="Seleccionar esta habitación para mi reserva">Seleccionar →</a>
+          </div>
+        </div>
+
+        <!-- Familiar -->
+        <div class="room-card fade-up" style="animation-delay:0.2s">
+          <div class="room-card-img">
+            <img src="/imagenes/hostal/familiar/DSC08332-HDR.webp" alt="Family room for up to 4 guests at Me Gusta Sucre Inn" loading="lazy" width="600" height="400" />
+            <span class="room-card-badge" data-i18n="hospedaje.room3Badge">Familias y Grupos</span>
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room3Price">365 Bs</div>
+              <div class="unit" data-i18n="hospedaje.unitNight">/ noche</div>
+              <div style="font-size:10px;opacity:0.65;margin-top:2px;letter-spacing:0.5px">≈ $55 USD</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room3Name">Habitación<br>Familiar</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room3Desc">Espacio amplio para hasta 4 personas. Ideal para familias o grupos pequeños que exploran Sucre juntos.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chipUpTo4">Hasta 4 personas</span>
+              <span class="chip" data-i18n="hospedaje.chipSpaciousRoom">Espacio Amplio</span>
+              <span class="chip" data-i18n="hospedaje.chipHotWater">Agua Caliente 24h</span>
+              <span class="chip" data-i18n="hospedaje.chipFiberWifi">WiFi Fibra</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room3DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 300 Bs / noche</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-family')" data-i18n="hospedaje.btnReserve" aria-label="Seleccionar esta habitación para mi reserva">Seleccionar →</a>
+          </div>
+        </div>
+
+        <!-- Compartida -->
+        <div class="room-card room-card--dark fade-up" style="animation-delay:0.15s">
+          <div class="room-card-img">
+            <img src="/imagenes/hostal/seis_camas/DSC08489-HDR.webp" alt="Clean and spacious dormitory bed in Sucre hostel lodging" loading="lazy" width="800" height="500" />
+            <span class="room-card-badge" data-i18n="hospedaje.room4Eyebrow">The Most Social Option</span>
+            <div class="room-card-price">
+              <div class="num" data-i18n="hospedaje.room4Price">103 Bs</div>
+              <div class="unit">per bed / night</div>
+              <div style="font-size:10px;opacity:0.65;margin-top:2px;letter-spacing:0.5px">≈ $12 USD</div>
+            </div>
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="hospedaje.room4Name">Habitación<br>Compartida</h3>
+            <p class="room-card-desc" data-i18n="hospedaje.room4Desc">Techos altos, literas cómodas y casilleros grandes. El mejor lugar para conocer gente y compartir experiencias.</p>
+            <div class="room-chips">
+              <span class="chip" data-i18n="hospedaje.chip6Beds">6 Camas</span>
+              <span class="chip" data-i18n="hospedaje.chipBunkBeds">Literas</span>
+              <span class="chip" data-i18n="hospedaje.chipWifi">WiFi</span>
+            </div>
+            <div class="room-discount" data-i18n-html="hospedaje.room4DiscountHtml">
+              <span class="room-discount-icon">%</span>
+              <span>Descuento estudiantes (17%): 85 Bs por cama / noche</span>
+            </div>
+            <a href="#reservar" class="room-card-cta" onclick="selectRoom('opt-dorm')" data-i18n="hospedaje.btnReserve" aria-label="Seleccionar esta habitación para mi reserva">Seleccionar →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. AMENITIES -->
+  <section class="s-amenities">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-3" data-i18n="hospedaje.inclEyebrow">Lo que incluye tu estadía</span>
+        <h2 data-i18n-html="hospedaje.inclTitleHtml">Lo que te<br><em>espera aquí</em></h2>
+      </div>
+      <div class="amenities-grid fade-up" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));max-width:900px;margin:0 auto">
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am1Name">Fast Wi-Fi</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am1Desc">In every room, not just the lobby.</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am2Name">Hot Showers</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am2Desc">Proper ones, all day.</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am3Name">Shared Kitchen</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am3Desc">Full stove, fridge, pans that work.</div>
+        </div>
+        <div class="amenity-cell">
+          <div class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
+          <div class="amenity-name" data-i18n="hospedaje.am4Name">Roof Terrace</div>
+          <div class="amenity-desc" data-i18n="hospedaje.am4Desc">Sucre's best sunset view.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 05. GALLERY -->
+  <section class="s-gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-3" data-i18n="hospedaje.galleryEyebrow">Un Vistazo a Tu Estadía</span>
+        <h2 data-i18n-html="hospedaje.galleryTitleHtml">La casa,<br><em>tu hogar</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="g-cell g-cell--tall fade-up">
+          <img src="/imagenes/hostal/hostal_general/terraza_3.webp" alt="Modern Rooftop View — Me Gusta Sucre Inn" loading="lazy" />
+          <div class="g-overlay"></div>
+          <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel1">El Patio · La Paz #571</span></div>
+        </div>
+        <div class="g-cell fade-up" style="animation-delay:0.1s">
+          <img src="/imagenes/hostal/hostal_general/area_compartida_1.webp" alt="Area comun" loading="lazy" />
+          <div class="g-overlay"></div>
+          <div class="g-label"><span class="g-pill" style="color:#a7f3d0" data-i18n="hospedaje.galleryLabel2">Me Gusta Café</span></div>
+        </div>
+        <div class="g-cell fade-up" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;background:transparent;border-radius:0;overflow:visible;animation-delay:0.2s">
+          <div class="g-cell">
+            <img src="/imagenes/hostal/hostal_general/pasillo_1.webp" alt="Pasillo" loading="lazy" />
+            <div class="g-overlay"></div>
+            <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel3">Habitación Privada</span></div>
+          </div>
+          <div class="g-cell">
+            <img src="/imagenes/hostal/hostal_general/area_compartida_2.webp" alt="Area comun" loading="lazy" />
+            <div class="g-overlay"></div>
+            <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel4">Common Areas</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06. CROSS-SELL -->
+  <section style="background:#000;padding:64px 0">
+    <div class="container">
+      <div class="crossell-banners fade-up">
+        <div class="cafe-banner cafe-banner--green">
+          <img class="cafe-banner-img" src="/imagenes/fotos_cafe/latte.webp" alt="Me Gusta Café" loading="lazy" />
+          <div class="cafe-banner-text">
+            <p class="cafe-banner-eyebrow" data-i18n="hospedaje.xsellCafeEyebrow">Sobre el desayuno</p>
+            <h3 class="cafe-banner-title" data-i18n-html="hospedaje.xsellCafeTitleHtml">El desayuno es en <em>Me Gusta Café</em></h3>
+            <p class="cafe-banner-desc" data-i18n="hospedaje.xsellCafeDesc">A 5 minutos — café boliviano de origen y pastelería casera hecha en el día.</p>
+          </div>
+          <a href="/cafe" class="cafe-banner-btn cafe-banner-btn--cafe" data-i18n="hospedaje.xsellCafeBtn">Ver el Menú</a>
+        </div>
+        <div class="cafe-banner" style="background:linear-gradient(135deg,#1a0a12 0%,#2d0f1e 100%)">
+          <img class="cafe-banner-img" src="/imagenes/fotos_escuela/esc2.webp" alt="Me Gusta Spanish" loading="lazy" />
+          <div class="cafe-banner-text">
+            <p class="cafe-banner-eyebrow" style="color:var(--school)" data-i18n="hospedaje.xsellSchoolEyebrow">Aprender + Vivir</p>
+            <h3 class="cafe-banner-title" style="font-size:1rem" data-i18n-html="hospedaje.xsellSchoolTitleHtml">Aprende español<br><em style="color:var(--school)">mientras te quedas</em></h3>
+            <p class="cafe-banner-desc" data-i18n="hospedaje.xsellSchoolDesc">Aprende español en el mismo centro histórico donde vives. Programas desde 1 semana.</p>
+          </div>
+          <a href="/clases" class="cafe-banner-btn cafe-banner-btn--school" data-i18n="hospedaje.xsellSchoolBtn">Ver Programas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07. BOOKING -->
+  <section class="s-booking" id="reservar">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="eyebrow-teal mb-3" data-i18n="hospedaje.formEyebrow">Solicitud de Reserva</span>
+        <h2 data-i18n-html="hospedaje.formTitleHtml">Reserva<br><em>tu habitación</em></h2>
+        <p data-i18n="hospedaje.formSub">Completa los datos y confirmamos por WhatsApp — normalmente en menos de una hora.</p>
+      </div>
+      <div class="booking-grid">
+        <div class="booking-form-card fade-up">
+          <div class="booking-accent-line"></div>
+          <div class="booking-form-body">
+            <div style="margin-bottom:24px">
+              <span class="form-label" style="margin-bottom:14px;display:block" data-i18n="hospedaje.formLabelRoom">Tipo de Habitación</span>
+              <div class="room-option-light sel" onclick="selectRoom('opt-private-bath', this)" data-room="Privada c/ Baño Privado" data-price="230">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt1">Privada c/ Baño Privado</span>
+                <span class="rol-price">230 Bs</span>
+              </div>
+              <div class="room-option-light" onclick="selectRoom('opt-private-shared', this)" data-room="Privada c/ Baño Compartido" data-price="180">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt2">Privada c/ Baño Compartido</span>
+                <span class="rol-price">180 Bs</span>
+              </div>
+              <div class="room-option-light" onclick="selectRoom('opt-family', this)" data-room="Familiar (hasta 4 personas)" data-price="365">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt3">Familiar (hasta 4 personas)</span>
+                <span class="rol-price">365 Bs</span>
+              </div>
+              <div class="room-option-light" onclick="selectRoom('opt-dorm', this)" data-room="Cama Compartida" data-price="103">
+                <div class="rol-dot"></div>
+                <span class="rol-text" data-i18n="hospedaje.formOpt4">Cama Compartida</span>
+                <span class="rol-price">103 Bs</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelArrival">Llegada</label>
+                <input type="date" id="check-in" class="form-input" oninput="syncFromForm()" />
+              </div>
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelDeparture">Salida</label>
+                <input type="date" id="check-out" class="form-input" oninput="syncFromForm()" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelGuests">Huéspedes</label>
+                <input type="number" id="guests" class="form-input" value="2" min="1" max="20" oninput="syncFromForm()" />
+              </div>
+              <div>
+                <label class="form-label" data-i18n="hospedaje.formLabelName">Tu Nombre</label>
+                <input type="text" id="user-name" class="form-input" placeholder="Your name / Tu nombre" />
+              </div>
+            </div>
+
+            <!-- Toggle descuento estudiante -->
+            <label class="student-toggle" onclick="updateSummary()">
+              <input type="checkbox" id="student-discount" onchange="updateSummary()" />
+              <span class="student-toggle-box"></span>
+              <span class="student-toggle-text" data-i18n="hospedaje.studentToggleText">Soy estudiante de Me Gusta Spanish</span>
+              <span class="student-toggle-badge" data-i18n="hospedaje.studentToggleBadge">17% DESCUENTO</span>
+            </label>
+
+            <label class="form-label" data-i18n="hospedaje.formLabelMessage">Mensaje (opcional)</label>
+            <textarea id="message" class="form-input" rows="2" placeholder="Arrival time, special requests / Hora de llegada..."></textarea>
+          </div>
+        </div>
+
+        <div class="booking-summary">
+          <div class="summary-card">
+            <div class="sum-accent"></div>
+            <div class="sum-body">
+              <div class="sum-title" data-i18n="hospedaje.sumTitle">Tu Estadía</div>
+              <img id="sum-img" class="sum-thumb" src="/imagenes/hostal/baño_privado/DSC08172-HDR-2.webp" alt="Resumen" loading="lazy" />
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelRoom">Habitación</span>
+                <span id="sum-room-name" class="sum-val">Privada c/ Baño Privado</span>
+              </div>
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelGuests">Huéspedes</span>
+                <span id="sum-guests" class="sum-val">2</span>
+              </div>
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelPrice">Precio / noche</span>
+                <span id="sum-rate" class="sum-val">230 Bs</span>
+              </div>
+              <div class="sum-row">
+                <span class="sum-lbl" data-i18n="hospedaje.sumLabelNights">Noches</span>
+                <span id="sum-nights" class="sum-val">0</span>
+              </div>
+              <div id="sum-capacity-warn" style="display:none;background:rgba(255,180,0,0.12);border:1px solid rgba(255,180,0,0.3);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:11px;color:#fcd34d;line-height:1.55"></div>
+              <div class="sum-total">
+                <span class="sum-total-lbl" data-i18n="hospedaje.sumLabelTotal">Total Estimado</span>
+                <span id="sum-total-num" class="sum-total-num">0 Bs</span>
+              </div>
+              <div class="sum-discount">
+                <p data-i18n="hospedaje.sumDiscount">Estudiantes de Me Gusta Spanish: 17% de descuento en todas las habitaciones.</p>
+              </div>
+              <button class="sum-cta" onclick="sendWhatsApp()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span data-i18n="hospedaje.sumBtn">Enviar por WhatsApp</span>
+              </button>
+              <p class="sum-note" data-i18n="hospedaje.sumNote">Sin registro. Respondemos en menos de una hora.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08. POLITICAS -->
+  <section id="s-policies" style="background:rgb(255,241,241);padding:80px 0">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="policy-title" style="font-family:'Aztec Beat',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:#1a1a1a;margin-bottom:64px;text-align:center;text-transform:uppercase" data-i18n="hospedaje.policyTitle">Politicas del Inn</h2>
+
+      <!-- TIMELINE -->
+      <div style="position:relative">
+        <!-- Linea conectora: contenedor fijo + inner animado -->
+        <div class="policy-line" style="position:absolute;top:28px;left:calc(12.5%);right:calc(12.5%);height:2px;background:rgba(0,0,0,0.08);z-index:0;overflow:hidden">
+          <div class="policy-line-fill" style="height:100%;width:0;background:#d61a16;opacity:0.4;transition:width 1s ease 0.1s"></div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;z-index:1">
+
+          <!-- 1. PAYMENT -->
+          <div class="policy-node" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;opacity:0;transform:translateY(24px);transition:opacity 0.5s ease,transform 0.5s ease">
+            <div class="policy-icon" style="width:56px;height:56px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;margin-bottom:20px;flex-shrink:0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square">
+                <rect x="2" y="5" width="20" height="14"/><line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+            </div>
+            <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#d61a16;margin-bottom:8px" data-i18n="hospedaje.policy1Tag">Pago</p>
+            <p style="font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;color:#1a1a1a;line-height:1;margin-bottom:10px;text-transform:uppercase" data-i18n="hospedaje.policy1Title">Al llegar</p>
+            <p style="font-size:13px;color:#555;line-height:1.6" data-i18n="hospedaje.policy1Desc">Efectivo, transferencia o tarjeta · Pago presencial en el Inn</p>
+          </div>
+
+          <!-- 2. CHECK-IN -->
+          <div class="policy-node" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;opacity:0;transform:translateY(24px);transition:opacity 0.5s ease 0.35s,transform 0.5s ease 0.35s">
+            <div class="policy-icon" style="width:56px;height:56px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;margin-bottom:20px;flex-shrink:0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square">
+                <rect x="3" y="4" width="18" height="18"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+            </div>
+            <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#d61a16;margin-bottom:8px" data-i18n="hospedaje.policy2Tag">Check-in</p>
+            <p style="font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;color:#1a1a1a;line-height:1;margin-bottom:10px" data-i18n="hospedaje.policy2Title">14:00</p>
+            <p style="font-size:13px;color:#555;line-height:1.6" data-i18n="hospedaje.policy2Desc">Llegada fuera de horario sujeta a disponibilidad</p>
+          </div>
+
+          <!-- 3. ESTADIA -->
+          <div class="policy-node" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;opacity:0;transform:translateY(24px);transition:opacity 0.5s ease 0.65s,transform 0.5s ease 0.65s">
+            <div class="policy-icon" style="width:56px;height:56px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;margin-bottom:20px;flex-shrink:0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#d61a16;margin-bottom:8px" data-i18n="hospedaje.policy3Tag">Atencion</p>
+            <p style="font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;color:#1a1a1a;line-height:1;margin-bottom:10px" data-i18n="hospedaje.policy3Title">6:30–23:00</p>
+            <p style="font-size:13px;color:#555;line-height:1.6" data-i18n="hospedaje.policy3Desc">Recepcion disponible todos los dias del ano</p>
+          </div>
+
+          <!-- 4. CHECK-OUT -->
+          <div class="policy-node" style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 12px;opacity:0;transform:translateY(24px);transition:opacity 0.5s ease 0.95s,transform 0.5s ease 0.95s">
+            <div class="policy-icon" style="width:56px;height:56px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;margin-bottom:20px;flex-shrink:0">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="square">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+              </svg>
+            </div>
+            <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#d61a16;margin-bottom:8px" data-i18n="hospedaje.policy4Tag">Check-out</p>
+            <p style="font-family:'Inter',sans-serif;font-size:1.4rem;font-weight:700;color:#1a1a1a;line-height:1;margin-bottom:10px" data-i18n="hospedaje.policy4Title">12:00</p>
+            <p style="font-size:13px;color:#555;line-height:1.6" data-i18n="hospedaje.policy4Desc">Salida fuera de horario sujeta a disponibilidad</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- NOTA CANCELACION -->
+      <div class="policy-cancel" style="margin-top:48px;padding:20px 24px;border-left:3px solid #d61a16;background:#fff;opacity:0;transform:translateY(16px);transition:opacity 0.5s ease 1.2s,transform 0.5s ease 1.2s">
+        <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#d61a16;margin-bottom:6px" data-i18n="hospedaje.policyCancelTag">Cancelacion</p>
+        <p style="font-size:14px;color:#444;line-height:1.7" data-i18n="hospedaje.policyCancelDesc">Cancelacion gratuita hasta 48 horas antes de la llegada. Cancelaciones dentro de las 48 horas se cobran una noche — pagadero en Bs o USD.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    @media (max-width:640px) {
+      .policy-line { display:none; }
+      #s-policies [style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns:repeat(2,1fr) !important; gap:32px !important; }
+    }
+    .policy-title { opacity:0; transform:translateY(16px); transition:opacity 0.5s ease, transform 0.5s ease; }
+    #s-policies.is-visible .policy-title { opacity:1; transform:translateY(0); }
+    #s-policies.is-visible .policy-line-fill { width:100% !important; }
+    #s-policies.is-visible .policy-node { opacity:1 !important; transform:translateY(0) !important; }
+    #s-policies.is-visible .policy-cancel { opacity:1 !important; transform:translateY(0) !important; }
+    .policy-node { cursor:default; }
+    .policy-node .policy-icon { transition:background 0.25s ease, transform 0.25s ease; }
+    .policy-node:hover .policy-icon { background:#d61a16 !important; transform:translateY(-4px); }
+  </style>
+
+  <script>
+    (function(){
+      var sec = document.getElementById('s-policies');
+      if(!sec) return;
+      var io = new IntersectionObserver(function(entries){
+        if(entries[0].isIntersecting){
+          sec.classList.add('is-visible');
+          io.disconnect();
+        }
+      }, { threshold: 0.2 });
+      io.observe(sec);
+    })();
+  </script>
+
+  <!-- 10. FINAL CTA -->
+  <section class="s-cta">
+    <div class="s-cta-overlay"></div>
+    <div class="s-cta-body">
+      <h2 data-i18n="hospedaje.ctaTitle">¿Listo para despertar en Sucre?</h2>
+      <p data-i18n="hospedaje.ctaSub">Las habitaciones se llenan rápido en temporada alta (Jun–Ago). Reserva con anticipación.</p>
+      <div class="cta-btns">
+        <a href="#habitaciones" class="btn-red" data-i18n="hospedaje.ctaBtn1">Reservar Habitación</a>
+        <a href="/contacto" class="btn-outline-white" data-i18n="hospedaje.ctaBtn2">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_7.svg" alt="Me Gusta Sucre" class="footer-logo-img" style="height:50px;width:auto">
+          </div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Your local guide to Sucre — we connect travelers with Bolivia's most storied city through language, food, and authentic experiences.</p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <p class="footer-col-title" data-i18n="footer.explore">Explore</p>
+          <ul class="footer-nav-list">
+            <li><a href="/guia"      data-i18n="nav.guide">City Guide</a></li>
+            <li><a href="/cafe"      data-i18n="nav.cafeFull">Café &amp; Menu</a></li>
+            <li><a href="/hospedaje" data-i18n="nav.stay">Stay</a></li>
+            <li><a href="/clases"    data-i18n="nav.classes">Spanish Classes</a></li>
+            <li><a href="/contacto"  data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Locations -->
+        <div>
+          <p class="footer-col-title" data-i18n="footer.findUs">Find Us</p>
+
+          <div class="footer-loc">
+            <span class="footer-loc-brand footer-loc-brand--inn" data-i18n="index.brand2Name">Me Gusta Sucre Inn</span>
+            <p class="footer-loc-addr">La Paz #571 &middot; Sucre</p>
+            <a href="https://wa.me/59164415223" target="_blank" class="footer-loc-wa"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>+591 644 15223</a>
+          </div>
+
+          <div class="footer-loc">
+            <span class="footer-loc-brand footer-loc-brand--cafe">Me Gusta Café</span>
+            <p class="footer-loc-addr">Bolivar #603 &middot; Sucre</p>
+            <a href="/cafe" class="footer-loc-link">Me Gusta Café ↗</a>
+          </div>
+
+          <div class="footer-loc">
+            <span class="footer-loc-brand footer-loc-brand--school">Me Gusta Spanish</span>
+            <p class="footer-loc-addr">Audiencia #97 &middot; Sucre</p>
+            <a href="https://wa.me/59174325725" target="_blank" class="footer-loc-wa"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>+591 743 25725</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Me Gusta Sucre. <span data-i18n="footer.rights">All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <a href="https://wa.me/59164415223" class="mobile-sticky-cta" target="_blank">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <span data-i18n="hospedaje.stickyBtn">Book Now</span>
+  </a>
+
+  <script src="/js/translations.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    // Configuración de Habitaciones — precios reales en Bs
+    const roomsData = {
+      'opt-private-bath': {
+        name: 'Privada c/ Baño Privado',
+        pricing: 'room',
+        prices:         { 1: 230, 2: 230 }, // precio regular (tarifa por habitación)
+        discountPrices: { 1: 150, 2: 190 }, // precio estudiante 17%
+        maxGuests: 2,
+        img: 'imagenes/hostal/baño_privado/DSC08147-HDR-2.webp'
+      },
+      'opt-private-shared': {
+        name: 'Privada c/ Baño Compartido',
+        pricing: 'room',
+        prices:         { 1: 180, 2: 180 },
+        discountPrices: { 1: 130, 2: 150 },
+        maxGuests: 2,
+        img: 'imagenes/hostal/baño_compartido/DSC08232-HDR.webp'
+      },
+      'opt-family': {
+        name: 'Familiar (hasta 4 personas)',
+        pricing: 'flat',
+        price:         365,
+        discountPrice: 300,
+        maxGuests: 4,
+        img: 'imagenes/hostal/familiar/DSC08332-HDR.webp'
+      },
+      'opt-dorm': {
+        name: 'Cama Compartida',
+        pricing: 'per-person',
+        price:         103, // por cama / noche
+        discountPrice:  85,
+        maxGuests: 6,
+        img: 'imagenes/hostal/seis_camas/DSC08494-HDR.webp'
+      }
+    };
+
+    // Calcula el precio por noche según habitación, huéspedes y descuento
+    function getPricePerNight(room, guests, isStudent) {
+      const g = Math.max(1, parseInt(guests) || 1);
+      if (room.pricing === 'per-person') {
+        const base = isStudent ? room.discountPrice : room.price;
+        return base * Math.min(g, room.maxGuests);
+      } else if (room.pricing === 'room') {
+        const tiers = isStudent ? room.discountPrices : room.prices;
+        const capped = Math.min(g, room.maxGuests);
+        return tiers[capped] || tiers[room.maxGuests];
+      } else { // flat
+        return isStudent ? room.discountPrice : room.price;
+      }
+    }
+
+    let selectedRoomId = 'opt-private-bath';
+
+    // Función para seleccionar habitación
+    function selectRoom(id, element) {
+      selectedRoomId = id;
+      
+      // UI Update
+      document.querySelectorAll('.room-option-light').forEach(opt => opt.classList.remove('sel'));
+      if (element) {
+        element.classList.add('sel');
+      } else {
+        // Find element by id if called from room cards
+        const opts = document.querySelectorAll('.room-option-light');
+        if (id === 'opt-private-bath') opts[0].classList.add('sel');
+        if (id === 'opt-private-shared') opts[1].classList.add('sel');
+        if (id === 'opt-family') opts[2].classList.add('sel');
+        if (id === 'opt-dorm') opts[3].classList.add('sel');
+      }
+
+      // Scroll to form if needed
+      if (!element) {
+        document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
+      }
+
+      updateSummary();
+    }
+
+    // Scroll al formulario
+    function scrollToForm() {
+      document.getElementById('reservar').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Sincronización: barra del hero → form
+    function syncFromBar(field) {
+      if (field === 'checkin') {
+        document.getElementById('check-in').value = document.getElementById('bar-checkin').value;
+      } else if (field === 'checkout') {
+        document.getElementById('check-out').value = document.getElementById('bar-checkout').value;
+      } else if (field === 'guests') {
+        document.getElementById('guests').value = document.getElementById('bar-guests-inp').value;
+      }
+      updateSummary();
+    }
+
+    // Sincronización: form → barra del hero (se llama desde oninput/onchange del form)
+    function syncFromForm() {
+      document.getElementById('bar-checkin').value = document.getElementById('check-in').value;
+      document.getElementById('bar-checkout').value = document.getElementById('check-out').value;
+      document.getElementById('bar-guests-inp').value = document.getElementById('guests').value;
+      updateSummary();
+    }
+
+    // Actualizar resumen de la tarjeta sticky
+    function updateSummary() {
+      const room      = roomsData[selectedRoomId];
+      const checkIn   = document.getElementById('check-in').value;
+      const checkOut  = document.getElementById('check-out').value;
+      const guests    = Math.max(1, parseInt(document.getElementById('guests').value) || 1);
+      const isStudent = document.getElementById('student-discount').checked;
+
+      document.getElementById('sum-room-name').innerText = room.name;
+      document.getElementById('sum-img').src = room.img;
+      document.getElementById('sum-guests').innerText = guests + (guests === 1 ? ' persona' : ' personas');
+
+      // Aviso de capacidad
+      const warn = document.getElementById('sum-capacity-warn');
+      if (room.maxGuests && guests > room.maxGuests) {
+        warn.style.display = 'block';
+        warn.innerText = `Esta habitación tiene capacidad para ${room.maxGuests} huésped${room.maxGuests > 1 ? 'es' : ''}. El precio refleja el máximo.`;
+      } else {
+        warn.style.display = 'none';
+      }
+
+      const pricePerNight = getPricePerNight(room, guests, isStudent);
+
+      let nights = 0;
+      if (checkIn && checkOut) {
+        const start = new Date(checkIn);
+        const end   = new Date(checkOut);
+        nights = Math.max(0, Math.ceil((end - start) / (1000 * 60 * 60 * 24)));
+      }
+
+      // Etiqueta de precio/noche según tipo de habitación
+      const basePrice = room.pricing === 'per-person'
+        ? (isStudent ? room.discountPrice : room.price)
+        : pricePerNight;
+      const rateLabel = room.pricing === 'per-person'
+        ? `${basePrice} Bs × ${Math.min(guests, room.maxGuests)} cama${guests > 1 ? 's' : ''}`
+        : room.pricing === 'room'
+          ? `${pricePerNight} Bs (tarifa por cuarto)`
+          : `${pricePerNight} Bs`;
+
+      document.getElementById('sum-rate').innerText   = rateLabel;
+      document.getElementById('sum-nights').innerText = nights;
+      document.getElementById('sum-total-num').innerText = (nights * pricePerNight) + ' Bs';
+    }
+
+    // Enviar WhatsApp
+    function sendWhatsApp() {
+      const room      = roomsData[selectedRoomId];
+      const name      = document.getElementById('user-name').value;
+      const checkIn   = document.getElementById('check-in').value;
+      const checkOut  = document.getElementById('check-out').value;
+      const guests    = Math.max(1, parseInt(document.getElementById('guests').value) || 1);
+      const isStudent = document.getElementById('student-discount').checked;
+      const msg       = document.getElementById('message').value;
+
+      if (!name || !checkIn || !checkOut) {
+        alert('Por favor completa tu nombre y las fechas de estadía.');
+        return;
+      }
+
+      const pricePerNight = getPricePerNight(room, guests, isStudent);
+      const nights = Math.max(0, Math.ceil((new Date(checkOut) - new Date(checkIn)) / (1000*60*60*24)));
+      const total  = nights * pricePerNight;
+
+      const text = `%C2%A1Hola Me Gusta Sucre Inn! %F0%9F%91%8B Quisiera solicitar una reserva:%0A%0A` +
+                   `%F0%9F%8F%A0 Habitacion: ${room.name}%0A` +
+                   `%F0%9F%91%A4 Nombre: ${name}%0A` +
+                   `%F0%9F%93%85 Llegada: ${checkIn}%0A` +
+                   `%F0%9F%93%85 Salida: ${checkOut}%0A` +
+                   `%F0%9F%8C%99 Noches: ${nights}%0A` +
+                   `%F0%9F%91%A5 Huespedes: ${guests}%0A` +
+                   `%F0%9F%8E%93 %C2%BFSoy estudiante?: ${isStudent ? 'Si (17% descuento)' : 'No'}%0A` +
+                   `%F0%9F%92%B0 Precio/noche: ${pricePerNight} Bs%0A` +
+                   `%F0%9F%92%B0 Total estimado: ${total} Bs%0A` +
+                   (msg ? `%0A%F0%9F%92%AC Mensaje: ${msg}%0A` : '') +
+                   `%0A%C2%A1Espero su confirmacion! Gracias.`;
+
+      window.open(`https://wa.me/59164415223?text=${text}`, '_blank');
+    }
+
+    // Inicializar fechas en ambos lados
+    window.onload = () => {
+      const today = new Date();
+      const d1 = new Date(today); d1.setDate(d1.getDate() + 1);
+      const d2 = new Date(today); d2.setDate(d2.getDate() + 3);
+      const fmt = d => d.toISOString().split('T')[0];
+
+      // Form
+      document.getElementById('check-in').value  = fmt(d1);
+      document.getElementById('check-out').value = fmt(d2);
+
+      // Barra del hero
+      document.getElementById('bar-checkin').value  = fmt(d1);
+      document.getElementById('bar-checkout').value = fmt(d2);
+
+      updateSummary();
+    };
+  </script>
+</body>
+</html>
