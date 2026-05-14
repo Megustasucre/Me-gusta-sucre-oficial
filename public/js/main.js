@@ -180,10 +180,10 @@ if (heroSection) {
 }
 
 /* ── Active nav link ── */
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
 document.querySelectorAll('.nav-link').forEach(link => {
-  const href = link.getAttribute('href') || '';
-  if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+  const href = (link.getAttribute('href') || '').replace(/\/$/, '');
+  if (href && currentPath.startsWith(href)) {
     link.classList.add('nav-active');
   }
 });
