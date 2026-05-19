@@ -802,7 +802,9 @@ const translations ={
 "explore":"Explore",
 "megustaTitle":"Me Gusta",
 "rights":"All rights reserved.",
-"address":"La Paz #571,Sucre,Bolivia"
+"address":"La Paz #571,Sucre,Bolivia",
+"privacy":"Privacy Policy",
+"terms":"Terms of Service"
 },
 "index":{
 "seoTitle":"Me Gusta Sucre | Stay, Learn Spanish & Specialty Coffee in Bolivia",
@@ -1866,7 +1868,9 @@ const translations ={
 "explore":"Explorar",
 "megustaTitle":"Me Gusta",
 "rights":"Todos los derechos reservados.",
-"address":"La Paz #571,Sucre,Bolivia"
+"address":"La Paz #571,Sucre,Bolivia",
+"privacy":"Política de Privacidad",
+"terms":"Términos de Servicio"
 },
 "index":{
 "seoTitle":"Me Gusta Sucre | Hospedaje, Clases de Español y Café de Especialidad en Bolivia",
@@ -2902,7 +2906,9 @@ const translations ={
 "explore":"Explorer",
 "megustaTitle":"Me Gusta",
 "rights":"Tous droits réservés.",
-"address":"La Paz #571,Sucre,Bolivie"
+"address":"La Paz #571,Sucre,Bolivie",
+"privacy":"Politique de Confidentialité",
+"terms":"Conditions d'Utilisation"
 },
 "index":{
 "seoTitle":"Me Gusta Sucre | Hébergement, Cours d'Espagnol et Café de Spécialité en Bolivie",

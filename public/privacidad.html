@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Me Gusta Sucre</title>
+  <meta name="description" content="Privacy Policy for Me Gusta Sucre — Inn, Café & Spanish School. Learn how we collect, use, and protect your personal information." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://megustasucre.com/privacidad" />
+  <link rel="icon" type="image/svg+xml" href="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logo_tam_reducido_2.svg">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/css/tw.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/sucre-fonts.css" />
+  <style>
+    .policy-hero { background: #000; padding: 100px 0 60px; }
+    .policy-body { background: #fff; padding: 64px 0 80px; }
+    .policy-section { margin-bottom: 40px; }
+    .policy-section h2 { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; color: #111; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #d61a16; display: inline-block; }
+    .policy-section p, .policy-section li { font-size: 15px; color: #444; line-height: 1.85; }
+    .policy-section ul { padding-left: 20px; margin-top: 8px; }
+    .policy-section ul li { margin-bottom: 6px; }
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 32px; }
+    .lang-toggle button { padding: 6px 18px; border-radius: 8px; font-size: 12px; font-weight: 700; cursor: pointer; border: 2px solid #d61a16; transition: all 0.2s; }
+    .lang-toggle button.active { background: #d61a16; color: #fff; }
+    .lang-toggle button:not(.active) { background: transparent; color: #d61a16; }
+    .last-updated { font-size: 12px; color: #aaa; margin-bottom: 40px; }
+    @media(max-width:768px){ .policy-hero { padding: 90px 0 40px; } }
+  </style>
+</head>
+<body style="background:#fff">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50" style="background:transparent">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between relative">
+      <div class="hidden md:flex items-center gap-7" style="flex:1">
+        <a href="/clases" class="nav-link nav-secondary text-white" data-i18n="nav.classes">Spanish Classes</a>
+        <a href="/cafe" class="nav-link nav-secondary text-white" data-i18n="nav.cafe">Café</a>
+        <a href="/guia" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
+      </div>
+      <a href="/" class="flex items-center md:absolute md:left-1/2 md:-translate-x-1/2">
+        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img">
+      </a>
+      <div class="hidden md:flex items-center justify-end gap-5" style="flex:1">
+        <a href="/hospedaje" class="nav-link nav-primary text-white" data-i18n="nav.stay">Stay</a>
+        <a href="/contacto" class="nav-link nav-secondary text-white" data-i18n="nav.contact">Contact</a>
+        <div class="flex items-center gap-3 border-l lang-container border-white/20 pl-6 ml-2">
+          <button class="lang-btn text-xs font-bold text-white uppercase active" data-lang="en">EN</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="es">ES</button>
+          <span class="text-white/30 text-xs">|</span>
+          <button class="lang-btn text-xs font-bold text-white/50 uppercase" data-lang="fr">FR</button>
+        </div>
+      </div>
+      <button id="menu-btn" class="md:hidden text-white p-1">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-5" style="background:#000">
+      <div class="flex flex-col gap-4 pt-2">
+        <a href="/clases" class="text-white text-sm font-semibold" data-i18n="nav.classes">Spanish Classes</a>
+        <a href="/cafe"   class="text-white text-sm font-semibold" data-i18n="nav.cafe">Café</a>
+        <a href="/guia"   class="text-white text-sm font-semibold" data-i18n="nav.guide">City Guide</a>
+        <a href="/hospedaje" class="text-white text-sm font-semibold" data-i18n="nav.stay">Stay</a>
+        <a href="/contacto"  class="text-white text-sm font-semibold" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="policy-hero">
+    <div class="max-w-3xl mx-auto px-6">
+      <p style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#d61a16;margin-bottom:12px">Legal</p>
+      <h1 id="hero-title" style="font-family:'Aztec Beat',serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;color:#fff;line-height:1.1;text-transform:uppercase;font-style:normal">Privacy Policy</h1>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="policy-body">
+    <div class="max-w-3xl mx-auto px-6">
+
+      <!-- Language toggle -->
+      <div class="lang-toggle">
+        <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+        <button id="btn-es" onclick="setLang('es')">Español</button>
+      </div>
+
+      <p class="last-updated" id="last-updated">Last updated: May 19, 2026</p>
+
+      <!-- EN Content -->
+      <div id="content-en">
+
+        <div class="policy-section">
+          <p>Me Gusta Sucre ("we", "our", "us") operates Me Gusta Sucre Inn, Me Gusta Café, and Me Gusta Spanish School. This Privacy Policy explains how we collect, use, and protect your personal information when you interact with us through our website, WhatsApp, or in person.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>1. Information We Collect</h2>
+          <ul>
+            <li><strong>Contact information:</strong> name, phone number, email address.</li>
+            <li><strong>Reservation details:</strong> check-in/check-out dates, number of guests, room preferences.</li>
+            <li><strong>Communication data:</strong> messages sent via WhatsApp or our contact form.</li>
+            <li><strong>Usage data:</strong> pages visited on our website (via Google Analytics).</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h2>2. How We Use Your Information</h2>
+          <ul>
+            <li>To respond to inquiries and manage reservations.</li>
+            <li>To provide customer support via WhatsApp (including our automated AI assistant).</li>
+            <li>To send confirmation or follow-up messages related to your booking.</li>
+            <li>To improve our services and website experience.</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h2>3. WhatsApp & AI Assistant</h2>
+          <p>We use the <strong>WhatsApp Business Platform</strong> (Meta Platforms, Inc.) to communicate with customers. When you message us on WhatsApp, your messages may be processed by our automated assistant powered by <strong>Groq AI</strong>. Messages are used solely to respond to your inquiry. We do not sell or share your WhatsApp data with third parties for marketing purposes.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>4. Third-Party Services</h2>
+          <ul>
+            <li><strong>Meta / WhatsApp Business API</strong> — message delivery platform.</li>
+            <li><strong>Groq AI</strong> — AI language model used for automated responses.</li>
+            <li><strong>Google Analytics</strong> — website traffic analysis.</li>
+            <li><strong>Google Maps</strong> — embedded maps on our website.</li>
+          </ul>
+          <p style="margin-top:12px">Each third party has its own privacy policy. We encourage you to review them.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>5. Data Retention</h2>
+          <p>We retain your personal data only as long as necessary to fulfill the purposes described above or as required by law. Conversation history in our WhatsApp system resets periodically.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>6. Your Rights</h2>
+          <p>You have the right to request access to, correction of, or deletion of your personal data. To exercise these rights, contact us at:</p>
+          <p style="margin-top:10px"><strong>Email:</strong> info@megustaspanish.com<br>
+          <strong>WhatsApp:</strong> +591 644 15223<br>
+          <strong>Address:</strong> La Paz #571, Sucre, Bolivia</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>7. Cookies</h2>
+          <p>Our website uses cookies for analytics (Google Analytics) and functionality. By using our website, you consent to our use of cookies. You can disable cookies in your browser settings at any time.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>8. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of our services after changes constitutes acceptance of the new policy.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>9. Contact Us</h2>
+          <p>If you have questions about this Privacy Policy, please contact us:</p>
+          <p style="margin-top:10px"><strong>Me Gusta Sucre</strong><br>
+          La Paz #571, Sucre, Bolivia<br>
+          info@megustaspanish.com<br>
+          +591 644 15223</p>
+        </div>
+
+      </div>
+
+      <!-- ES Content -->
+      <div id="content-es" style="display:none">
+
+        <div class="policy-section">
+          <p>Me Gusta Sucre ("nosotros", "nuestro") opera Me Gusta Sucre Inn, Me Gusta Café y Me Gusta Spanish School. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información personal cuando interactúas con nosotros a través de nuestro sitio web, WhatsApp o en persona.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>1. Información que recopilamos</h2>
+          <ul>
+            <li><strong>Datos de contacto:</strong> nombre, número de teléfono, dirección de correo electrónico.</li>
+            <li><strong>Datos de reserva:</strong> fechas de check-in/check-out, número de huéspedes, preferencias de habitación.</li>
+            <li><strong>Datos de comunicación:</strong> mensajes enviados por WhatsApp o nuestro formulario de contacto.</li>
+            <li><strong>Datos de uso:</strong> páginas visitadas en nuestro sitio web (a través de Google Analytics).</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h2>2. Cómo usamos tu información</h2>
+          <ul>
+            <li>Para responder consultas y gestionar reservas.</li>
+            <li>Para brindar atención al cliente por WhatsApp (incluyendo nuestro asistente de IA automatizado).</li>
+            <li>Para enviar mensajes de confirmación o seguimiento relacionados con tu reserva.</li>
+            <li>Para mejorar nuestros servicios y la experiencia en el sitio web.</li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h2>3. WhatsApp y Asistente de IA</h2>
+          <p>Usamos la <strong>plataforma WhatsApp Business</strong> (Meta Platforms, Inc.) para comunicarnos con clientes. Cuando nos escribes por WhatsApp, tus mensajes pueden ser procesados por nuestro asistente automatizado basado en <strong>Groq AI</strong>. Los mensajes se usan únicamente para responder tu consulta. No vendemos ni compartimos tus datos de WhatsApp con terceros con fines de marketing.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>4. Servicios de terceros</h2>
+          <ul>
+            <li><strong>Meta / WhatsApp Business API</strong> — plataforma de entrega de mensajes.</li>
+            <li><strong>Groq AI</strong> — modelo de IA usado para respuestas automatizadas.</li>
+            <li><strong>Google Analytics</strong> — análisis de tráfico web.</li>
+            <li><strong>Google Maps</strong> — mapas integrados en nuestro sitio web.</li>
+          </ul>
+          <p style="margin-top:12px">Cada tercero tiene su propia política de privacidad. Te recomendamos revisarlas.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>5. Retención de datos</h2>
+          <p>Conservamos tus datos personales solo durante el tiempo necesario para cumplir los fines descritos o según lo exija la ley. El historial de conversaciones en nuestro sistema de WhatsApp se reinicia periódicamente.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>6. Tus derechos</h2>
+          <p>Tienes derecho a solicitar acceso, corrección o eliminación de tus datos personales. Para ejercer estos derechos, contáctanos en:</p>
+          <p style="margin-top:10px"><strong>Correo:</strong> info@megustaspanish.com<br>
+          <strong>WhatsApp:</strong> +591 644 15223<br>
+          <strong>Dirección:</strong> La Paz #571, Sucre, Bolivia</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>7. Cookies</h2>
+          <p>Nuestro sitio web usa cookies para análisis (Google Analytics) y funcionalidad. Al usar nuestro sitio, aceptas el uso de cookies. Puedes desactivar las cookies en la configuración de tu navegador en cualquier momento.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>8. Cambios en esta política</h2>
+          <p>Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se publicarán en esta página con una fecha actualizada. El uso continuado de nuestros servicios tras los cambios implica la aceptación de la nueva política.</p>
+        </div>
+
+        <div class="policy-section">
+          <h2>9. Contáctanos</h2>
+          <p>Si tienes preguntas sobre esta Política de Privacidad, contáctanos:</p>
+          <p style="margin-top:10px"><strong>Me Gusta Sucre</strong><br>
+          La Paz #571, Sucre, Bolivia<br>
+          info@megustaspanish.com<br>
+          +591 644 15223</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-main">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-row">
+            <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_7.svg" alt="Me Gusta Sucre" class="footer-logo-img" style="height:50px;width:auto">
+          </div>
+          <p class="footer-tagline" data-i18n="footer.tagline">Your local guide to Sucre — we connect travelers with Bolivia's most storied city through language, food, and authentic experiences.</p>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.explore">Explore</p>
+          <ul class="footer-nav-list">
+            <li><a href="/guia"      data-i18n="nav.guide">City Guide</a></li>
+            <li><a href="/cafe"      data-i18n="nav.cafeFull">Café &amp; Menu</a></li>
+            <li><a href="/hospedaje" data-i18n="nav.stay">Stay</a></li>
+            <li><a href="/clases"    data-i18n="nav.classes">Spanish Classes</a></li>
+            <li><a href="/contacto"  data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title" data-i18n="footer.findUs">Find Us</p>
+          <div class="footer-loc">
+            <span class="footer-loc-brand footer-loc-brand--inn">Me Gusta Sucre Inn</span>
+            <p class="footer-loc-addr">La Paz #571 &middot; Sucre</p>
+            <a href="https://wa.me/59164415223" target="_blank" class="footer-loc-wa">+591 644 15223</a>
+          </div>
+          <div class="footer-loc">
+            <span class="footer-loc-brand footer-loc-brand--cafe">Me Gusta Café</span>
+            <p class="footer-loc-addr">Bolivar #603 &middot; Sucre</p>
+          </div>
+          <div class="footer-loc">
+            <span class="footer-loc-brand footer-loc-brand--school">Me Gusta Spanish</span>
+            <p class="footer-loc-addr">Audiencia #97 &middot; Sucre</p>
+            <a href="https://wa.me/59174325725" target="_blank" class="footer-loc-wa">+591 743 25725</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Me Gusta Sucre. <span data-i18n="footer.rights">All rights reserved.</span>
+        &nbsp;·&nbsp; <a href="/privacidad" style="color:inherit;text-decoration:underline" data-i18n="footer.privacy">Privacy Policy</a>
+        &nbsp;·&nbsp; <a href="/terminos" style="color:inherit;text-decoration:underline" data-i18n="footer.terms">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/59164415223" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="/js/translations.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    function setLang(lang) {
+      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('content-es').style.display = lang === 'es' ? 'block' : 'none';
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+      document.getElementById('hero-title').textContent = lang === 'en' ? 'Privacy Policy' : 'Política de Privacidad';
+      document.getElementById('last-updated').textContent = lang === 'en' ? 'Last updated: May 19, 2026' : 'Última actualización: 19 de mayo de 2026';
+    }
+  </script>
+</body>
+</html>
