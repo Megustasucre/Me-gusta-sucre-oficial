@@ -770,26 +770,6 @@ footer a:hover { color: var(--red); }
   .footer-brand { grid-column: span 1; }
 }
 
-/* ─── WHATSAPP FLOAT ─── */
-.whatsapp-float {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 56px;
-  height: 56px;
-  background: #25d366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-  z-index: 999;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.whatsapp-float:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 28px rgba(37,211,102,0.5);
-}
 
 /* ─── TESTIMONIALS MARQUEE ─── */
 .testimonial-strip {
@@ -1004,8 +984,6 @@ footer a:hover { color: var(--red); }
   /* Footer: 2 cols on mobile for better use of space */
   footer .grid.md\:grid-cols-4 { grid-template-columns: 1fr 1fr !important; }
 
-  /* WhatsApp float button — smaller on mobile */
-  .whatsapp-float { width: 48px; height: 48px; bottom: 20px; right: 20px; }
 
   /* Map frame */
   .map-frame { height: 300px !important; }
