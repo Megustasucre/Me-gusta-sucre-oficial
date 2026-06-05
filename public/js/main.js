@@ -83,7 +83,7 @@ if (navbar) {
     }
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  requestAnimationFrame(onScroll);
 }
 
 /* ── Mobile menu toggle ── */

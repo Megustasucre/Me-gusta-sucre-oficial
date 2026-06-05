@@ -222,7 +222,7 @@ body.scrolled-past .top-bar { transform: translateY(-100%); }
 #navbar.scrolled .logo-accent { color: var(--red) !important; }
 
 /* Logo image — navbar */
-.logo-img { height: 56px; width: auto; flex-shrink: 0; display: block; filter: brightness(0) invert(1); transition: filter 0.35s; }
+.logo-img { height: 56px; width: auto; aspect-ratio: 1205 / 214; flex-shrink: 0; display: block; filter: brightness(0) invert(1); transition: filter 0.35s; }
 #navbar.scrolled .logo-img { filter: none; }
 .navbar-brand-logo { filter: brightness(0) invert(1); transition: filter 0.35s; }
 #navbar.scrolled .navbar-brand-logo { filter: none; }
@@ -680,6 +680,7 @@ footer a:hover { color: var(--red); }
 .footer-logo-img {
   height: 40px;
   width: auto;
+  aspect-ratio: 1205 / 214;
 }
 .footer-wordmark {
   font-family: 'Inter', sans-serif;
