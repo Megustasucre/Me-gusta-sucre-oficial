@@ -56,7 +56,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- CSS Global + Tailwind (sucre-fonts.css ya carga las fuentes) -->
   <link rel="stylesheet" href="/css/tw.css" />
   <link rel="stylesheet" href="/css/style.css?v=3" />
-  <link rel="stylesheet" href="/css/sucre-fonts.css" />
+  <link rel="preload" as="font" href="/fonts/AztecBeat.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="/fonts/Inter.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" href="/css/sucre-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/sucre-fonts.css"></noscript>
   <style>
     .mobile-sticky-cta {
       display: none;
@@ -103,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <a href="/" class="flex items-center md:absolute md:left-1/2 md:-translate-x-1/2">
-        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img">
+        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img" width="1205" height="214">
       </a>
 
       <div class="hidden md:flex items-center justify-end gap-5" style="flex:1">
@@ -191,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="s-narrative-img">
-      <img src="/imagenes/hostal/hostal_general/Entrada.webp" alt="Me Gusta Sucre Inn — Tu casa lejos de casa" loading="lazy" />
+      <img src="/imagenes/hostal/hostal_general/Entrada.webp" alt="Me Gusta Sucre Inn — Tu casa lejos de casa" loading="lazy" width="1067" height="1600" />
       <div class="s-narrative-overlay"></div>
       <div class="s-narrative-float">
         <div class="s-narrative-float-label" data-i18n="hospedaje.narrativeFloatLabel">Nuestra dirección</div>
@@ -376,12 +379,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="g-cell fade-up" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;background:transparent;border-radius:0;overflow:visible;animation-delay:0.2s">
           <div class="g-cell">
-            <img src="/imagenes/hostal/hostal_general/pasillo_1.webp" alt="Pasillo" loading="lazy" />
+            <img src="/imagenes/hostal/hostal_general/pasillo_1.webp" alt="Pasillo" loading="lazy" width="1067" height="1600" />
             <div class="g-overlay"></div>
             <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel3">Habitación Privada</span></div>
           </div>
           <div class="g-cell">
-            <img src="/imagenes/hostal/hostal_general/area_compartida_2.webp" alt="Area comun" loading="lazy" />
+            <img src="/imagenes/hostal/hostal_general/area_compartida_2.webp" alt="Area comun" loading="lazy" width="1067" height="1600" />
             <div class="g-overlay"></div>
             <div class="g-label"><span class="g-pill" data-i18n="hospedaje.galleryLabel4">Common Areas</span></div>
           </div>
@@ -653,7 +656,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Brand -->
         <div class="footer-brand">
           <div class="footer-logo-row">
-            <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_7.svg" alt="Me Gusta Sucre" class="footer-logo-img" style="height:50px;width:auto">
+            <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_7.svg" alt="Me Gusta Sucre" class="footer-logo-img" style="height:50px;width:auto" width="1205" height="214">
           </div>
           <p class="footer-tagline" data-i18n="footer.tagline">Your local guide to Sucre — we connect travelers with Bolivia's most storied city through language, food, and authentic experiences.</p>
         </div>

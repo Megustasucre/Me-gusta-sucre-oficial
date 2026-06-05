@@ -11,7 +11,10 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/tw.css" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/sucre-fonts.css" />
+  <link rel="preload" as="font" href="/fonts/AztecBeat.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" as="font" href="/fonts/Inter.ttf" type="font/ttf" crossorigin>
+  <link rel="preload" href="/css/sucre-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/sucre-fonts.css"></noscript>
   <style>
     .policy-hero { background: #000; padding: 100px 0 60px; }
     .policy-body { background: #fff; padding: 64px 0 80px; }
@@ -39,7 +42,7 @@
         <a href="/guia" class="nav-link nav-primary text-white" data-i18n="nav.guide">City Guide</a>
       </div>
       <a href="/" class="flex items-center md:absolute md:left-1/2 md:-translate-x-1/2">
-        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img">
+        <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_6.svg" alt="Me Gusta Sucre" class="logo-img" width="1205" height="214">
       </a>
       <div class="hidden md:flex items-center justify-end gap-5" style="flex:1">
         <a href="/hospedaje" class="nav-link nav-primary text-white" data-i18n="nav.stay">Stay</a>
@@ -271,7 +274,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo-row">
-            <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_7.svg" alt="Me Gusta Sucre" class="footer-logo-img" style="height:50px;width:auto">
+            <img src="/imagenes/logos/logo_me_gusta_sucre_of/SVG/logotipo_7.svg" alt="Me Gusta Sucre" class="footer-logo-img" style="height:50px;width:auto" width="1205" height="214">
           </div>
           <p class="footer-tagline" data-i18n="footer.tagline">Your local guide to Sucre — we connect travelers with Bolivia's most storied city through language, food, and authentic experiences.</p>
         </div>
