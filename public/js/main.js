@@ -13,12 +13,14 @@ function getLang() {
   return localStorage.getItem('mgs_lang') || 'en';
 }
 
-function setLang(lang) {
-  localStorage.setItem('mgs_lang', lang);
-  applyTranslations(lang);
-  // Update active state on lang buttons
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+function loadLang(lang) {
+  return new Promise(resolve => {
+    if (window.__tr && window.__tr[lang]) { resolve(); return; }
+    const s = document.createElement('script');
+    s.src = '/js/lang/' + lang + '.js';
+    s.onload = resolve;
+    s.onerror = resolve;
+    document.head.appendChild(s);
   });
 }
 
@@ -27,25 +29,22 @@ function getNestedValue(obj, key) {
 }
 
 function applyTranslations(lang) {
-  if (typeof translations === 'undefined') return;
-  const t = translations[lang] || translations.en;
-  
-  // Standard text content
+  if (!window.__tr) return;
+  const t = window.__tr[lang] || window.__tr.en;
+  if (!t) return;
+
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const val = getNestedValue(t, el.dataset.i18n);
     if (val !== undefined && val !== null) el.textContent = val;
   });
 
-  // HTML content
   document.querySelectorAll('[data-i18n-html]').forEach(el => {
     const val = getNestedValue(t, el.dataset.i18nHtml);
     if (val !== undefined && val !== null) el.innerHTML = val;
   });
 
-  // Attributes (e.g., data-i18n-attr="alt:imgAlt,title:linkTitle")
   document.querySelectorAll('[data-i18n-attr]').forEach(el => {
-    const attrMappings = el.dataset.i18nAttr.split(',');
-    attrMappings.forEach(mapping => {
+    el.dataset.i18nAttr.split(',').forEach(mapping => {
       const [attr, key] = mapping.trim().split(':');
       const val = getNestedValue(t, key);
       if (val !== undefined && val !== null) el.setAttribute(attr, val);
@@ -53,16 +52,25 @@ function applyTranslations(lang) {
   });
 
   document.documentElement.lang = lang;
-  
-  // Show/hide language-specific content blocks
+
   document.querySelectorAll('[data-lang-block]').forEach(el => {
     el.style.display = el.dataset.langBlock === lang ? '' : 'none';
   });
 }
 
+async function setLang(lang) {
+  localStorage.setItem('mgs_lang', lang);
+  await loadLang(lang);
+  applyTranslations(lang);
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+}
+
 // Init i18n on page load
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const lang = getLang();
+  await loadLang(lang);
   applyTranslations(lang);
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
